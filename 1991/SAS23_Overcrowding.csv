@@ -1,0 +1,1977 @@
+
+"1991 census - small area statistics"
+"ONS Crown Copyright Reserved [from Nomis on 5 April 2025]"
+"Analysis   :","standard"
+"Date       :","1991"
+
+"enumeration districts","mnemonic","S23:1 (Total households : Total households )","S23:2 (Total households : Up to 0.5 persons per room )","S23:3 (Total households : Over 1 and up to 1.5 persons per room )","S23:4 (Total households : Over 1.5 persons per room )"
+
+"CNFA01 (Acock's Green)",59174,243,131,11,2
+"CNFA02 (Acock's Green)",59175,183,95,5,0
+"CNFA03 (Acock's Green)",59176,220,112,16,0
+"CNFA04 (Acock's Green)",59177,216,127,8,1
+"CNFA05 (Acock's Green)",59178,195,129,7,0
+"CNFA06 (Acock's Green)",59179,241,140,11,2
+"CNFA07 (Acock's Green)",59180,187,108,10,1
+"CNFA08 (Acock's Green)",59181,190,94,14,0
+"CNFA09 (Acock's Green)",59182,225,140,5,0
+"CNFA10 (Acock's Green)",59183,210,146,7,0
+"CNFA11 (Acock's Green)",59184,161,92,9,0
+"CNFA12 (Acock's Green)",59185,172,103,9,4
+"CNFA13 (Acock's Green)",59186,160,93,3,0
+"CNFA14 (Acock's Green)",59187,200,115,11,0
+"CNFA15 (Acock's Green)",59188,172,115,6,2
+"CNFA16 (Acock's Green)",59189,187,136,3,0
+"CNFA17 (Acock's Green)",59190,203,133,4,0
+"CNFA18 (Acock's Green)",59191,205,134,4,1
+"CNFA19 (Acock's Green)",59192,172,120,2,0
+"CNFA20 (Acock's Green)",59193,206,155,2,0
+"CNFA21 (Acock's Green)",59194,229,157,5,0
+"CNFA22 (Acock's Green)",59195,153,121,1,0
+"CNFA23 (Acock's Green)",59196,175,109,4,1
+"CNFA24 (Acock's Green)",59197,154,107,5,1
+"CNFA25 (Acock's Green)",59198,229,150,8,0
+"CNFA26 (Acock's Green)",59199,159,108,5,0
+"CNFA27 (Acock's Green)",59200,234,140,3,2
+"CNFA28 (Acock's Green)",59201,227,128,7,1
+"CNFA29 (Acock's Green)",59202,174,123,3,0
+"CNFA30 (Acock's Green)",59203,159,124,5,0
+"CNFA31 (Acock's Green)",59204,229,149,9,0
+"CNFA32 (Acock's Green)",59205,201,142,3,0
+"CNFA33 (Acock's Green)",59206,220,119,7,0
+"CNFA34 (Acock's Green)",59207,223,143,7,0
+"CNFA35 (Acock's Green)",59208,244,171,5,0
+"CNFA37 (Acock's Green)",59209,259,142,9,2
+"CNFA38 (Acock's Green)",59210,105,50,12,0
+"CNFA39 (Acock's Green)",59211,210,106,14,1
+"CNFA40 (Acock's Green)",59212,183,116,1,1
+"CNFA41 (Acock's Green)",59213,200,119,6,1
+"CNFA42 (Acock's Green)",59214,228,167,5,0
+"CNFA43 (Acock's Green)",59215,180,111,4,1
+"CNFA44 (Acock's Green)",59216,200,131,4,0
+"CNFA45 (Acock's Green)",59217,232,168,3,1
+"CNFA46 (Acock's Green)",59218,234,159,2,1
+"CNFA47 (Acock's Green)",59219,167,97,3,2
+"CNFA48 (Acock's Green)",59220,173,122,3,1
+"CNFA49 (Acock's Green)",59221,183,117,0,2
+"CNFA50 (Acock's Green)",59222,166,102,1,3
+"CNFA51 (Acock's Green)",59223,213,129,3,2
+"CNFA52 (Acock's Green)",59224,179,112,4,3
+"CNFA53 (Acock's Green)",59225,225,146,5,3
+"CNFA54 (Acock's Green)",59226,181,129,5,0
+"CNFB01 (Aston)",59227,192,129,6,1
+"CNFB02 (Aston)",59228,166,109,4,2
+"CNFB03 (Aston)",59229,247,159,5,0
+"CNFB04 (Aston)",59230,237,124,18,4
+"CNFB05 (Aston)",59231,165,70,18,9
+"CNFB07 (Aston)",59232,192,118,16,6
+"CNFB08 (Aston)",59233,241,112,28,10
+"CNFB09 (Aston)",59234,165,107,9,2
+"CNFB10 (Aston)",59235,201,140,1,0
+"CNFB11 (Aston)",59236,194,103,20,8
+"CNFB12 (Aston)",59237,134,67,15,7
+"CNFB13 (Aston)",59238,181,71,33,11
+"CNFB14 (Aston)",59239,147,55,21,14
+"CNFB15 (Aston)",59240,197,139,5,4
+"CNFB16 (Aston)",59241,165,125,4,1
+"CNFB17 (Aston)",59242,198,116,9,3
+"CNFB18 (Aston)",59243,193,53,48,20
+"CNFB19 (Aston)",59244,196,108,16,6
+"CNFB20 (Aston)",59245,168,78,12,1
+"CNFB21 (Aston)",59246,188,117,9,7
+"CNFB22 (Aston)",59247,128,52,13,10
+"CNFB23 (Aston)",59248,190,114,6,5
+"CNFB24 (Aston)",59249,187,74,41,12
+"CNFB25 (Aston)",59250,213,100,32,13
+"CNFB26 (Aston)",59251,189,99,11,5
+"CNFB27 (Aston)",59252,208,94,17,2
+"CNFB28 (Aston)",59253,210,117,25,7
+"CNFB29 (Aston)",59254,174,117,10,4
+"CNFB30 (Aston)",59255,206,95,18,5
+"CNFB32 (Aston)",59256,143,84,3,4
+"CNFB33 (Aston)",59257,109,41,13,5
+"CNFB34 (Aston)",59258,182,70,25,5
+"CNFB35 (Aston)",59259,164,82,27,6
+"CNFB36 (Aston)",59260,228,170,3,8
+"CNFB37 (Aston)",59261,224,130,16,2
+"CNFB38 (Aston)",59262,200,86,16,6
+"CNFB39 (Aston)",59263,218,90,20,4
+"CNFB40 (Aston)",59264,207,99,13,2
+"CNFB41 (Aston)",59265,191,165,1,1
+"CNFB42 (Aston)",59266,209,101,14,2
+"CNFB43 (Aston)",59267,175,133,3,2
+"CNFB44 (Aston)",59268,175,111,5,1
+"CNFB45 (Aston)",59269,205,90,17,1
+"CNFB46 (Aston)",59270,230,164,5,0
+"CNFB47 (Aston)",59271,153,119,4,1
+"CNFB48 (Aston)",59272,237,178,6,2
+"CNFB49 (Aston)",59273,159,123,3,0
+"CNFB50 (Aston)",59274,211,142,3,1
+"CNFB51 (Aston)",59275,191,123,5,2
+"CNFB52 (Aston)",59276,156,121,2,1
+"CNFB54 (Aston)",59277,159,98,3,3
+"CNFB55 (Aston)",59278,171,110,7,0
+"CNFB58 (Aston)",59279,0,0,0,0
+"CNFC01 (Bartley Green)",59280,77,48,1,0
+"CNFC02 (Bartley Green)",59281,181,108,0,0
+"CNFC03 (Bartley Green)",59282,192,111,10,1
+"CNFC04 (Bartley Green)",59283,220,133,4,1
+"CNFC05 (Bartley Green)",59284,189,118,5,2
+"CNFC06 (Bartley Green)",59285,205,124,1,1
+"CNFC07 (Bartley Green)",59286,225,142,10,2
+"CNFC08 (Bartley Green)",59287,210,104,10,2
+"CNFC09 (Bartley Green)",59288,212,126,9,1
+"CNFC10 (Bartley Green)",59289,228,140,12,0
+"CNFC11 (Bartley Green)",59290,167,88,4,0
+"CNFC12 (Bartley Green)",59291,200,94,3,0
+"CNFC13 (Bartley Green)",59292,239,133,6,3
+"CNFC14 (Bartley Green)",59293,218,114,11,1
+"CNFC15 (Bartley Green)",59294,195,89,4,0
+"CNFC16 (Bartley Green)",59295,193,69,1,0
+"CNFC17 (Bartley Green)",59296,213,148,5,0
+"CNFC18 (Bartley Green)",59297,170,102,0,0
+"CNFC19 (Bartley Green)",59298,172,100,3,0
+"CNFC20 (Bartley Green)",59299,206,132,2,1
+"CNFC21 (Bartley Green)",59300,200,145,5,0
+"CNFC22 (Bartley Green)",59301,230,157,5,0
+"CNFC23 (Bartley Green)",59302,194,112,7,0
+"CNFC24 (Bartley Green)",59303,165,95,1,1
+"CNFC25 (Bartley Green)",59304,192,95,11,1
+"CNFC26 (Bartley Green)",59305,118,63,2,0
+"CNFC27 (Bartley Green)",59306,238,168,5,3
+"CNFC28 (Bartley Green)",59307,193,135,5,0
+"CNFC29 (Bartley Green)",59308,228,146,6,0
+"CNFC30 (Bartley Green)",59309,221,117,3,0
+"CNFC31 (Bartley Green)",59310,177,132,4,1
+"CNFC32 (Bartley Green)",59311,189,132,3,1
+"CNFC33 (Bartley Green)",59312,173,115,3,0
+"CNFC34 (Bartley Green)",59313,189,117,11,0
+"CNFC35 (Bartley Green)",59314,268,198,2,1
+"CNFC36 (Bartley Green)",59315,180,132,0,0
+"CNFC37 (Bartley Green)",59316,221,175,3,0
+"CNFC38 (Bartley Green)",59317,198,136,2,1
+"CNFC39 (Bartley Green)",59318,169,101,5,2
+"CNFC40 (Bartley Green)",59319,103,62,0,0
+"CNFC41 (Bartley Green)",59320,187,134,6,0
+"CNFC42 (Bartley Green)",59321,230,142,6,0
+"CNFC43 (Bartley Green)",59322,187,124,4,0
+"CNFC44 (Bartley Green)",59323,192,98,1,0
+"CNFC45 (Bartley Green)",59324,223,104,12,0
+"CNFC46 (Bartley Green)",59325,228,119,11,1
+"CNFC47 (Bartley Green)",59326,237,141,9,0
+"CNFD01 (Billesley)",59327,193,124,7,0
+"CNFD02 (Billesley)",59328,225,117,9,3
+"CNFD03 (Billesley)",59329,179,117,3,0
+"CNFD04 (Billesley)",59330,195,130,1,3
+"CNFD05 (Billesley)",59331,222,152,4,0
+"CNFD06 (Billesley)",59332,216,144,4,1
+"CNFD07 (Billesley)",59333,212,149,6,2
+"CNFD08 (Billesley)",59334,206,130,6,2
+"CNFD09 (Billesley)",59335,228,149,5,1
+"CNFD10 (Billesley)",59336,214,154,2,0
+"CNFD11 (Billesley)",59337,221,153,6,0
+"CNFD12 (Billesley)",59338,265,181,5,1
+"CNFD13 (Billesley)",59339,233,137,2,0
+"CNFD14 (Billesley)",59340,208,147,2,0
+"CNFD15 (Billesley)",59341,195,113,11,0
+"CNFD16 (Billesley)",59342,224,133,6,0
+"CNFD17 (Billesley)",59343,185,112,3,0
+"CNFD18 (Billesley)",59344,205,124,6,0
+"CNFD19 (Billesley)",59345,229,122,4,0
+"CNFD20 (Billesley)",59346,204,115,5,0
+"CNFD21 (Billesley)",59347,170,103,5,1
+"CNFD22 (Billesley)",59348,227,147,4,1
+"CNFD23 (Billesley)",59349,226,145,8,1
+"CNFD24 (Billesley)",59350,203,119,6,0
+"CNFD25 (Billesley)",59351,248,144,10,2
+"CNFD26 (Billesley)",59352,193,117,7,1
+"CNFD27 (Billesley)",59353,167,100,6,1
+"CNFD28 (Billesley)",59354,211,128,9,0
+"CNFD29 (Billesley)",59355,239,143,6,0
+"CNFD30 (Billesley)",59356,237,156,2,2
+"CNFD31 (Billesley)",59357,222,112,3,0
+"CNFD32 (Billesley)",59358,230,131,10,0
+"CNFD33 (Billesley)",59359,293,176,7,2
+"CNFD34 (Billesley)",59360,120,81,3,0
+"CNFD35 (Billesley)",59361,225,127,13,0
+"CNFD36 (Billesley)",59362,241,156,3,0
+"CNFD37 (Billesley)",59363,216,149,1,0
+"CNFD38 (Billesley)",59364,246,144,6,2
+"CNFD39 (Billesley)",59365,219,127,7,0
+"CNFD40 (Billesley)",59366,190,105,10,1
+"CNFD41 (Billesley)",59367,190,124,3,1
+"CNFD42 (Billesley)",59368,204,123,2,3
+"CNFD43 (Billesley)",59369,196,118,3,0
+"CNFD44 (Billesley)",59370,192,127,0,0
+"CNFD45 (Billesley)",59371,206,133,4,0
+"CNFD46 (Billesley)",59372,198,131,5,0
+"CNFD47 (Billesley)",59373,181,120,1,0
+"CNFD48 (Billesley)",59374,236,148,4,0
+"CNFD49 (Billesley)",59375,232,112,1,0
+"CNFD50 (Billesley)",59376,235,134,4,0
+"CNFE01 (Bournville)",59377,255,178,1,0
+"CNFE02 (Bournville)",59378,196,149,0,2
+"CNFE03 (Bournville)",59379,198,138,0,0
+"CNFE04 (Bournville)",59380,222,107,7,1
+"CNFE05 (Bournville)",59381,222,141,2,0
+"CNFE06 (Bournville)",59382,227,149,2,0
+"CNFE07 (Bournville)",59383,131,112,0,0
+"CNFE08 (Bournville)",59384,241,165,2,0
+"CNFE09 (Bournville)",59385,185,133,0,2
+"CNFE10 (Bournville)",59386,230,167,4,0
+"CNFE11 (Bournville)",59387,181,139,3,0
+"CNFE12 (Bournville)",59388,158,108,6,1
+"CNFE13 (Bournville)",59389,157,102,7,0
+"CNFE14 (Bournville)",59390,170,111,0,1
+"CNFE15 (Bournville)",59391,193,134,4,1
+"CNFE16 (Bournville)",59392,189,102,9,0
+"CNFE17 (Bournville)",59393,192,124,9,0
+"CNFE18 (Bournville)",59394,183,111,5,0
+"CNFE19 (Bournville)",59395,195,105,5,1
+"CNFE20 (Bournville)",59396,176,123,3,0
+"CNFE21 (Bournville)",59397,203,121,6,2
+"CNFE22 (Bournville)",59398,244,160,3,1
+"CNFE23 (Bournville)",59399,245,135,4,0
+"CNFE24 (Bournville)",59400,213,133,6,0
+"CNFE25 (Bournville)",59401,175,118,7,0
+"CNFE26 (Bournville)",59402,154,119,3,0
+"CNFE27 (Bournville)",59403,159,122,2,0
+"CNFE28 (Bournville)",59404,218,139,5,0
+"CNFE29 (Bournville)",59405,189,127,1,1
+"CNFE30 (Bournville)",59406,244,171,1,0
+"CNFE31 (Bournville)",59407,231,160,2,0
+"CNFE32 (Bournville)",59408,233,181,1,0
+"CNFE33 (Bournville)",59409,178,121,2,0
+"CNFE34 (Bournville)",59410,223,170,0,0
+"CNFE35 (Bournville)",59411,242,163,2,1
+"CNFE36 (Bournville)",59412,189,146,2,0
+"CNFE37 (Bournville)",59413,239,174,4,0
+"CNFE38 (Bournville)",59414,179,113,2,0
+"CNFE39 (Bournville)",59415,196,126,0,0
+"CNFE40 (Bournville)",59416,229,127,4,0
+"CNFE41 (Bournville)",59417,217,150,4,2
+"CNFE42 (Bournville)",59418,204,112,8,5
+"CNFE43 (Bournville)",59419,238,116,13,2
+"CNFE44 (Bournville)",59420,178,145,1,0
+"CNFE45 (Bournville)",59421,185,136,0,0
+"CNFE46 (Bournville)",59422,193,120,2,0
+"CNFE47 (Bournville)",59423,212,137,0,3
+"CNFE48 (Bournville)",59424,210,138,1,0
+"CNFE49 (Bournville)",59425,162,95,1,0
+"CNFE50 (Bournville)",59426,237,198,1,0
+"CNFE52 (Bournville)",59427,42,5,0,0
+"CNFF01 (Brandwood)",59428,181,139,2,0
+"CNFF02 (Brandwood)",59429,220,163,0,0
+"CNFF03 (Brandwood)",59430,222,152,6,4
+"CNFF04 (Brandwood)",59431,223,145,1,0
+"CNFF05 (Brandwood)",59432,206,120,3,0
+"CNFF06 (Brandwood)",59433,232,128,10,2
+"CNFF07 (Brandwood)",59434,209,142,12,2
+"CNFF08 (Brandwood)",59435,193,105,14,2
+"CNFF09 (Brandwood)",59436,215,108,11,0
+"CNFF10 (Brandwood)",59437,230,117,9,0
+"CNFF11 (Brandwood)",59438,181,122,3,0
+"CNFF12 (Brandwood)",59439,172,125,1,0
+"CNFF13 (Brandwood)",59440,210,156,1,2
+"CNFF14 (Brandwood)",59441,225,146,0,0
+"CNFF15 (Brandwood)",59442,180,105,7,0
+"CNFF16 (Brandwood)",59443,225,155,3,0
+"CNFF17 (Brandwood)",59444,229,158,0,0
+"CNFF18 (Brandwood)",59445,178,144,0,0
+"CNFF19 (Brandwood)",59446,169,119,0,0
+"CNFF20 (Brandwood)",59447,180,134,3,0
+"CNFF21 (Brandwood)",59448,244,158,4,0
+"CNFF22 (Brandwood)",59449,210,136,5,0
+"CNFF23 (Brandwood)",59450,212,128,2,0
+"CNFF24 (Brandwood)",59451,201,119,5,0
+"CNFF25 (Brandwood)",59452,223,142,4,0
+"CNFF26 (Brandwood)",59453,181,127,4,0
+"CNFF27 (Brandwood)",59454,206,124,5,1
+"CNFF28 (Brandwood)",59455,227,155,5,1
+"CNFF29 (Brandwood)",59456,190,111,2,1
+"CNFF30 (Brandwood)",59457,211,130,4,0
+"CNFF31 (Brandwood)",59458,198,134,1,1
+"CNFF32 (Brandwood)",59459,221,141,4,0
+"CNFF33 (Brandwood)",59460,244,162,4,0
+"CNFF34 (Brandwood)",59461,189,132,1,0
+"CNFF35 (Brandwood)",59462,195,103,5,1
+"CNFF36 (Brandwood)",59463,210,133,3,0
+"CNFF37 (Brandwood)",59464,218,139,9,0
+"CNFF38 (Brandwood)",59465,212,123,5,0
+"CNFF39 (Brandwood)",59466,187,131,1,1
+"CNFF40 (Brandwood)",59467,205,122,3,1
+"CNFF41 (Brandwood)",59468,192,146,5,0
+"CNFF42 (Brandwood)",59469,191,106,5,1
+"CNFF43 (Brandwood)",59470,156,70,8,0
+"CNFF44 (Brandwood)",59471,182,126,2,3
+"CNFF45 (Brandwood)",59472,224,152,2,0
+"CNFF46 (Brandwood)",59473,194,142,3,0
+"CNFF47 (Brandwood)",59474,204,128,6,1
+"CNFF48 (Brandwood)",59475,197,115,4,2
+"CNFF49 (Brandwood)",59476,190,104,4,0
+"CNFF50 (Brandwood)",59477,217,154,5,0
+"CNFF51 (Brandwood)",59478,201,135,4,0
+"CNFF52 (Brandwood)",59479,209,119,4,2
+"CNFF53 (Brandwood)",59480,0,0,0,0
+"CNFG01 (Edgbaston)",59481,120,57,0,7
+"CNFG02 (Edgbaston)",59482,105,72,0,7
+"CNFG03 (Edgbaston)",59483,126,65,3,4
+"CNFG04 (Edgbaston)",59484,107,83,1,3
+"CNFG05 (Edgbaston)",59485,186,131,6,2
+"CNFG06 (Edgbaston)",59486,209,123,6,2
+"CNFG07 (Edgbaston)",59487,200,125,5,4
+"CNFG08 (Edgbaston)",59488,62,23,5,2
+"CNFG09 (Edgbaston)",59489,132,90,3,4
+"CNFG10 (Edgbaston)",59490,68,44,0,0
+"CNFG11 (Edgbaston)",59491,137,97,0,0
+"CNFG12 (Edgbaston)",59492,164,110,0,1
+"CNFG13 (Edgbaston)",59493,191,120,1,3
+"CNFG14 (Edgbaston)",59494,216,180,0,2
+"CNFG15 (Edgbaston)",59495,133,57,0,1
+"CNFG16 (Edgbaston)",59496,156,132,0,1
+"CNFG17 (Edgbaston)",59497,158,136,1,0
+"CNFG18 (Edgbaston)",59498,139,125,0,0
+"CNFG19 (Edgbaston)",59499,226,172,0,0
+"CNFG20 (Edgbaston)",59500,114,71,0,2
+"CNFG21 (Edgbaston)",59501,149,115,0,0
+"CNFG22 (Edgbaston)",59502,159,151,0,0
+"CNFG23 (Edgbaston)",59503,146,131,1,0
+"CNFG24 (Edgbaston)",59504,191,162,1,0
+"CNFG25 (Edgbaston)",59505,178,153,0,2
+"CNFG26 (Edgbaston)",59506,201,160,1,0
+"CNFG27 (Edgbaston)",59507,162,147,0,0
+"CNFG28 (Edgbaston)",59508,135,119,0,0
+"CNFG29 (Edgbaston)",59509,59,41,0,0
+"CNFG30 (Edgbaston)",59510,180,151,2,2
+"CNFG31 (Edgbaston)",59511,189,155,1,0
+"CNFG32 (Edgbaston)",59512,188,141,0,3
+"CNFG33 (Edgbaston)",59513,208,109,9,5
+"CNFG34 (Edgbaston)",59514,185,121,0,2
+"CNFG35 (Edgbaston)",59515,179,120,4,2
+"CNFG36 (Edgbaston)",59516,217,157,5,2
+"CNFG37 (Edgbaston)",59517,151,94,3,0
+"CNFG38 (Edgbaston)",59518,217,146,0,0
+"CNFG39 (Edgbaston)",59519,170,135,2,0
+"CNFG40 (Edgbaston)",59520,165,150,0,0
+"CNFG41 (Edgbaston)",59521,203,140,1,4
+"CNFG42 (Edgbaston)",59522,187,130,8,0
+"CNFG43 (Edgbaston)",59523,217,138,6,2
+"CNFG44 (Edgbaston)",59524,234,180,6,2
+"CNFG45 (Edgbaston)",59525,190,109,9,3
+"CNFG46 (Edgbaston)",59526,90,55,4,0
+"CNFG47 (Edgbaston)",59527,152,91,11,2
+"CNFG48 (Edgbaston)",59528,228,171,2,1
+"CNFG49 (Edgbaston)",59529,230,200,0,3
+"CNFG50 (Edgbaston)",59530,107,82,3,1
+"CNFG51 (Edgbaston)",59531,174,144,3,0
+"CNFG52 (Edgbaston)",59532,182,125,3,1
+"CNFG53 (Edgbaston)",59533,319,260,2,0
+"CNFG55 (Edgbaston)",59534,109,95,0,0
+"CNFG56 (Edgbaston)",59535,30,25,0,0
+"CNFG57 (Edgbaston)",59536,157,80,7,2
+"CNFG60 (Edgbaston)",59537,0,0,0,0
+"CNFG62 (Edgbaston)",59538,0,0,0,0
+"CNFG64 (Edgbaston)",59539,0,0,0,0
+"CNFG65 (Edgbaston)",59540,0,0,0,0
+"CNFG67 (Edgbaston)",59541,0,0,0,0
+"CNFG71 (Edgbaston)",59542,0,0,0,0
+"CNFH01 (Erdington)",59543,252,161,2,1
+"CNFH02 (Erdington)",59544,236,188,2,0
+"CNFH03 (Erdington)",59545,207,134,3,0
+"CNFH04 (Erdington)",59546,234,146,3,1
+"CNFH05 (Erdington)",59547,234,155,4,0
+"CNFH06 (Erdington)",59548,165,115,2,0
+"CNFH07 (Erdington)",59549,163,120,0,0
+"CNFH08 (Erdington)",59550,221,168,0,0
+"CNFH09 (Erdington)",59551,225,135,10,0
+"CNFH10 (Erdington)",59552,209,177,0,0
+"CNFH11 (Erdington)",59553,221,171,3,2
+"CNFH12 (Erdington)",59554,232,147,6,7
+"CNFH13 (Erdington)",59555,207,137,7,1
+"CNFH14 (Erdington)",59556,157,116,1,0
+"CNFH15 (Erdington)",59557,169,95,2,0
+"CNFH16 (Erdington)",59558,218,171,1,0
+"CNFH17 (Erdington)",59559,191,145,1,0
+"CNFH18 (Erdington)",59560,151,97,5,0
+"CNFH19 (Erdington)",59561,217,154,1,0
+"CNFH20 (Erdington)",59562,198,144,2,0
+"CNFH21 (Erdington)",59563,186,130,1,2
+"CNFH22 (Erdington)",59564,175,125,0,0
+"CNFH23 (Erdington)",59565,161,104,3,2
+"CNFH24 (Erdington)",59566,208,136,3,6
+"CNFH25 (Erdington)",59567,205,116,3,4
+"CNFH26 (Erdington)",59568,200,132,3,0
+"CNFH27 (Erdington)",59569,228,158,0,0
+"CNFH28 (Erdington)",59570,244,121,4,0
+"CNFH29 (Erdington)",59571,161,116,0,0
+"CNFH30 (Erdington)",59572,185,107,0,0
+"CNFH31 (Erdington)",59573,174,121,2,0
+"CNFH32 (Erdington)",59574,219,140,3,0
+"CNFH33 (Erdington)",59575,203,153,1,0
+"CNFH34 (Erdington)",59576,226,135,8,0
+"CNFH35 (Erdington)",59577,158,104,0,2
+"CNFH36 (Erdington)",59578,170,96,3,5
+"CNFH37 (Erdington)",59579,191,120,5,0
+"CNFH38 (Erdington)",59580,157,63,6,9
+"CNFH39 (Erdington)",59581,192,152,1,0
+"CNFH40 (Erdington)",59582,258,110,0,21
+"CNFH41 (Erdington)",59583,123,87,3,1
+"CNFH42 (Erdington)",59584,216,123,3,10
+"CNFH43 (Erdington)",59585,176,112,3,0
+"CNFH44 (Erdington)",59586,174,96,8,2
+"CNFH45 (Erdington)",59587,224,162,2,0
+"CNFH46 (Erdington)",59588,236,140,12,1
+"CNFH47 (Erdington)",59589,196,111,6,2
+"CNFH48 (Erdington)",59590,224,127,8,2
+"CNFH49 (Erdington)",59591,238,118,20,1
+"CNFH50 (Erdington)",59592,212,125,9,1
+"CNFH51 (Erdington)",59593,210,131,5,1
+"CNFJ01 (Fox Hollies)",59594,230,125,10,1
+"CNFJ02 (Fox Hollies)",59595,187,110,7,0
+"CNFJ03 (Fox Hollies)",59596,156,89,9,2
+"CNFJ04 (Fox Hollies)",59597,151,80,6,1
+"CNFJ05 (Fox Hollies)",59598,228,140,17,4
+"CNFJ06 (Fox Hollies)",59599,182,124,7,3
+"CNFJ07 (Fox Hollies)",59600,210,136,7,2
+"CNFJ08 (Fox Hollies)",59601,207,134,10,1
+"CNFJ09 (Fox Hollies)",59602,195,119,4,1
+"CNFJ10 (Fox Hollies)",59603,174,107,6,0
+"CNFJ11 (Fox Hollies)",59604,203,134,3,1
+"CNFJ12 (Fox Hollies)",59605,236,156,5,0
+"CNFJ13 (Fox Hollies)",59606,134,86,4,0
+"CNFJ14 (Fox Hollies)",59607,203,111,14,4
+"CNFJ15 (Fox Hollies)",59608,251,139,10,6
+"CNFJ16 (Fox Hollies)",59609,237,135,13,1
+"CNFJ17 (Fox Hollies)",59610,195,130,3,0
+"CNFJ18 (Fox Hollies)",59611,239,142,11,1
+"CNFJ19 (Fox Hollies)",59612,277,161,11,0
+"CNFJ20 (Fox Hollies)",59613,231,147,7,3
+"CNFJ21 (Fox Hollies)",59614,217,165,1,3
+"CNFJ22 (Fox Hollies)",59615,207,112,6,2
+"CNFJ23 (Fox Hollies)",59616,230,126,5,0
+"CNFJ24 (Fox Hollies)",59617,219,192,0,0
+"CNFJ25 (Fox Hollies)",59618,190,120,3,0
+"CNFJ26 (Fox Hollies)",59619,197,144,4,0
+"CNFJ27 (Fox Hollies)",59620,213,110,11,4
+"CNFJ28 (Fox Hollies)",59621,218,115,15,2
+"CNFJ29 (Fox Hollies)",59622,221,133,7,1
+"CNFJ30 (Fox Hollies)",59623,192,123,5,0
+"CNFJ31 (Fox Hollies)",59624,209,130,8,0
+"CNFJ32 (Fox Hollies)",59625,226,132,13,2
+"CNFJ33 (Fox Hollies)",59626,187,128,3,0
+"CNFJ34 (Fox Hollies)",59627,197,130,1,0
+"CNFJ35 (Fox Hollies)",59628,194,119,3,0
+"CNFJ36 (Fox Hollies)",59629,200,118,8,5
+"CNFJ37 (Fox Hollies)",59630,231,129,18,1
+"CNFJ38 (Fox Hollies)",59631,194,114,8,0
+"CNFJ39 (Fox Hollies)",59632,222,125,10,2
+"CNFJ40 (Fox Hollies)",59633,195,117,10,0
+"CNFJ41 (Fox Hollies)",59634,188,145,2,0
+"CNFJ42 (Fox Hollies)",59635,217,149,7,1
+"CNFJ43 (Fox Hollies)",59636,222,122,9,1
+"CNFJ44 (Fox Hollies)",59637,232,130,4,4
+"CNFK01 (Hall Green)",59638,155,74,15,5
+"CNFK02 (Hall Green)",59639,173,97,14,1
+"CNFK03 (Hall Green)",59640,210,124,12,5
+"CNFK04 (Hall Green)",59641,212,147,6,2
+"CNFK05 (Hall Green)",59642,229,155,10,1
+"CNFK06 (Hall Green)",59643,213,126,9,1
+"CNFK07 (Hall Green)",59644,166,95,5,3
+"CNFK08 (Hall Green)",59645,228,147,3,0
+"CNFK09 (Hall Green)",59646,247,182,1,0
+"CNFK10 (Hall Green)",59647,229,179,1,0
+"CNFK11 (Hall Green)",59648,247,156,6,1
+"CNFK12 (Hall Green)",59649,205,149,0,0
+"CNFK13 (Hall Green)",59650,226,168,1,0
+"CNFK14 (Hall Green)",59651,237,162,2,0
+"CNFK15 (Hall Green)",59652,204,145,2,2
+"CNFK16 (Hall Green)",59653,226,172,2,0
+"CNFK17 (Hall Green)",59654,215,146,3,0
+"CNFK18 (Hall Green)",59655,215,151,1,2
+"CNFK19 (Hall Green)",59656,198,122,6,0
+"CNFK20 (Hall Green)",59657,245,158,4,0
+"CNFK21 (Hall Green)",59658,234,153,5,0
+"CNFK22 (Hall Green)",59659,194,108,9,0
+"CNFK23 (Hall Green)",59660,189,119,4,1
+"CNFK24 (Hall Green)",59661,224,169,1,0
+"CNFK25 (Hall Green)",59662,202,139,0,0
+"CNFK26 (Hall Green)",59663,216,135,6,0
+"CNFK27 (Hall Green)",59664,214,141,4,2
+"CNFK28 (Hall Green)",59665,190,121,2,0
+"CNFK29 (Hall Green)",59666,238,174,0,0
+"CNFK30 (Hall Green)",59667,228,142,4,0
+"CNFK31 (Hall Green)",59668,195,137,4,0
+"CNFK32 (Hall Green)",59669,218,135,4,4
+"CNFK33 (Hall Green)",59670,169,117,4,0
+"CNFK34 (Hall Green)",59671,215,158,2,0
+"CNFK35 (Hall Green)",59672,219,144,1,0
+"CNFK36 (Hall Green)",59673,199,132,4,0
+"CNFK37 (Hall Green)",59674,195,147,3,0
+"CNFK38 (Hall Green)",59675,199,133,3,0
+"CNFK39 (Hall Green)",59676,215,145,2,0
+"CNFK40 (Hall Green)",59677,193,138,3,0
+"CNFK41 (Hall Green)",59678,219,136,3,0
+"CNFK42 (Hall Green)",59679,197,129,0,0
+"CNFK43 (Hall Green)",59680,236,163,0,0
+"CNFK44 (Hall Green)",59681,234,180,1,1
+"CNFK45 (Hall Green)",59682,235,145,3,0
+"CNFL01 (Handsworth)",59683,183,112,8,1
+"CNFL02 (Handsworth)",59684,174,103,9,3
+"CNFL03 (Handsworth)",59685,144,83,2,3
+"CNFL04 (Handsworth)",59686,159,83,6,2
+"CNFL05 (Handsworth)",59687,152,92,10,1
+"CNFL07 (Handsworth)",59688,196,123,16,4
+"CNFL08 (Handsworth)",59689,141,85,10,4
+"CNFL09 (Handsworth)",59690,201,143,3,1
+"CNFL10 (Handsworth)",59691,188,114,8,3
+"CNFL11 (Handsworth)",59692,174,102,9,3
+"CNFL12 (Handsworth)",59693,183,113,5,3
+"CNFL13 (Handsworth)",59694,206,91,19,3
+"CNFL14 (Handsworth)",59695,184,84,16,4
+"CNFL15 (Handsworth)",59696,158,87,9,4
+"CNFL16 (Handsworth)",59697,179,87,23,3
+"CNFL17 (Handsworth)",59698,156,90,9,0
+"CNFL18 (Handsworth)",59699,163,85,25,4
+"CNFL19 (Handsworth)",59700,154,89,9,1
+"CNFL20 (Handsworth)",59701,172,80,17,5
+"CNFL21 (Handsworth)",59702,126,82,1,0
+"CNFL22 (Handsworth)",59703,189,112,10,10
+"CNFL23 (Handsworth)",59704,198,155,6,1
+"CNFL24 (Handsworth)",59705,186,83,19,0
+"CNFL25 (Handsworth)",59706,147,118,3,1
+"CNFL26 (Handsworth)",59707,182,97,12,7
+"CNFL27 (Handsworth)",59708,163,115,5,3
+"CNFL28 (Handsworth)",59709,166,96,12,8
+"CNFL29 (Handsworth)",59710,237,110,9,3
+"CNFL30 (Handsworth)",59711,168,73,10,2
+"CNFL31 (Handsworth)",59712,152,97,9,2
+"CNFL32 (Handsworth)",59713,109,75,3,4
+"CNFL33 (Handsworth)",59714,147,39,20,14
+"CNFL34 (Handsworth)",59715,138,86,4,4
+"CNFL35 (Handsworth)",59716,211,137,7,4
+"CNFL36 (Handsworth)",59717,156,90,8,5
+"CNFL37 (Handsworth)",59718,131,62,11,2
+"CNFL38 (Handsworth)",59719,196,106,5,5
+"CNFL39 (Handsworth)",59720,122,50,11,3
+"CNFL40 (Handsworth)",59721,224,113,18,6
+"CNFL41 (Handsworth)",59722,109,62,15,2
+"CNFL42 (Handsworth)",59723,144,93,7,2
+"CNFL43 (Handsworth)",59724,176,93,11,6
+"CNFL44 (Handsworth)",59725,189,82,18,3
+"CNFL45 (Handsworth)",59726,201,84,14,7
+"CNFL46 (Handsworth)",59727,135,37,24,7
+"CNFL47 (Handsworth)",59728,109,34,23,2
+"CNFL48 (Handsworth)",59729,119,61,21,3
+"CNFL49 (Handsworth)",59730,138,87,14,6
+"CNFL50 (Handsworth)",59731,200,110,9,6
+"CNFL51 (Handsworth)",59732,83,32,8,4
+"CNFL52 (Handsworth)",59733,249,169,14,6
+"CNFM01 (Harborne)",59734,262,188,2,2
+"CNFM02 (Harborne)",59735,216,166,3,0
+"CNFM03 (Harborne)",59736,208,151,2,0
+"CNFM04 (Harborne)",59737,223,175,0,0
+"CNFM05 (Harborne)",59738,222,171,2,0
+"CNFM06 (Harborne)",59739,238,189,0,0
+"CNFM07 (Harborne)",59740,250,191,2,1
+"CNFM08 (Harborne)",59741,213,151,0,0
+"CNFM09 (Harborne)",59742,175,126,0,0
+"CNFM10 (Harborne)",59743,198,151,3,1
+"CNFM11 (Harborne)",59744,218,171,1,1
+"CNFM12 (Harborne)",59745,196,159,1,0
+"CNFM13 (Harborne)",59746,122,86,0,1
+"CNFM14 (Harborne)",59747,228,191,0,0
+"CNFM15 (Harborne)",59748,224,150,0,1
+"CNFM16 (Harborne)",59749,160,127,2,2
+"CNFM17 (Harborne)",59750,170,119,0,5
+"CNFM18 (Harborne)",59751,154,129,1,0
+"CNFM19 (Harborne)",59752,189,121,2,0
+"CNFM20 (Harborne)",59753,233,162,4,0
+"CNFM21 (Harborne)",59754,181,130,2,0
+"CNFM22 (Harborne)",59755,163,105,3,0
+"CNFM23 (Harborne)",59756,214,158,3,1
+"CNFM24 (Harborne)",59757,206,138,4,0
+"CNFM25 (Harborne)",59758,217,148,0,0
+"CNFM26 (Harborne)",59759,237,195,0,0
+"CNFM27 (Harborne)",59760,230,186,3,1
+"CNFM28 (Harborne)",59761,234,148,5,4
+"CNFM29 (Harborne)",59762,222,152,6,0
+"CNFM30 (Harborne)",59763,248,176,4,2
+"CNFM31 (Harborne)",59764,227,204,0,0
+"CNFM32 (Harborne)",59765,174,139,2,0
+"CNFM33 (Harborne)",59766,168,113,3,1
+"CNFM34 (Harborne)",59767,199,115,5,1
+"CNFM35 (Harborne)",59768,250,194,2,1
+"CNFM36 (Harborne)",59769,227,164,2,2
+"CNFM37 (Harborne)",59770,204,145,0,0
+"CNFM38 (Harborne)",59771,219,129,13,0
+"CNFM39 (Harborne)",59772,197,113,11,2
+"CNFM40 (Harborne)",59773,218,153,5,2
+"CNFM41 (Harborne)",59774,238,124,10,13
+"CNFM42 (Harborne)",59775,154,125,0,0
+"CNFM43 (Harborne)",59776,187,114,3,0
+"CNFM44 (Harborne)",59777,200,125,6,1
+"CNFM45 (Harborne)",59778,224,134,5,0
+"CNFM46 (Harborne)",59779,191,120,5,0
+"CNFM47 (Harborne)",59780,197,139,3,0
+"CNFN01 (Hodge Hill)",59781,227,142,10,1
+"CNFN02 (Hodge Hill)",59782,182,124,6,0
+"CNFN03 (Hodge Hill)",59783,208,125,8,0
+"CNFN04 (Hodge Hill)",59784,169,111,6,0
+"CNFN05 (Hodge Hill)",59785,183,102,9,0
+"CNFN06 (Hodge Hill)",59786,205,130,4,0
+"CNFN07 (Hodge Hill)",59787,199,105,9,0
+"CNFN08 (Hodge Hill)",59788,200,103,6,1
+"CNFN09 (Hodge Hill)",59789,177,124,0,1
+"CNFN10 (Hodge Hill)",59790,192,99,4,0
+"CNFN11 (Hodge Hill)",59791,187,136,1,0
+"CNFN12 (Hodge Hill)",59792,207,96,11,0
+"CNFN13 (Hodge Hill)",59793,211,124,3,0
+"CNFN14 (Hodge Hill)",59794,176,95,5,0
+"CNFN15 (Hodge Hill)",59795,185,123,2,0
+"CNFN16 (Hodge Hill)",59796,194,123,2,0
+"CNFN17 (Hodge Hill)",59797,198,118,4,0
+"CNFN18 (Hodge Hill)",59798,205,147,4,1
+"CNFN19 (Hodge Hill)",59799,180,115,3,0
+"CNFN20 (Hodge Hill)",59800,194,124,3,0
+"CNFN21 (Hodge Hill)",59801,195,131,1,0
+"CNFN22 (Hodge Hill)",59802,243,153,2,0
+"CNFN23 (Hodge Hill)",59803,187,127,1,0
+"CNFN24 (Hodge Hill)",59804,186,130,0,0
+"CNFN25 (Hodge Hill)",59805,196,157,1,0
+"CNFN26 (Hodge Hill)",59806,203,146,5,0
+"CNFN27 (Hodge Hill)",59807,190,129,1,0
+"CNFN28 (Hodge Hill)",59808,175,115,3,0
+"CNFN29 (Hodge Hill)",59809,185,119,4,1
+"CNFN30 (Hodge Hill)",59810,221,142,1,0
+"CNFN31 (Hodge Hill)",59811,198,156,2,1
+"CNFN32 (Hodge Hill)",59812,181,118,5,0
+"CNFN33 (Hodge Hill)",59813,194,122,2,0
+"CNFN34 (Hodge Hill)",59814,193,134,1,0
+"CNFN35 (Hodge Hill)",59815,208,131,4,0
+"CNFN36 (Hodge Hill)",59816,182,140,6,1
+"CNFN37 (Hodge Hill)",59817,193,109,4,2
+"CNFN38 (Hodge Hill)",59818,236,144,8,1
+"CNFN39 (Hodge Hill)",59819,201,114,9,1
+"CNFN40 (Hodge Hill)",59820,194,107,7,1
+"CNFN41 (Hodge Hill)",59821,191,104,14,0
+"CNFN42 (Hodge Hill)",59822,220,106,8,3
+"CNFN43 (Hodge Hill)",59823,184,101,9,3
+"CNFN44 (Hodge Hill)",59824,210,132,8,2
+"CNFN45 (Hodge Hill)",59825,161,103,2,1
+"CNFN46 (Hodge Hill)",59826,215,148,3,0
+"CNFN47 (Hodge Hill)",59827,267,149,5,1
+"CNFN48 (Hodge Hill)",59828,212,111,8,2
+"CNFN49 (Hodge Hill)",59829,222,133,9,1
+"CNFN50 (Hodge Hill)",59830,193,122,3,3
+"CNFN51 (Hodge Hill)",59831,167,113,8,0
+"CNFP01 (Kingsbury)",59832,175,113,1,0
+"CNFP02 (Kingsbury)",59833,175,119,1,0
+"CNFP03 (Kingsbury)",59834,188,114,4,0
+"CNFP04 (Kingsbury)",59835,215,134,3,0
+"CNFP05 (Kingsbury)",59836,188,130,3,0
+"CNFP06 (Kingsbury)",59837,191,119,2,0
+"CNFP07 (Kingsbury)",59838,207,118,2,1
+"CNFP08 (Kingsbury)",59839,177,95,4,0
+"CNFP09 (Kingsbury)",59840,185,137,5,0
+"CNFP10 (Kingsbury)",59841,187,99,6,1
+"CNFP11 (Kingsbury)",59842,243,163,2,0
+"CNFP12 (Kingsbury)",59843,153,96,0,0
+"CNFP13 (Kingsbury)",59844,219,157,5,2
+"CNFP14 (Kingsbury)",59845,193,131,3,0
+"CNFP15 (Kingsbury)",59846,189,129,1,0
+"CNFP16 (Kingsbury)",59847,231,107,11,0
+"CNFP17 (Kingsbury)",59848,190,112,12,1
+"CNFP18 (Kingsbury)",59849,209,127,8,0
+"CNFP19 (Kingsbury)",59850,223,143,7,1
+"CNFP20 (Kingsbury)",59851,212,164,1,0
+"CNFP21 (Kingsbury)",59852,198,111,6,0
+"CNFP22 (Kingsbury)",59853,158,122,2,2
+"CNFP23 (Kingsbury)",59854,192,139,4,0
+"CNFP24 (Kingsbury)",59855,206,150,3,2
+"CNFP25 (Kingsbury)",59856,188,153,3,0
+"CNFP26 (Kingsbury)",59857,197,120,6,0
+"CNFP27 (Kingsbury)",59858,163,118,2,5
+"CNFP28 (Kingsbury)",59859,187,98,4,0
+"CNFP29 (Kingsbury)",59860,235,130,6,0
+"CNFP30 (Kingsbury)",59861,206,104,6,0
+"CNFP31 (Kingsbury)",59862,211,100,9,0
+"CNFP32 (Kingsbury)",59863,203,110,7,1
+"CNFP33 (Kingsbury)",59864,187,142,1,0
+"CNFP34 (Kingsbury)",59865,198,152,2,0
+"CNFP35 (Kingsbury)",59866,221,157,2,1
+"CNFP36 (Kingsbury)",59867,226,161,5,2
+"CNFP37 (Kingsbury)",59868,191,140,2,0
+"CNFP38 (Kingsbury)",59869,212,149,5,0
+"CNFP39 (Kingsbury)",59870,231,142,12,3
+"CNFP40 (Kingsbury)",59871,142,91,2,3
+"CNFP41 (Kingsbury)",59872,193,118,1,0
+"CNFP42 (Kingsbury)",59873,200,99,11,1
+"CNFQ01 (King's Norton)",59874,172,112,4,2
+"CNFQ02 (King's Norton)",59875,193,106,5,2
+"CNFQ03 (King's Norton)",59876,157,93,3,0
+"CNFQ04 (King's Norton)",59877,226,136,3,0
+"CNFQ05 (King's Norton)",59878,175,112,3,0
+"CNFQ06 (King's Norton)",59879,227,172,3,0
+"CNFQ07 (King's Norton)",59880,160,126,0,0
+"CNFQ08 (King's Norton)",59881,212,134,3,3
+"CNFQ09 (King's Norton)",59882,200,101,3,0
+"CNFQ10 (King's Norton)",59883,213,125,3,0
+"CNFQ11 (King's Norton)",59884,213,163,1,0
+"CNFQ12 (King's Norton)",59885,203,149,5,0
+"CNFQ13 (King's Norton)",59886,169,113,2,0
+"CNFQ14 (King's Norton)",59887,193,131,4,0
+"CNFQ15 (King's Norton)",59888,219,131,2,0
+"CNFQ16 (King's Norton)",59889,190,109,3,0
+"CNFQ17 (King's Norton)",59890,199,131,0,0
+"CNFQ18 (King's Norton)",59891,194,120,4,1
+"CNFQ19 (King's Norton)",59892,183,115,5,1
+"CNFQ20 (King's Norton)",59893,204,117,6,0
+"CNFQ21 (King's Norton)",59894,245,185,2,0
+"CNFQ22 (King's Norton)",59895,254,134,2,0
+"CNFQ23 (King's Norton)",59896,235,146,6,1
+"CNFQ24 (King's Norton)",59897,216,118,5,0
+"CNFQ25 (King's Norton)",59898,180,107,4,2
+"CNFQ26 (King's Norton)",59899,189,143,5,0
+"CNFQ27 (King's Norton)",59900,172,115,5,0
+"CNFQ28 (King's Norton)",59901,184,108,2,0
+"CNFQ29 (King's Norton)",59902,179,88,5,0
+"CNFQ30 (King's Norton)",59903,174,103,1,2
+"CNFQ31 (King's Norton)",59904,205,117,8,0
+"CNFQ32 (King's Norton)",59905,203,102,11,0
+"CNFQ33 (King's Norton)",59906,210,80,14,1
+"CNFQ34 (King's Norton)",59907,255,147,11,1
+"CNFQ35 (King's Norton)",59908,218,121,3,2
+"CNFQ36 (King's Norton)",59909,164,83,6,3
+"CNFQ37 (King's Norton)",59910,255,155,2,2
+"CNFQ38 (King's Norton)",59911,192,160,6,0
+"CNFQ39 (King's Norton)",59912,233,127,8,0
+"CNFQ40 (King's Norton)",59913,227,130,4,0
+"CNFQ41 (King's Norton)",59914,219,112,7,0
+"CNFQ42 (King's Norton)",59915,194,81,12,1
+"CNFQ43 (King's Norton)",59916,186,135,1,3
+"CNFQ44 (King's Norton)",59917,242,120,14,0
+"CNFQ45 (King's Norton)",59918,96,47,1,0
+"CNFR01 (Kingstanding)",59919,199,117,12,0
+"CNFR02 (Kingstanding)",59920,221,112,12,2
+"CNFR03 (Kingstanding)",59921,184,109,12,0
+"CNFR04 (Kingstanding)",59922,243,145,11,0
+"CNFR05 (Kingstanding)",59923,216,109,12,2
+"CNFR06 (Kingstanding)",59924,186,106,8,0
+"CNFR07 (Kingstanding)",59925,193,99,6,0
+"CNFR08 (Kingstanding)",59926,180,92,9,1
+"CNFR09 (Kingstanding)",59927,188,105,11,0
+"CNFR10 (Kingstanding)",59928,227,131,8,6
+"CNFR11 (Kingstanding)",59929,187,94,12,2
+"CNFR12 (Kingstanding)",59930,170,98,4,2
+"CNFR13 (Kingstanding)",59931,247,154,11,1
+"CNFR14 (Kingstanding)",59932,231,129,10,0
+"CNFR15 (Kingstanding)",59933,213,113,8,0
+"CNFR16 (Kingstanding)",59934,233,121,9,2
+"CNFR17 (Kingstanding)",59935,250,154,8,0
+"CNFR18 (Kingstanding)",59936,204,116,9,1
+"CNFR19 (Kingstanding)",59937,183,108,5,1
+"CNFR20 (Kingstanding)",59938,191,97,13,1
+"CNFR21 (Kingstanding)",59939,175,93,9,2
+"CNFR22 (Kingstanding)",59940,176,108,9,1
+"CNFR23 (Kingstanding)",59941,221,117,12,4
+"CNFR24 (Kingstanding)",59942,209,130,11,0
+"CNFR25 (Kingstanding)",59943,187,107,8,0
+"CNFR26 (Kingstanding)",59944,174,86,9,1
+"CNFR27 (Kingstanding)",59945,245,150,6,2
+"CNFR28 (Kingstanding)",59946,182,117,11,1
+"CNFR29 (Kingstanding)",59947,249,181,3,0
+"CNFR30 (Kingstanding)",59948,275,162,1,1
+"CNFR31 (Kingstanding)",59949,230,153,8,3
+"CNFR32 (Kingstanding)",59950,182,105,7,0
+"CNFR33 (Kingstanding)",59951,192,114,2,0
+"CNFR34 (Kingstanding)",59952,216,155,0,0
+"CNFR35 (Kingstanding)",59953,232,193,0,0
+"CNFR36 (Kingstanding)",59954,210,122,13,0
+"CNFR37 (Kingstanding)",59955,215,125,7,1
+"CNFR38 (Kingstanding)",59956,209,114,9,1
+"CNFR39 (Kingstanding)",59957,173,92,9,0
+"CNFR40 (Kingstanding)",59958,176,85,9,0
+"CNFR41 (Kingstanding)",59959,187,108,2,0
+"CNFR42 (Kingstanding)",59960,229,135,5,0
+"CNFR43 (Kingstanding)",59961,189,129,4,0
+"CNFR44 (Kingstanding)",59962,160,97,2,0
+"CNFR45 (Kingstanding)",59963,205,126,6,0
+"CNFR46 (Kingstanding)",59964,217,146,2,1
+"CNFR47 (Kingstanding)",59965,190,130,1,0
+"CNFR48 (Kingstanding)",59966,173,119,10,0
+"CNFR49 (Kingstanding)",59967,159,98,4,1
+"CNFR50 (Kingstanding)",59968,195,155,1,0
+"CNFR51 (Kingstanding)",59969,209,118,10,0
+"CNFR52 (Kingstanding)",59970,199,139,1,0
+"CNFR53 (Kingstanding)",59971,225,142,0,0
+"CNFS01 (Ladywood)",59972,176,114,4,1
+"CNFS02 (Ladywood)",59973,160,96,2,3
+"CNFS03 (Ladywood)",59974,193,114,8,1
+"CNFS04 (Ladywood)",59975,195,118,12,0
+"CNFS05 (Ladywood)",59976,189,147,4,0
+"CNFS06 (Ladywood)",59977,212,139,7,1
+"CNFS07 (Ladywood)",59978,158,100,2,4
+"CNFS08 (Ladywood)",59979,221,126,23,5
+"CNFS09 (Ladywood)",59980,182,89,17,4
+"CNFS10 (Ladywood)",59981,205,98,23,6
+"CNFS11 (Ladywood)",59982,175,60,21,5
+"CNFS12 (Ladywood)",59983,142,66,4,3
+"CNFS13 (Ladywood)",59984,215,168,5,0
+"CNFS14 (Ladywood)",59985,155,94,5,2
+"CNFS15 (Ladywood)",59986,207,144,4,0
+"CNFS16 (Ladywood)",59987,154,118,1,1
+"CNFS18 (Ladywood)",59988,84,56,1,3
+"CNFS19 (Ladywood)",59989,155,72,6,4
+"CNFS20 (Ladywood)",59990,150,73,7,2
+"CNFS21 (Ladywood)",59991,138,52,6,0
+"CNFS22 (Ladywood)",59992,161,76,4,7
+"CNFS23 (Ladywood)",59993,161,85,3,1
+"CNFS24 (Ladywood)",59994,115,61,4,1
+"CNFS25 (Ladywood)",59995,118,57,2,7
+"CNFS26 (Ladywood)",59996,183,102,8,2
+"CNFS27 (Ladywood)",59997,83,42,3,2
+"CNFS28 (Ladywood)",59998,112,59,0,5
+"CNFS29 (Ladywood)",59999,114,58,1,0
+"CNFS30 (Ladywood)",60000,131,80,2,5
+"CNFS31 (Ladywood)",60001,138,99,2,0
+"CNFS32 (Ladywood)",60002,129,75,1,1
+"CNFS33 (Ladywood)",60003,180,84,8,1
+"CNFS34 (Ladywood)",60004,175,98,10,0
+"CNFS35 (Ladywood)",60005,162,85,4,0
+"CNFS36 (Ladywood)",60006,235,201,2,0
+"CNFS37 (Ladywood)",60007,134,99,2,0
+"CNFS38 (Ladywood)",60008,164,103,6,2
+"CNFS39 (Ladywood)",60009,212,125,11,1
+"CNFS40 (Ladywood)",60010,153,104,4,0
+"CNFS41 (Ladywood)",60011,209,143,5,0
+"CNFS42 (Ladywood)",60012,132,73,9,3
+"CNFS43 (Ladywood)",60013,121,97,1,0
+"CNFS44 (Ladywood)",60014,93,74,2,0
+"CNFS45 (Ladywood)",60015,220,146,6,1
+"CNFS46 (Ladywood)",60016,171,137,3,0
+"CNFS47 (Ladywood)",60017,211,165,2,0
+"CNFS48 (Ladywood)",60018,215,158,1,1
+"CNFS49 (Ladywood)",60019,196,96,5,1
+"CNFS50 (Ladywood)",60020,214,133,6,0
+"CNFS51 (Ladywood)",60021,296,210,0,2
+"CNFS52 (Ladywood)",60022,223,133,1,2
+"CNFS53 (Ladywood)",60023,149,71,12,2
+"CNFS54 (Ladywood)",60024,231,169,3,0
+"CNFS55 (Ladywood)",60025,241,181,3,0
+"CNFS56 (Ladywood)",60026,211,169,0,0
+"CNFS57 (Ladywood)",60027,215,144,6,0
+"CNFS58 (Ladywood)",60028,189,118,9,0
+"CNFS59 (Ladywood)",60029,173,130,3,0
+"CNFS60 (Ladywood)",60030,142,88,3,0
+"CNFS61 (Ladywood)",60031,191,131,12,1
+"CNFS63 (Ladywood)",60032,178,127,1,0
+"CNFS64 (Ladywood)",60033,0,0,0,0
+"CNFS70 (Ladywood)",60034,0,0,0,0
+"CNFT01 (Longbridge)",60035,185,103,9,0
+"CNFT02 (Longbridge)",60036,201,108,10,1
+"CNFT03 (Longbridge)",60037,176,90,12,3
+"CNFT04 (Longbridge)",60038,238,136,14,3
+"CNFT05 (Longbridge)",60039,182,99,11,0
+"CNFT06 (Longbridge)",60040,232,186,2,1
+"CNFT07 (Longbridge)",60041,194,102,10,0
+"CNFT08 (Longbridge)",60042,209,119,6,1
+"CNFT10 (Longbridge)",60043,93,58,5,2
+"CNFT11 (Longbridge)",60044,186,96,13,1
+"CNFT12 (Longbridge)",60045,189,117,1,0
+"CNFT13 (Longbridge)",60046,171,107,5,0
+"CNFT14 (Longbridge)",60047,198,99,4,0
+"CNFT15 (Longbridge)",60048,186,103,4,0
+"CNFT16 (Longbridge)",60049,175,121,1,0
+"CNFT17 (Longbridge)",60050,293,122,10,0
+"CNFT18 (Longbridge)",60051,245,106,16,1
+"CNFT19 (Longbridge)",60052,159,96,0,0
+"CNFT20 (Longbridge)",60053,155,97,4,1
+"CNFT21 (Longbridge)",60054,156,94,5,0
+"CNFT22 (Longbridge)",60055,247,148,4,1
+"CNFT23 (Longbridge)",60056,213,147,3,0
+"CNFT24 (Longbridge)",60057,193,124,4,0
+"CNFT25 (Longbridge)",60058,194,96,10,0
+"CNFT26 (Longbridge)",60059,199,121,3,0
+"CNFT27 (Longbridge)",60060,176,98,0,0
+"CNFT28 (Longbridge)",60061,215,148,5,0
+"CNFT29 (Longbridge)",60062,184,134,6,0
+"CNFT30 (Longbridge)",60063,217,137,1,2
+"CNFT31 (Longbridge)",60064,188,109,4,0
+"CNFT32 (Longbridge)",60065,228,139,3,0
+"CNFT33 (Longbridge)",60066,228,154,4,1
+"CNFT34 (Longbridge)",60067,211,128,2,1
+"CNFT35 (Longbridge)",60068,232,159,2,0
+"CNFT36 (Longbridge)",60069,171,127,1,0
+"CNFT37 (Longbridge)",60070,189,108,6,0
+"CNFT38 (Longbridge)",60071,234,141,3,1
+"CNFT39 (Longbridge)",60072,189,109,7,2
+"CNFT40 (Longbridge)",60073,241,159,7,0
+"CNFT41 (Longbridge)",60074,204,132,8,1
+"CNFT42 (Longbridge)",60075,206,123,3,0
+"CNFT43 (Longbridge)",60076,194,136,2,0
+"CNFT44 (Longbridge)",60077,202,134,1,0
+"CNFT45 (Longbridge)",60078,212,130,3,0
+"CNFT46 (Longbridge)",60079,244,159,7,1
+"CNFT47 (Longbridge)",60080,235,126,5,0
+"CNFU01 (Moseley)",60081,165,105,16,6
+"CNFU02 (Moseley)",60082,114,53,11,1
+"CNFU03 (Moseley)",60083,150,59,30,6
+"CNFU04 (Moseley)",60084,98,33,10,5
+"CNFU05 (Moseley)",60085,137,82,10,3
+"CNFU06 (Moseley)",60086,121,52,8,4
+"CNFU07 (Moseley)",60087,123,58,10,2
+"CNFU08 (Moseley)",60088,201,138,2,4
+"CNFU09 (Moseley)",60089,177,136,4,1
+"CNFU10 (Moseley)",60090,158,119,0,1
+"CNFU11 (Moseley)",60091,152,84,1,5
+"CNFU12 (Moseley)",60092,105,72,2,1
+"CNFU13 (Moseley)",60093,117,66,6,3
+"CNFU14 (Moseley)",60094,279,212,2,4
+"CNFU15 (Moseley)",60095,168,143,0,0
+"CNFU16 (Moseley)",60096,168,117,4,0
+"CNFU17 (Moseley)",60097,228,177,6,2
+"CNFU18 (Moseley)",60098,185,113,0,6
+"CNFU19 (Moseley)",60099,210,168,2,0
+"CNFU20 (Moseley)",60100,153,92,3,5
+"CNFU21 (Moseley)",60101,171,129,0,0
+"CNFU22 (Moseley)",60102,220,167,1,1
+"CNFU23 (Moseley)",60103,206,149,3,1
+"CNFU24 (Moseley)",60104,196,126,4,0
+"CNFU25 (Moseley)",60105,210,140,6,0
+"CNFU26 (Moseley)",60106,219,169,6,2
+"CNFU27 (Moseley)",60107,192,145,2,0
+"CNFU28 (Moseley)",60108,164,113,2,2
+"CNFU29 (Moseley)",60109,198,139,1,1
+"CNFU30 (Moseley)",60110,237,157,0,4
+"CNFU31 (Moseley)",60111,144,88,1,3
+"CNFU32 (Moseley)",60112,155,129,0,1
+"CNFU33 (Moseley)",60113,183,144,1,0
+"CNFU34 (Moseley)",60114,239,183,3,3
+"CNFU35 (Moseley)",60115,114,87,1,1
+"CNFU36 (Moseley)",60116,230,162,5,0
+"CNFU37 (Moseley)",60117,211,165,2,0
+"CNFU38 (Moseley)",60118,215,147,8,0
+"CNFU39 (Moseley)",60119,117,63,2,2
+"CNFU40 (Moseley)",60120,197,142,3,5
+"CNFU41 (Moseley)",60121,208,151,6,0
+"CNFU42 (Moseley)",60122,232,159,1,0
+"CNFU43 (Moseley)",60123,179,120,3,2
+"CNFU44 (Moseley)",60124,216,169,5,0
+"CNFU45 (Moseley)",60125,176,105,8,2
+"CNFU46 (Moseley)",60126,190,138,5,0
+"CNFU47 (Moseley)",60127,227,159,1,0
+"CNFU48 (Moseley)",60128,217,161,3,0
+"CNFU49 (Moseley)",60129,211,144,1,1
+"CNFU52 (Moseley)",60130,0,0,0,0
+"CNFW01 (Nechells)",60131,198,137,10,0
+"CNFW02 (Nechells)",60132,187,106,9,5
+"CNFW03 (Nechells)",60133,199,102,13,2
+"CNFW04 (Nechells)",60134,180,115,6,2
+"CNFW05 (Nechells)",60135,216,108,7,2
+"CNFW06 (Nechells)",60136,178,106,11,0
+"CNFW07 (Nechells)",60137,235,159,12,1
+"CNFW08 (Nechells)",60138,56,33,2,0
+"CNFW09 (Nechells)",60139,140,102,0,1
+"CNFW10 (Nechells)",60140,177,89,4,1
+"CNFW11 (Nechells)",60141,179,113,2,0
+"CNFW12 (Nechells)",60142,148,84,6,0
+"CNFW13 (Nechells)",60143,178,142,2,0
+"CNFW14 (Nechells)",60144,122,62,8,1
+"CNFW15 (Nechells)",60145,126,99,3,0
+"CNFW16 (Nechells)",60146,174,99,7,0
+"CNFW17 (Nechells)",60147,87,70,1,0
+"CNFW18 (Nechells)",60148,42,36,0,0
+"CNFW19 (Nechells)",60149,104,71,1,0
+"CNFW20 (Nechells)",60150,170,143,3,0
+"CNFW21 (Nechells)",60151,202,119,10,5
+"CNFW22 (Nechells)",60152,178,124,3,3
+"CNFW23 (Nechells)",60153,124,59,13,7
+"CNFW24 (Nechells)",60154,114,35,23,5
+"CNFW25 (Nechells)",60155,224,80,41,12
+"CNFW26 (Nechells)",60156,173,55,26,15
+"CNFW27 (Nechells)",60157,171,58,27,20
+"CNFW28 (Nechells)",60158,137,44,28,11
+"CNFW29 (Nechells)",60159,150,56,30,10
+"CNFW30 (Nechells)",60160,149,66,28,4
+"CNFW31 (Nechells)",60161,148,68,20,4
+"CNFW32 (Nechells)",60162,180,93,29,7
+"CNFW33 (Nechells)",60163,233,136,16,4
+"CNFW34 (Nechells)",60164,147,52,27,12
+"CNFW35 (Nechells)",60165,116,64,10,1
+"CNFW36 (Nechells)",60166,159,58,34,5
+"CNFW37 (Nechells)",60167,214,129,16,10
+"CNFW38 (Nechells)",60168,159,95,14,4
+"CNFW39 (Nechells)",60169,51,31,1,2
+"CNFW40 (Nechells)",60170,221,130,8,0
+"CNFW41 (Nechells)",60171,213,126,7,3
+"CNFW42 (Nechells)",60172,185,114,16,4
+"CNFW43 (Nechells)",60173,213,104,28,9
+"CNFW44 (Nechells)",60174,211,115,11,1
+"CNFW45 (Nechells)",60175,199,121,15,2
+"CNFW46 (Nechells)",60176,191,115,2,4
+"CNFW47 (Nechells)",60177,182,122,10,5
+"CNFW48 (Nechells)",60178,184,140,9,0
+"CNFW49 (Nechells)",60179,0,0,0,0
+"CNFW50 (Nechells)",60180,0,0,0,0
+"CNFX01 (Northfield)",60181,248,171,3,0
+"CNFX02 (Northfield)",60182,205,135,1,0
+"CNFX03 (Northfield)",60183,226,145,2,3
+"CNFX04 (Northfield)",60184,233,134,1,1
+"CNFX05 (Northfield)",60185,222,146,3,0
+"CNFX06 (Northfield)",60186,220,155,0,0
+"CNFX07 (Northfield)",60187,238,152,1,0
+"CNFX08 (Northfield)",60188,202,152,3,0
+"CNFX09 (Northfield)",60189,174,125,0,0
+"CNFX10 (Northfield)",60190,187,130,0,0
+"CNFX11 (Northfield)",60191,174,108,5,1
+"CNFX12 (Northfield)",60192,199,132,0,0
+"CNFX13 (Northfield)",60193,159,123,1,0
+"CNFX14 (Northfield)",60194,166,95,1,0
+"CNFX15 (Northfield)",60195,224,118,1,0
+"CNFX16 (Northfield)",60196,178,108,4,0
+"CNFX17 (Northfield)",60197,223,148,0,0
+"CNFX18 (Northfield)",60198,215,125,3,0
+"CNFX19 (Northfield)",60199,177,109,1,1
+"CNFX20 (Northfield)",60200,219,138,3,0
+"CNFX21 (Northfield)",60201,211,148,2,1
+"CNFX22 (Northfield)",60202,203,147,1,2
+"CNFX23 (Northfield)",60203,189,121,5,0
+"CNFX24 (Northfield)",60204,198,126,2,0
+"CNFX25 (Northfield)",60205,239,153,2,0
+"CNFX26 (Northfield)",60206,210,133,7,0
+"CNFX27 (Northfield)",60207,195,124,0,0
+"CNFX28 (Northfield)",60208,212,161,0,0
+"CNFX29 (Northfield)",60209,201,144,1,0
+"CNFX30 (Northfield)",60210,189,128,2,0
+"CNFX31 (Northfield)",60211,194,135,3,0
+"CNFX32 (Northfield)",60212,233,162,2,2
+"CNFX33 (Northfield)",60213,225,152,3,0
+"CNFX34 (Northfield)",60214,191,123,3,1
+"CNFX35 (Northfield)",60215,240,158,5,1
+"CNFX36 (Northfield)",60216,194,152,2,0
+"CNFX37 (Northfield)",60217,185,124,2,0
+"CNFX38 (Northfield)",60218,207,159,3,0
+"CNFX39 (Northfield)",60219,186,128,4,0
+"CNFX40 (Northfield)",60220,215,171,1,0
+"CNFX41 (Northfield)",60221,209,121,2,1
+"CNFX42 (Northfield)",60222,206,127,10,0
+"CNFX43 (Northfield)",60223,220,141,4,2
+"CNFX44 (Northfield)",60224,196,144,2,0
+"CNFX45 (Northfield)",60225,238,150,4,0
+"CNFX46 (Northfield)",60226,216,107,5,1
+"CNFX47 (Northfield)",60227,209,153,3,0
+"CNFX48 (Northfield)",60228,227,109,5,0
+"CNFX49 (Northfield)",60229,214,125,1,0
+"CNFY01 (Oscott)",60230,191,133,5,0
+"CNFY02 (Oscott)",60231,201,116,9,0
+"CNFY03 (Oscott)",60232,220,130,9,0
+"CNFY04 (Oscott)",60233,190,126,5,2
+"CNFY05 (Oscott)",60234,178,111,8,0
+"CNFY06 (Oscott)",60235,185,117,2,0
+"CNFY07 (Oscott)",60236,164,87,1,0
+"CNFY08 (Oscott)",60237,203,130,7,0
+"CNFY09 (Oscott)",60238,216,127,8,0
+"CNFY10 (Oscott)",60239,178,109,6,0
+"CNFY11 (Oscott)",60240,253,179,0,2
+"CNFY12 (Oscott)",60241,200,127,3,1
+"CNFY13 (Oscott)",60242,211,130,3,1
+"CNFY14 (Oscott)",60243,216,133,2,0
+"CNFY15 (Oscott)",60244,211,136,2,0
+"CNFY16 (Oscott)",60245,181,125,1,0
+"CNFY17 (Oscott)",60246,226,157,5,0
+"CNFY18 (Oscott)",60247,187,107,8,2
+"CNFY19 (Oscott)",60248,235,158,3,0
+"CNFY20 (Oscott)",60249,208,165,5,0
+"CNFY21 (Oscott)",60250,213,141,4,0
+"CNFY22 (Oscott)",60251,197,114,2,0
+"CNFY23 (Oscott)",60252,207,116,7,1
+"CNFY24 (Oscott)",60253,178,113,1,0
+"CNFY25 (Oscott)",60254,223,146,2,0
+"CNFY26 (Oscott)",60255,186,113,4,0
+"CNFY27 (Oscott)",60256,196,132,3,1
+"CNFY28 (Oscott)",60257,205,120,7,0
+"CNFY29 (Oscott)",60258,212,125,11,2
+"CNFY30 (Oscott)",60259,184,105,2,0
+"CNFY31 (Oscott)",60260,196,130,1,0
+"CNFY32 (Oscott)",60261,193,111,9,1
+"CNFY33 (Oscott)",60262,227,150,4,0
+"CNFY34 (Oscott)",60263,220,129,5,1
+"CNFY35 (Oscott)",60264,207,113,7,0
+"CNFY36 (Oscott)",60265,225,120,7,0
+"CNFY37 (Oscott)",60266,164,114,0,1
+"CNFY38 (Oscott)",60267,203,130,2,0
+"CNFY39 (Oscott)",60268,203,143,2,6
+"CNFY40 (Oscott)",60269,232,143,5,0
+"CNFY41 (Oscott)",60270,197,124,4,0
+"CNFY42 (Oscott)",60271,237,157,9,2
+"CNFY43 (Oscott)",60272,180,123,1,0
+"CNFY44 (Oscott)",60273,196,132,1,1
+"CNFZ01 (Perry Barr)",60274,188,107,5,0
+"CNFZ02 (Perry Barr)",60275,200,113,4,0
+"CNFZ03 (Perry Barr)",60276,219,147,4,0
+"CNFZ04 (Perry Barr)",60277,205,145,1,0
+"CNFZ05 (Perry Barr)",60278,172,128,3,0
+"CNFZ06 (Perry Barr)",60279,195,134,4,1
+"CNFZ07 (Perry Barr)",60280,179,105,5,0
+"CNFZ08 (Perry Barr)",60281,185,102,6,0
+"CNFZ09 (Perry Barr)",60282,172,96,3,0
+"CNFZ10 (Perry Barr)",60283,230,158,2,0
+"CNFZ11 (Perry Barr)",60284,195,128,1,0
+"CNFZ12 (Perry Barr)",60285,200,140,0,1
+"CNFZ13 (Perry Barr)",60286,199,116,4,0
+"CNFZ14 (Perry Barr)",60287,196,108,5,4
+"CNFZ15 (Perry Barr)",60288,206,133,3,0
+"CNFZ16 (Perry Barr)",60289,187,131,2,0
+"CNFZ17 (Perry Barr)",60290,228,140,2,0
+"CNFZ18 (Perry Barr)",60291,200,111,6,0
+"CNFZ19 (Perry Barr)",60292,207,123,3,1
+"CNFZ20 (Perry Barr)",60293,206,128,5,0
+"CNFZ22 (Perry Barr)",60294,192,123,5,0
+"CNFZ23 (Perry Barr)",60295,197,119,4,1
+"CNFZ24 (Perry Barr)",60296,206,150,4,0
+"CNFZ25 (Perry Barr)",60297,185,114,3,0
+"CNFZ26 (Perry Barr)",60298,175,118,4,0
+"CNFZ27 (Perry Barr)",60299,251,162,1,1
+"CNFZ28 (Perry Barr)",60300,182,112,4,0
+"CNFZ29 (Perry Barr)",60301,195,124,0,0
+"CNFZ30 (Perry Barr)",60302,179,115,3,0
+"CNFZ31 (Perry Barr)",60303,169,104,3,2
+"CNFZ32 (Perry Barr)",60304,179,120,4,0
+"CNFZ33 (Perry Barr)",60305,175,127,1,1
+"CNFZ34 (Perry Barr)",60306,177,111,1,0
+"CNFZ35 (Perry Barr)",60307,194,136,2,0
+"CNFZ36 (Perry Barr)",60308,226,169,4,0
+"CNFZ37 (Perry Barr)",60309,242,154,4,0
+"CNFZ38 (Perry Barr)",60310,196,124,4,0
+"CNFZ39 (Perry Barr)",60311,184,131,5,0
+"CNFZ40 (Perry Barr)",60312,189,121,8,0
+"CNFZ41 (Perry Barr)",60313,181,111,2,0
+"CNFZ42 (Perry Barr)",60314,156,108,1,1
+"CNFZ43 (Perry Barr)",60315,168,102,6,0
+"CNFZ44 (Perry Barr)",60316,188,122,3,0
+"CNFZ45 (Perry Barr)",60317,174,102,6,1
+"CNFZ46 (Perry Barr)",60318,204,122,12,1
+"CNFZ47 (Perry Barr)",60319,200,152,2,0
+"CNFZ48 (Perry Barr)",60320,61,47,0,0
+"CNGA01 (Quinton)",60321,218,157,3,0
+"CNGA02 (Quinton)",60322,202,177,1,0
+"CNGA03 (Quinton)",60323,220,186,0,0
+"CNGA04 (Quinton)",60324,184,116,6,1
+"CNGA05 (Quinton)",60325,188,138,3,0
+"CNGA06 (Quinton)",60326,199,133,7,0
+"CNGA07 (Quinton)",60327,220,162,2,0
+"CNGA08 (Quinton)",60328,214,154,1,0
+"CNGA09 (Quinton)",60329,192,146,0,0
+"CNGA10 (Quinton)",60330,201,159,1,0
+"CNGA11 (Quinton)",60331,215,152,0,0
+"CNGA12 (Quinton)",60332,171,131,2,0
+"CNGA13 (Quinton)",60333,202,141,0,0
+"CNGA14 (Quinton)",60334,168,140,2,0
+"CNGA15 (Quinton)",60335,220,157,1,0
+"CNGA16 (Quinton)",60336,176,107,1,0
+"CNGA17 (Quinton)",60337,192,119,5,0
+"CNGA18 (Quinton)",60338,200,126,0,1
+"CNGA19 (Quinton)",60339,197,130,2,0
+"CNGA20 (Quinton)",60340,181,108,11,0
+"CNGA21 (Quinton)",60341,197,116,7,0
+"CNGA22 (Quinton)",60342,161,123,0,1
+"CNGA23 (Quinton)",60343,173,138,3,0
+"CNGA24 (Quinton)",60344,149,118,0,1
+"CNGA25 (Quinton)",60345,171,86,4,0
+"CNGA26 (Quinton)",60346,169,111,1,0
+"CNGA27 (Quinton)",60347,201,143,4,0
+"CNGA28 (Quinton)",60348,209,140,4,1
+"CNGA29 (Quinton)",60349,205,132,5,0
+"CNGA30 (Quinton)",60350,171,117,4,1
+"CNGA31 (Quinton)",60351,196,119,4,0
+"CNGA32 (Quinton)",60352,205,121,4,0
+"CNGA33 (Quinton)",60353,163,101,5,0
+"CNGA34 (Quinton)",60354,226,140,5,1
+"CNGA35 (Quinton)",60355,167,104,4,3
+"CNGA36 (Quinton)",60356,191,126,8,0
+"CNGA37 (Quinton)",60357,242,141,6,0
+"CNGA38 (Quinton)",60358,229,135,10,2
+"CNGA39 (Quinton)",60359,240,129,15,0
+"CNGA40 (Quinton)",60360,224,117,7,0
+"CNGA41 (Quinton)",60361,235,118,7,1
+"CNGA42 (Quinton)",60362,206,120,5,2
+"CNGB01 (Sandwell)",60363,219,116,11,2
+"CNGB02 (Sandwell)",60364,221,108,11,2
+"CNGB03 (Sandwell)",60365,217,137,7,1
+"CNGB04 (Sandwell)",60366,250,168,1,0
+"CNGB05 (Sandwell)",60367,191,107,6,1
+"CNGB06 (Sandwell)",60368,220,140,8,0
+"CNGB07 (Sandwell)",60369,212,101,13,0
+"CNGB08 (Sandwell)",60370,186,113,5,1
+"CNGB09 (Sandwell)",60371,181,109,7,3
+"CNGB10 (Sandwell)",60372,214,134,5,0
+"CNGB11 (Sandwell)",60373,219,144,8,2
+"CNGB12 (Sandwell)",60374,206,130,4,1
+"CNGB13 (Sandwell)",60375,195,124,10,0
+"CNGB14 (Sandwell)",60376,170,96,7,1
+"CNGB15 (Sandwell)",60377,173,120,1,3
+"CNGB16 (Sandwell)",60378,221,142,5,1
+"CNGB17 (Sandwell)",60379,161,121,2,0
+"CNGB18 (Sandwell)",60380,205,137,3,0
+"CNGB19 (Sandwell)",60381,245,143,16,1
+"CNGB20 (Sandwell)",60382,236,104,16,4
+"CNGB21 (Sandwell)",60383,39,19,3,0
+"CNGB22 (Sandwell)",60384,198,152,3,0
+"CNGB23 (Sandwell)",60385,212,140,2,6
+"CNGB24 (Sandwell)",60386,168,100,2,5
+"CNGB25 (Sandwell)",60387,222,162,6,0
+"CNGB26 (Sandwell)",60388,213,108,17,2
+"CNGB27 (Sandwell)",60389,200,113,5,3
+"CNGB28 (Sandwell)",60390,231,125,12,0
+"CNGB29 (Sandwell)",60391,192,119,5,3
+"CNGB30 (Sandwell)",60392,201,140,3,1
+"CNGB31 (Sandwell)",60393,207,127,12,3
+"CNGB32 (Sandwell)",60394,223,103,15,5
+"CNGB33 (Sandwell)",60395,170,104,4,4
+"CNGB34 (Sandwell)",60396,190,120,8,0
+"CNGB35 (Sandwell)",60397,209,113,18,2
+"CNGB36 (Sandwell)",60398,176,99,9,5
+"CNGB37 (Sandwell)",60399,191,75,19,4
+"CNGB38 (Sandwell)",60400,185,108,6,4
+"CNGB39 (Sandwell)",60401,150,65,19,3
+"CNGB40 (Sandwell)",60402,206,112,8,1
+"CNGB41 (Sandwell)",60403,182,100,6,0
+"CNGB42 (Sandwell)",60404,169,84,10,0
+"CNGB43 (Sandwell)",60405,204,99,20,8
+"CNGB44 (Sandwell)",60406,170,85,22,2
+"CNGB45 (Sandwell)",60407,169,89,12,5
+"CNGB46 (Sandwell)",60408,148,69,14,5
+"CNGB47 (Sandwell)",60409,166,75,20,4
+"CNGB48 (Sandwell)",60410,162,71,22,5
+"CNGB50 (Sandwell)",60411,110,60,1,12
+"CNGC01 (Selly Oak)",60412,230,132,4,0
+"CNGC02 (Selly Oak)",60413,180,112,4,1
+"CNGC03 (Selly Oak)",60414,180,103,7,1
+"CNGC04 (Selly Oak)",60415,188,121,3,0
+"CNGC05 (Selly Oak)",60416,179,116,3,0
+"CNGC06 (Selly Oak)",60417,193,113,2,0
+"CNGC07 (Selly Oak)",60418,105,67,6,5
+"CNGC08 (Selly Oak)",60419,132,74,7,3
+"CNGC09 (Selly Oak)",60420,117,75,6,0
+"CNGC10 (Selly Oak)",60421,130,85,1,0
+"CNGC11 (Selly Oak)",60422,209,169,2,0
+"CNGC12 (Selly Oak)",60423,230,152,0,0
+"CNGC13 (Selly Oak)",60424,205,139,1,1
+"CNGC14 (Selly Oak)",60425,149,96,2,0
+"CNGC15 (Selly Oak)",60426,187,136,2,0
+"CNGC16 (Selly Oak)",60427,157,110,5,0
+"CNGC17 (Selly Oak)",60428,141,93,9,3
+"CNGC18 (Selly Oak)",60429,136,83,7,3
+"CNGC19 (Selly Oak)",60430,141,102,3,2
+"CNGC20 (Selly Oak)",60431,186,144,2,0
+"CNGC21 (Selly Oak)",60432,195,141,1,1
+"CNGC22 (Selly Oak)",60433,175,141,2,2
+"CNGC23 (Selly Oak)",60434,196,123,7,0
+"CNGC24 (Selly Oak)",60435,200,134,5,1
+"CNGC25 (Selly Oak)",60436,143,108,3,1
+"CNGC26 (Selly Oak)",60437,190,126,2,1
+"CNGC27 (Selly Oak)",60438,147,103,4,0
+"CNGC28 (Selly Oak)",60439,172,123,0,0
+"CNGC29 (Selly Oak)",60440,175,137,3,1
+"CNGC30 (Selly Oak)",60441,224,154,6,0
+"CNGC31 (Selly Oak)",60442,197,151,0,0
+"CNGC32 (Selly Oak)",60443,121,92,0,0
+"CNGC33 (Selly Oak)",60444,128,91,0,0
+"CNGC34 (Selly Oak)",60445,205,144,0,1
+"CNGC35 (Selly Oak)",60446,184,131,0,3
+"CNGC36 (Selly Oak)",60447,163,121,3,1
+"CNGC37 (Selly Oak)",60448,184,151,1,0
+"CNGC38 (Selly Oak)",60449,208,153,1,0
+"CNGC39 (Selly Oak)",60450,252,182,0,2
+"CNGC40 (Selly Oak)",60451,241,152,3,1
+"CNGC41 (Selly Oak)",60452,177,118,0,3
+"CNGC42 (Selly Oak)",60453,211,158,2,0
+"CNGC43 (Selly Oak)",60454,188,134,3,0
+"CNGC44 (Selly Oak)",60455,226,153,4,1
+"CNGC45 (Selly Oak)",60456,219,167,5,1
+"CNGC46 (Selly Oak)",60457,154,87,3,5
+"CNGC47 (Selly Oak)",60458,175,124,2,0
+"CNGC48 (Selly Oak)",60459,178,120,5,1
+"CNGC49 (Selly Oak)",60460,192,147,2,1
+"CNGC50 (Selly Oak)",60461,0,0,0,0
+"CNGC51 (Selly Oak)",60462,0,0,0,0
+"CNGD01 (Shard End)",60463,213,153,4,1
+"CNGD02 (Shard End)",60464,195,145,2,2
+"CNGD03 (Shard End)",60465,193,120,4,2
+"CNGD04 (Shard End)",60466,205,145,5,0
+"CNGD05 (Shard End)",60467,161,107,3,2
+"CNGD06 (Shard End)",60468,208,146,4,0
+"CNGD07 (Shard End)",60469,187,147,0,0
+"CNGD08 (Shard End)",60470,245,159,7,0
+"CNGD09 (Shard End)",60471,193,140,0,0
+"CNGD10 (Shard End)",60472,217,136,8,0
+"CNGD11 (Shard End)",60473,215,132,5,1
+"CNGD12 (Shard End)",60474,219,150,2,0
+"CNGD13 (Shard End)",60475,172,117,3,0
+"CNGD14 (Shard End)",60476,211,122,3,4
+"CNGD15 (Shard End)",60477,235,174,5,0
+"CNGD16 (Shard End)",60478,251,153,8,0
+"CNGD17 (Shard End)",60479,182,121,4,0
+"CNGD18 (Shard End)",60480,166,103,6,0
+"CNGD19 (Shard End)",60481,208,146,5,0
+"CNGD20 (Shard End)",60482,202,130,7,1
+"CNGD21 (Shard End)",60483,198,144,2,0
+"CNGD22 (Shard End)",60484,214,136,8,0
+"CNGD23 (Shard End)",60485,234,160,7,1
+"CNGD24 (Shard End)",60486,212,125,8,1
+"CNGD25 (Shard End)",60487,238,131,6,2
+"CNGD26 (Shard End)",60488,245,151,5,0
+"CNGD27 (Shard End)",60489,209,101,6,2
+"CNGD28 (Shard End)",60490,210,119,7,1
+"CNGD29 (Shard End)",60491,218,116,11,2
+"CNGD30 (Shard End)",60492,170,98,6,0
+"CNGD31 (Shard End)",60493,248,124,6,2
+"CNGD32 (Shard End)",60494,210,120,7,1
+"CNGD33 (Shard End)",60495,226,129,8,1
+"CNGD34 (Shard End)",60496,207,118,8,3
+"CNGD35 (Shard End)",60497,231,124,11,1
+"CNGD36 (Shard End)",60498,235,148,6,2
+"CNGD37 (Shard End)",60499,217,126,4,1
+"CNGD38 (Shard End)",60500,209,115,10,3
+"CNGD39 (Shard End)",60501,231,167,3,0
+"CNGD40 (Shard End)",60502,202,118,10,1
+"CNGD41 (Shard End)",60503,221,137,4,1
+"CNGD42 (Shard End)",60504,206,148,1,0
+"CNGD43 (Shard End)",60505,237,159,3,0
+"CNGD44 (Shard End)",60506,200,128,2,0
+"CNGD45 (Shard End)",60507,195,158,0,0
+"CNGD46 (Shard End)",60508,224,153,3,0
+"CNGD47 (Shard End)",60509,238,112,5,0
+"CNGD48 (Shard End)",60510,238,127,7,0
+"CNGE01 (Sheldon)",60511,239,140,6,0
+"CNGE02 (Sheldon)",60512,205,136,2,0
+"CNGE03 (Sheldon)",60513,209,139,4,0
+"CNGE04 (Sheldon)",60514,233,145,3,0
+"CNGE05 (Sheldon)",60515,228,142,5,0
+"CNGE06 (Sheldon)",60516,223,157,6,0
+"CNGE07 (Sheldon)",60517,181,143,2,0
+"CNGE08 (Sheldon)",60518,201,120,6,0
+"CNGE09 (Sheldon)",60519,227,146,4,0
+"CNGE10 (Sheldon)",60520,203,144,3,0
+"CNGE11 (Sheldon)",60521,210,144,4,0
+"CNGE12 (Sheldon)",60522,225,151,6,0
+"CNGE13 (Sheldon)",60523,200,142,7,0
+"CNGE14 (Sheldon)",60524,171,131,1,0
+"CNGE15 (Sheldon)",60525,194,148,4,0
+"CNGE16 (Sheldon)",60526,210,138,1,2
+"CNGE17 (Sheldon)",60527,187,94,9,0
+"CNGE18 (Sheldon)",60528,194,118,6,0
+"CNGE19 (Sheldon)",60529,205,133,7,0
+"CNGE20 (Sheldon)",60530,179,114,0,0
+"CNGE21 (Sheldon)",60531,220,132,10,1
+"CNGE22 (Sheldon)",60532,184,114,7,0
+"CNGE23 (Sheldon)",60533,202,125,2,0
+"CNGE24 (Sheldon)",60534,193,134,5,0
+"CNGE25 (Sheldon)",60535,180,113,0,0
+"CNGE26 (Sheldon)",60536,226,150,2,2
+"CNGE27 (Sheldon)",60537,262,189,6,0
+"CNGE28 (Sheldon)",60538,229,146,6,0
+"CNGE29 (Sheldon)",60539,244,151,3,0
+"CNGE30 (Sheldon)",60540,197,120,5,0
+"CNGE31 (Sheldon)",60541,210,152,0,0
+"CNGE32 (Sheldon)",60542,214,142,0,0
+"CNGE33 (Sheldon)",60543,210,136,7,0
+"CNGE34 (Sheldon)",60544,203,149,1,1
+"CNGE35 (Sheldon)",60545,180,138,7,0
+"CNGE36 (Sheldon)",60546,208,107,2,0
+"CNGE37 (Sheldon)",60547,182,108,2,0
+"CNGE38 (Sheldon)",60548,212,134,6,0
+"CNGE39 (Sheldon)",60549,173,103,0,0
+"CNGE40 (Sheldon)",60550,209,129,7,0
+"CNGE41 (Sheldon)",60551,188,117,1,0
+"CNGE42 (Sheldon)",60552,207,152,1,0
+"CNGF01 (Small Heath)",60553,231,112,15,10
+"CNGF02 (Small Heath)",60554,154,70,8,3
+"CNGF03 (Small Heath)",60555,225,116,15,10
+"CNGF04 (Small Heath)",60556,176,87,25,12
+"CNGF05 (Small Heath)",60557,188,87,31,7
+"CNGF06 (Small Heath)",60558,204,112,23,13
+"CNGF07 (Small Heath)",60559,168,97,11,7
+"CNGF08 (Small Heath)",60560,171,105,11,0
+"CNGF09 (Small Heath)",60561,187,105,12,0
+"CNGF10 (Small Heath)",60562,188,104,11,5
+"CNGF11 (Small Heath)",60563,215,131,18,4
+"CNGF12 (Small Heath)",60564,209,135,10,4
+"CNGF13 (Small Heath)",60565,207,136,5,4
+"CNGF14 (Small Heath)",60566,175,105,8,1
+"CNGF15 (Small Heath)",60567,183,71,25,11
+"CNGF16 (Small Heath)",60568,108,46,14,9
+"CNGF17 (Small Heath)",60569,127,61,18,5
+"CNGF18 (Small Heath)",60570,153,73,25,6
+"CNGF19 (Small Heath)",60571,142,58,21,7
+"CNGF20 (Small Heath)",60572,149,84,18,6
+"CNGF21 (Small Heath)",60573,209,131,7,1
+"CNGF22 (Small Heath)",60574,150,63,20,5
+"CNGF23 (Small Heath)",60575,137,66,17,5
+"CNGF24 (Small Heath)",60576,137,45,16,4
+"CNGF25 (Small Heath)",60577,201,96,28,3
+"CNGF26 (Small Heath)",60578,191,90,22,7
+"CNGF27 (Small Heath)",60579,233,119,24,13
+"CNGF28 (Small Heath)",60580,244,115,20,11
+"CNGF29 (Small Heath)",60581,206,112,13,5
+"CNGF30 (Small Heath)",60582,177,108,9,2
+"CNGF31 (Small Heath)",60583,130,59,26,3
+"CNGF32 (Small Heath)",60584,158,54,21,2
+"CNGF33 (Small Heath)",60585,144,46,27,8
+"CNGF34 (Small Heath)",60586,170,55,19,7
+"CNGF35 (Small Heath)",60587,209,88,19,3
+"CNGF36 (Small Heath)",60588,170,58,35,9
+"CNGF37 (Small Heath)",60589,221,117,31,8
+"CNGF38 (Small Heath)",60590,211,108,16,8
+"CNGF39 (Small Heath)",60591,221,111,28,10
+"CNGF40 (Small Heath)",60592,212,104,16,7
+"CNGF41 (Small Heath)",60593,165,79,17,4
+"CNGF42 (Small Heath)",60594,86,14,12,6
+"CNGF43 (Small Heath)",60595,205,80,25,14
+"CNGF44 (Small Heath)",60596,159,85,19,2
+"CNGF45 (Small Heath)",60597,135,72,15,4
+"CNGF46 (Small Heath)",60598,155,80,10,8
+"CNGF48 (Small Heath)",60599,220,118,17,6
+"CNGF49 (Small Heath)",60600,175,100,15,7
+"CNGF50 (Small Heath)",60601,209,138,10,2
+"CNGF51 (Small Heath)",60602,230,135,13,9
+"CNGF52 (Small Heath)",60603,223,160,5,2
+"CNGF53 (Small Heath)",60604,179,133,7,0
+"CNGF54 (Small Heath)",60605,0,0,0,0
+"CNGF55 (Small Heath)",60606,42,22,1,1
+"CNGG01 (Soho)",60607,119,54,14,4
+"CNGG02 (Soho)",60608,126,56,9,6
+"CNGG03 (Soho)",60609,210,87,30,7
+"CNGG04 (Soho)",60610,195,84,21,5
+"CNGG05 (Soho)",60611,122,57,11,1
+"CNGG06 (Soho)",60612,124,50,14,1
+"CNGG07 (Soho)",60613,126,51,5,0
+"CNGG08 (Soho)",60614,164,68,20,3
+"CNGG09 (Soho)",60615,107,55,7,2
+"CNGG10 (Soho)",60616,167,77,15,2
+"CNGG11 (Soho)",60617,171,106,8,5
+"CNGG12 (Soho)",60618,124,72,12,1
+"CNGG13 (Soho)",60619,145,80,11,5
+"CNGG14 (Soho)",60620,144,79,8,2
+"CNGG15 (Soho)",60621,114,51,10,6
+"CNGG16 (Soho)",60622,111,40,22,3
+"CNGG17 (Soho)",60623,179,97,12,4
+"CNGG18 (Soho)",60624,132,69,12,1
+"CNGG19 (Soho)",60625,157,86,16,3
+"CNGG20 (Soho)",60626,249,119,34,4
+"CNGG21 (Soho)",60627,189,91,15,9
+"CNGG22 (Soho)",60628,232,112,26,6
+"CNGG23 (Soho)",60629,196,78,21,5
+"CNGG24 (Soho)",60630,214,102,19,9
+"CNGG25 (Soho)",60631,126,65,6,4
+"CNGG26 (Soho)",60632,146,64,12,4
+"CNGG27 (Soho)",60633,125,60,14,1
+"CNGG28 (Soho)",60634,156,80,17,0
+"CNGG29 (Soho)",60635,170,94,13,4
+"CNGG30 (Soho)",60636,237,150,13,6
+"CNGG31 (Soho)",60637,115,38,18,7
+"CNGG32 (Soho)",60638,211,112,14,3
+"CNGG33 (Soho)",60639,161,75,10,1
+"CNGG34 (Soho)",60640,202,137,12,2
+"CNGG35 (Soho)",60641,166,97,3,2
+"CNGG36 (Soho)",60642,117,86,2,0
+"CNGG37 (Soho)",60643,165,91,13,2
+"CNGG38 (Soho)",60644,163,98,15,4
+"CNGG39 (Soho)",60645,180,110,8,2
+"CNGG40 (Soho)",60646,137,65,9,1
+"CNGG41 (Soho)",60647,182,81,10,5
+"CNGG42 (Soho)",60648,189,110,1,3
+"CNGG44 (Soho)",60649,152,100,1,2
+"CNGG45 (Soho)",60650,227,135,13,1
+"CNGG46 (Soho)",60651,95,53,7,7
+"CNGG47 (Soho)",60652,222,81,16,0
+"CNGG48 (Soho)",60653,188,116,11,0
+"CNGG49 (Soho)",60654,214,99,25,6
+"CNGG50 (Soho)",60655,252,128,18,1
+"CNGG51 (Soho)",60656,249,151,4,2
+"CNGG52 (Soho)",60657,201,99,9,2
+"CNGG53 (Soho)",60658,252,178,10,0
+"CNGG54 (Soho)",60659,153,69,11,2
+"CNGG55 (Soho)",60660,0,0,0,0
+"CNGG56 (Soho)",60661,0,0,0,0
+"CNGG57 (Soho)",60662,0,0,0,0
+"CNGH01 (Sparkbrook)",60663,96,59,4,0
+"CNGH02 (Sparkbrook)",60664,191,106,7,7
+"CNGH03 (Sparkbrook)",60665,136,65,11,6
+"CNGH04 (Sparkbrook)",60666,227,102,27,11
+"CNGH05 (Sparkbrook)",60667,162,125,1,0
+"CNGH06 (Sparkbrook)",60668,214,133,7,1
+"CNGH07 (Sparkbrook)",60669,215,140,7,4
+"CNGH08 (Sparkbrook)",60670,213,114,3,10
+"CNGH09 (Sparkbrook)",60671,197,116,5,0
+"CNGH10 (Sparkbrook)",60672,174,131,0,1
+"CNGH11 (Sparkbrook)",60673,165,122,6,4
+"CNGH12 (Sparkbrook)",60674,150,34,10,20
+"CNGH13 (Sparkbrook)",60675,142,59,7,7
+"CNGH14 (Sparkbrook)",60676,155,96,12,4
+"CNGH15 (Sparkbrook)",60677,182,64,15,5
+"CNGH16 (Sparkbrook)",60678,197,95,21,9
+"CNGH17 (Sparkbrook)",60679,145,51,27,10
+"CNGH18 (Sparkbrook)",60680,239,149,11,2
+"CNGH19 (Sparkbrook)",60681,150,84,9,6
+"CNGH20 (Sparkbrook)",60682,210,115,11,6
+"CNGH21 (Sparkbrook)",60683,230,121,16,3
+"CNGH22 (Sparkbrook)",60684,194,96,15,8
+"CNGH23 (Sparkbrook)",60685,67,24,11,4
+"CNGH24 (Sparkbrook)",60686,197,84,28,11
+"CNGH25 (Sparkbrook)",60687,231,109,20,4
+"CNGH26 (Sparkbrook)",60688,158,80,16,16
+"CNGH27 (Sparkbrook)",60689,126,63,12,2
+"CNGH28 (Sparkbrook)",60690,165,59,24,10
+"CNGH29 (Sparkbrook)",60691,111,53,4,7
+"CNGH30 (Sparkbrook)",60692,164,68,15,6
+"CNGH31 (Sparkbrook)",60693,189,83,30,5
+"CNGH32 (Sparkbrook)",60694,107,57,9,8
+"CNGH33 (Sparkbrook)",60695,100,40,19,7
+"CNGH34 (Sparkbrook)",60696,113,36,14,7
+"CNGH35 (Sparkbrook)",60697,164,59,35,7
+"CNGH36 (Sparkbrook)",60698,157,64,26,8
+"CNGH37 (Sparkbrook)",60699,150,59,30,8
+"CNGH38 (Sparkbrook)",60700,138,61,28,7
+"CNGH39 (Sparkbrook)",60701,147,53,27,9
+"CNGH40 (Sparkbrook)",60702,156,75,26,7
+"CNGH41 (Sparkbrook)",60703,218,76,47,12
+"CNGH42 (Sparkbrook)",60704,176,63,31,15
+"CNGH43 (Sparkbrook)",60705,155,80,19,6
+"CNGH44 (Sparkbrook)",60706,140,80,8,8
+"CNGH45 (Sparkbrook)",60707,156,69,30,6
+"CNGH46 (Sparkbrook)",60708,182,100,12,4
+"CNGH47 (Sparkbrook)",60709,142,65,18,5
+"CNGH48 (Sparkbrook)",60710,132,63,9,2
+"CNGH49 (Sparkbrook)",60711,183,89,18,8
+"CNGH50 (Sparkbrook)",60712,87,50,3,3
+"CNGH51 (Sparkbrook)",60713,76,48,8,4
+"CNGH54 (Sparkbrook)",60714,157,95,2,0
+"CNGH55 (Sparkbrook)",60715,0,0,0,0
+"CNGJ01 (Sparkhill)",60716,161,87,10,8
+"CNGJ02 (Sparkhill)",60717,132,56,20,7
+"CNGJ03 (Sparkhill)",60718,172,48,29,8
+"CNGJ04 (Sparkhill)",60719,94,37,9,7
+"CNGJ05 (Sparkhill)",60720,168,85,17,4
+"CNGJ06 (Sparkhill)",60721,118,46,20,8
+"CNGJ07 (Sparkhill)",60722,109,26,23,10
+"CNGJ08 (Sparkhill)",60723,105,33,15,1
+"CNGJ09 (Sparkhill)",60724,100,48,7,2
+"CNGJ10 (Sparkhill)",60725,132,72,13,2
+"CNGJ11 (Sparkhill)",60726,124,53,8,6
+"CNGJ12 (Sparkhill)",60727,114,36,20,6
+"CNGJ13 (Sparkhill)",60728,143,65,13,6
+"CNGJ14 (Sparkhill)",60729,128,74,14,0
+"CNGJ15 (Sparkhill)",60730,88,40,12,4
+"CNGJ16 (Sparkhill)",60731,119,36,17,2
+"CNGJ17 (Sparkhill)",60732,160,60,27,5
+"CNGJ18 (Sparkhill)",60733,129,67,9,4
+"CNGJ19 (Sparkhill)",60734,189,88,23,2
+"CNGJ20 (Sparkhill)",60735,131,50,17,12
+"CNGJ21 (Sparkhill)",60736,115,78,5,1
+"CNGJ22 (Sparkhill)",60737,146,65,8,5
+"CNGJ23 (Sparkhill)",60738,117,75,4,2
+"CNGJ24 (Sparkhill)",60739,118,76,5,0
+"CNGJ25 (Sparkhill)",60740,133,58,20,6
+"CNGJ26 (Sparkhill)",60741,82,36,8,4
+"CNGJ27 (Sparkhill)",60742,119,71,7,0
+"CNGJ28 (Sparkhill)",60743,150,79,7,8
+"CNGJ29 (Sparkhill)",60744,158,77,2,3
+"CNGJ30 (Sparkhill)",60745,105,50,6,4
+"CNGJ31 (Sparkhill)",60746,138,53,9,8
+"CNGJ32 (Sparkhill)",60747,169,65,21,8
+"CNGJ33 (Sparkhill)",60748,195,78,22,6
+"CNGJ34 (Sparkhill)",60749,116,43,16,5
+"CNGJ35 (Sparkhill)",60750,129,59,11,2
+"CNGJ36 (Sparkhill)",60751,207,125,15,2
+"CNGJ37 (Sparkhill)",60752,215,155,9,4
+"CNGJ38 (Sparkhill)",60753,180,100,14,6
+"CNGJ39 (Sparkhill)",60754,217,134,5,1
+"CNGJ40 (Sparkhill)",60755,155,86,1,2
+"CNGJ41 (Sparkhill)",60756,39,21,1,1
+"CNGJ42 (Sparkhill)",60757,105,71,0,2
+"CNGJ43 (Sparkhill)",60758,206,146,1,0
+"CNGJ44 (Sparkhill)",60759,160,110,2,3
+"CNGJ45 (Sparkhill)",60760,126,79,5,4
+"CNGJ46 (Sparkhill)",60761,122,76,6,4
+"CNGJ47 (Sparkhill)",60762,123,89,0,0
+"CNGJ48 (Sparkhill)",60763,164,107,0,3
+"CNGJ49 (Sparkhill)",60764,202,162,0,1
+"CNGJ50 (Sparkhill)",60765,187,115,9,2
+"CNGJ51 (Sparkhill)",60766,162,61,18,0
+"CNGJ52 (Sparkhill)",60767,163,71,31,8
+"CNGJ53 (Sparkhill)",60768,207,122,10,9
+"CNGJ54 (Sparkhill)",60769,217,150,6,0
+"CNGJ55 (Sparkhill)",60770,155,78,3,3
+"CNGJ56 (Sparkhill)",60771,145,65,4,1
+"CNGJ57 (Sparkhill)",60772,164,83,9,11
+"CNGJ58 (Sparkhill)",60773,170,89,12,3
+"CNGJ59 (Sparkhill)",60774,165,71,19,9
+"CNGJ61 (Sparkhill)",60775,0,0,0,0
+"CNGK01 (Stockland Green)",60776,247,141,11,2
+"CNGK02 (Stockland Green)",60777,237,155,7,0
+"CNGK03 (Stockland Green)",60778,201,118,9,0
+"CNGK04 (Stockland Green)",60779,244,152,7,0
+"CNGK05 (Stockland Green)",60780,216,139,5,2
+"CNGK06 (Stockland Green)",60781,243,161,6,0
+"CNGK07 (Stockland Green)",60782,202,126,3,1
+"CNGK08 (Stockland Green)",60783,201,118,5,2
+"CNGK09 (Stockland Green)",60784,215,133,7,1
+"CNGK10 (Stockland Green)",60785,231,128,4,1
+"CNGK11 (Stockland Green)",60786,241,169,3,2
+"CNGK12 (Stockland Green)",60787,193,134,3,1
+"CNGK13 (Stockland Green)",60788,235,147,18,0
+"CNGK14 (Stockland Green)",60789,205,113,10,0
+"CNGK15 (Stockland Green)",60790,236,156,4,0
+"CNGK16 (Stockland Green)",60791,220,131,9,2
+"CNGK17 (Stockland Green)",60792,188,117,8,0
+"CNGK18 (Stockland Green)",60793,245,171,3,0
+"CNGK19 (Stockland Green)",60794,186,108,8,1
+"CNGK20 (Stockland Green)",60795,187,129,0,2
+"CNGK21 (Stockland Green)",60796,202,120,2,7
+"CNGK22 (Stockland Green)",60797,158,98,4,0
+"CNGK23 (Stockland Green)",60798,155,109,2,1
+"CNGK24 (Stockland Green)",60799,159,123,4,0
+"CNGK25 (Stockland Green)",60800,115,75,0,2
+"CNGK26 (Stockland Green)",60801,224,146,2,0
+"CNGK27 (Stockland Green)",60802,228,150,3,1
+"CNGK28 (Stockland Green)",60803,175,121,5,0
+"CNGK29 (Stockland Green)",60804,188,120,2,4
+"CNGK30 (Stockland Green)",60805,161,110,0,0
+"CNGK31 (Stockland Green)",60806,144,103,4,2
+"CNGK32 (Stockland Green)",60807,200,141,6,0
+"CNGK33 (Stockland Green)",60808,182,118,2,0
+"CNGK34 (Stockland Green)",60809,188,132,4,1
+"CNGK35 (Stockland Green)",60810,195,132,5,1
+"CNGK36 (Stockland Green)",60811,143,78,3,4
+"CNGK37 (Stockland Green)",60812,158,114,3,1
+"CNGK38 (Stockland Green)",60813,196,130,9,1
+"CNGK39 (Stockland Green)",60814,220,135,9,3
+"CNGK40 (Stockland Green)",60815,188,132,2,0
+"CNGK41 (Stockland Green)",60816,213,136,8,1
+"CNGK42 (Stockland Green)",60817,162,106,0,1
+"CNGK43 (Stockland Green)",60818,187,118,4,5
+"CNGK44 (Stockland Green)",60819,176,113,5,1
+"CNGK45 (Stockland Green)",60820,229,126,10,2
+"CNGK46 (Stockland Green)",60821,161,90,7,0
+"CNGK47 (Stockland Green)",60822,164,87,5,3
+"CNGK48 (Stockland Green)",60823,194,116,4,0
+"CNGK52 (Stockland Green)",60824,0,0,0,0
+"CNGK53 (Stockland Green)",60825,127,96,2,0
+"CNGK54 (Stockland Green)",60826,220,145,4,0
+"CNGL01 (Sutton Four Oaks)",60827,225,180,0,0
+"CNGL02 (Sutton Four Oaks)",60828,218,173,1,0
+"CNGL03 (Sutton Four Oaks)",60829,192,140,0,0
+"CNGL04 (Sutton Four Oaks)",60830,229,172,0,0
+"CNGL05 (Sutton Four Oaks)",60831,169,141,0,0
+"CNGL06 (Sutton Four Oaks)",60832,226,174,0,0
+"CNGL07 (Sutton Four Oaks)",60833,200,133,0,0
+"CNGL08 (Sutton Four Oaks)",60834,216,159,0,0
+"CNGL09 (Sutton Four Oaks)",60835,286,200,1,1
+"CNGL10 (Sutton Four Oaks)",60836,223,152,3,0
+"CNGL11 (Sutton Four Oaks)",60837,167,104,4,1
+"CNGL12 (Sutton Four Oaks)",60838,219,170,0,1
+"CNGL13 (Sutton Four Oaks)",60839,230,155,1,0
+"CNGL14 (Sutton Four Oaks)",60840,246,162,9,0
+"CNGL15 (Sutton Four Oaks)",60841,251,201,1,0
+"CNGL16 (Sutton Four Oaks)",60842,170,125,0,0
+"CNGL17 (Sutton Four Oaks)",60843,205,151,0,0
+"CNGL18 (Sutton Four Oaks)",60844,219,174,0,0
+"CNGL19 (Sutton Four Oaks)",60845,189,125,0,0
+"CNGL20 (Sutton Four Oaks)",60846,110,84,1,0
+"CNGL21 (Sutton Four Oaks)",60847,230,188,0,0
+"CNGL22 (Sutton Four Oaks)",60848,213,174,0,0
+"CNGL23 (Sutton Four Oaks)",60849,229,168,2,0
+"CNGL24 (Sutton Four Oaks)",60850,214,157,2,0
+"CNGL25 (Sutton Four Oaks)",60851,213,150,4,0
+"CNGL26 (Sutton Four Oaks)",60852,213,144,0,0
+"CNGL27 (Sutton Four Oaks)",60853,202,109,0,0
+"CNGL28 (Sutton Four Oaks)",60854,221,172,0,0
+"CNGL29 (Sutton Four Oaks)",60855,226,169,0,0
+"CNGL30 (Sutton Four Oaks)",60856,220,181,1,1
+"CNGL31 (Sutton Four Oaks)",60857,197,160,0,2
+"CNGL32 (Sutton Four Oaks)",60858,187,122,0,0
+"CNGL33 (Sutton Four Oaks)",60859,229,150,6,0
+"CNGL34 (Sutton Four Oaks)",60860,206,148,0,0
+"CNGL35 (Sutton Four Oaks)",60861,232,179,1,0
+"CNGL36 (Sutton Four Oaks)",60862,184,121,1,0
+"CNGL37 (Sutton Four Oaks)",60863,186,154,0,0
+"CNGL38 (Sutton Four Oaks)",60864,194,140,1,0
+"CNGL39 (Sutton Four Oaks)",60865,186,119,0,0
+"CNGL40 (Sutton Four Oaks)",60866,178,159,0,0
+"CNGL41 (Sutton Four Oaks)",60867,242,215,0,0
+"CNGL42 (Sutton Four Oaks)",60868,224,158,0,0
+"CNGL43 (Sutton Four Oaks)",60869,237,174,0,0
+"CNGL44 (Sutton Four Oaks)",60870,194,141,0,0
+"CNGL45 (Sutton Four Oaks)",60871,185,143,1,0
+"CNGL46 (Sutton Four Oaks)",60872,170,129,0,0
+"CNGL47 (Sutton Four Oaks)",60873,168,137,0,0
+"CNGL48 (Sutton Four Oaks)",60874,204,178,0,0
+"CNGL49 (Sutton Four Oaks)",60875,198,156,0,0
+"CNGL50 (Sutton Four Oaks)",60876,212,109,0,1
+"CNGL51 (Sutton Four Oaks)",60877,198,135,0,0
+"CNGL52 (Sutton Four Oaks)",60878,254,203,0,0
+"CNGL53 (Sutton Four Oaks)",60879,217,155,1,0
+"CNGL54 (Sutton Four Oaks)",60880,198,167,2,1
+"CNGL55 (Sutton Four Oaks)",60881,215,158,0,0
+"CNGL56 (Sutton Four Oaks)",60882,175,115,0,0
+"CNGL57 (Sutton Four Oaks)",60883,185,132,5,0
+"CNGL58 (Sutton Four Oaks)",60884,0,0,0,0
+"CNGM01 (Sutton New Hall)",60885,142,106,0,0
+"CNGM02 (Sutton New Hall)",60886,245,184,0,0
+"CNGM03 (Sutton New Hall)",60887,229,147,1,0
+"CNGM04 (Sutton New Hall)",60888,225,164,0,0
+"CNGM05 (Sutton New Hall)",60889,240,162,1,0
+"CNGM06 (Sutton New Hall)",60890,244,158,2,0
+"CNGM07 (Sutton New Hall)",60891,131,74,9,1
+"CNGM08 (Sutton New Hall)",60892,231,145,0,0
+"CNGM09 (Sutton New Hall)",60893,237,161,7,0
+"CNGM10 (Sutton New Hall)",60894,224,149,1,0
+"CNGM11 (Sutton New Hall)",60895,238,186,4,2
+"CNGM12 (Sutton New Hall)",60896,215,123,14,0
+"CNGM13 (Sutton New Hall)",60897,199,116,4,0
+"CNGM14 (Sutton New Hall)",60898,216,128,5,0
+"CNGM15 (Sutton New Hall)",60899,218,135,6,0
+"CNGM16 (Sutton New Hall)",60900,187,133,1,0
+"CNGM17 (Sutton New Hall)",60901,168,113,0,0
+"CNGM18 (Sutton New Hall)",60902,188,151,0,2
+"CNGM19 (Sutton New Hall)",60903,167,144,0,1
+"CNGM20 (Sutton New Hall)",60904,145,124,0,0
+"CNGM21 (Sutton New Hall)",60905,153,116,1,0
+"CNGM22 (Sutton New Hall)",60906,205,165,0,0
+"CNGM23 (Sutton New Hall)",60907,150,115,3,0
+"CNGM24 (Sutton New Hall)",60908,216,132,3,1
+"CNGM25 (Sutton New Hall)",60909,200,125,7,0
+"CNGM26 (Sutton New Hall)",60910,206,136,1,0
+"CNGM27 (Sutton New Hall)",60911,184,117,0,0
+"CNGM28 (Sutton New Hall)",60912,229,159,0,2
+"CNGM29 (Sutton New Hall)",60913,210,140,0,2
+"CNGM30 (Sutton New Hall)",60914,267,191,1,0
+"CNGM31 (Sutton New Hall)",60915,185,112,2,0
+"CNGM32 (Sutton New Hall)",60916,241,144,0,0
+"CNGM33 (Sutton New Hall)",60917,223,128,6,0
+"CNGM34 (Sutton New Hall)",60918,207,164,0,0
+"CNGM35 (Sutton New Hall)",60919,186,97,1,1
+"CNGM36 (Sutton New Hall)",60920,169,98,3,0
+"CNGM37 (Sutton New Hall)",60921,189,125,1,0
+"CNGM38 (Sutton New Hall)",60922,236,158,2,0
+"CNGM39 (Sutton New Hall)",60923,289,167,1,0
+"CNGM40 (Sutton New Hall)",60924,53,41,0,0
+"CNGM41 (Sutton New Hall)",60925,155,90,2,0
+"CNGM42 (Sutton New Hall)",60926,38,31,0,0
+"CNGM43 (Sutton New Hall)",60927,25,18,0,0
+"CNGM44 (Sutton New Hall)",60928,202,156,1,0
+"CNGM45 (Sutton New Hall)",60929,188,149,0,0
+"CNGM46 (Sutton New Hall)",60930,257,205,1,0
+"CNGM47 (Sutton New Hall)",60931,133,96,1,0
+"CNGM48 (Sutton New Hall)",60932,238,165,2,0
+"CNGM49 (Sutton New Hall)",60933,221,162,2,0
+"CNGM50 (Sutton New Hall)",60934,225,134,0,0
+"CNGM51 (Sutton New Hall)",60935,167,111,1,0
+"CNGM52 (Sutton New Hall)",60936,94,59,2,1
+"CNGM53 (Sutton New Hall)",60937,174,117,1,0
+"CNGM54 (Sutton New Hall)",60938,195,130,1,0
+"CNGM55 (Sutton New Hall)",60939,266,149,2,1
+"CNGM56 (Sutton New Hall)",60940,230,144,3,0
+"CNGM57 (Sutton New Hall)",60941,255,147,0,0
+"CNGM58 (Sutton New Hall)",60942,182,136,1,0
+"CNGM59 (Sutton New Hall)",60943,189,137,0,0
+"CNGM60 (Sutton New Hall)",60944,184,127,2,1
+"CNGM61 (Sutton New Hall)",60945,242,124,12,2
+"CNGM62 (Sutton New Hall)",60946,196,138,0,0
+"CNGM63 (Sutton New Hall)",60947,225,149,4,0
+"CNGN01 (Sutton Vesey)",60948,198,132,0,0
+"CNGN02 (Sutton Vesey)",60949,195,123,3,0
+"CNGN03 (Sutton Vesey)",60950,181,114,2,0
+"CNGN04 (Sutton Vesey)",60951,207,142,0,0
+"CNGN05 (Sutton Vesey)",60952,194,126,1,0
+"CNGN06 (Sutton Vesey)",60953,244,149,0,0
+"CNGN07 (Sutton Vesey)",60954,224,165,1,0
+"CNGN08 (Sutton Vesey)",60955,174,126,0,0
+"CNGN09 (Sutton Vesey)",60956,171,136,0,0
+"CNGN10 (Sutton Vesey)",60957,242,155,8,0
+"CNGN11 (Sutton Vesey)",60958,202,140,1,0
+"CNGN12 (Sutton Vesey)",60959,250,154,1,0
+"CNGN13 (Sutton Vesey)",60960,91,62,0,0
+"CNGN14 (Sutton Vesey)",60961,220,158,0,0
+"CNGN15 (Sutton Vesey)",60962,213,154,0,0
+"CNGN16 (Sutton Vesey)",60963,197,159,1,0
+"CNGN17 (Sutton Vesey)",60964,179,143,0,0
+"CNGN18 (Sutton Vesey)",60965,209,152,0,0
+"CNGN19 (Sutton Vesey)",60966,191,135,0,0
+"CNGN20 (Sutton Vesey)",60967,213,152,0,0
+"CNGN21 (Sutton Vesey)",60968,214,151,3,0
+"CNGN22 (Sutton Vesey)",60969,216,169,1,0
+"CNGN23 (Sutton Vesey)",60970,232,164,3,0
+"CNGN24 (Sutton Vesey)",60971,225,179,1,0
+"CNGN25 (Sutton Vesey)",60972,224,144,1,1
+"CNGN26 (Sutton Vesey)",60973,203,147,0,0
+"CNGN27 (Sutton Vesey)",60974,182,135,3,0
+"CNGN28 (Sutton Vesey)",60975,205,131,0,0
+"CNGN29 (Sutton Vesey)",60976,228,165,1,0
+"CNGN30 (Sutton Vesey)",60977,184,122,1,0
+"CNGN31 (Sutton Vesey)",60978,185,132,0,1
+"CNGN32 (Sutton Vesey)",60979,210,137,0,0
+"CNGN33 (Sutton Vesey)",60980,186,127,0,0
+"CNGN34 (Sutton Vesey)",60981,214,170,1,0
+"CNGN35 (Sutton Vesey)",60982,220,182,1,0
+"CNGN36 (Sutton Vesey)",60983,250,171,1,0
+"CNGN37 (Sutton Vesey)",60984,234,130,7,0
+"CNGN38 (Sutton Vesey)",60985,208,136,4,0
+"CNGN39 (Sutton Vesey)",60986,210,157,0,0
+"CNGN40 (Sutton Vesey)",60987,186,128,1,0
+"CNGN41 (Sutton Vesey)",60988,228,174,0,0
+"CNGN42 (Sutton Vesey)",60989,241,168,0,2
+"CNGN43 (Sutton Vesey)",60990,219,164,2,0
+"CNGN44 (Sutton Vesey)",60991,232,176,0,0
+"CNGN45 (Sutton Vesey)",60992,167,132,1,0
+"CNGN46 (Sutton Vesey)",60993,249,142,3,7
+"CNGN47 (Sutton Vesey)",60994,210,163,0,0
+"CNGN48 (Sutton Vesey)",60995,167,126,0,0
+"CNGN49 (Sutton Vesey)",60996,322,245,2,1
+"CNGN50 (Sutton Vesey)",60997,201,155,0,1
+"CNGN51 (Sutton Vesey)",60998,202,160,0,2
+"CNGN52 (Sutton Vesey)",60999,247,177,0,0
+"CNGN53 (Sutton Vesey)",61000,198,129,2,0
+"CNGN54 (Sutton Vesey)",61001,197,149,1,0
+"CNGP01 (Washwood Heath)",61002,72,39,8,1
+"CNGP02 (Washwood Heath)",61003,145,102,6,0
+"CNGP03 (Washwood Heath)",61004,234,110,34,11
+"CNGP04 (Washwood Heath)",61005,213,114,17,0
+"CNGP05 (Washwood Heath)",61006,226,134,12,1
+"CNGP06 (Washwood Heath)",61007,196,117,6,2
+"CNGP07 (Washwood Heath)",61008,146,81,14,10
+"CNGP08 (Washwood Heath)",61009,150,70,22,7
+"CNGP09 (Washwood Heath)",61010,131,63,12,11
+"CNGP10 (Washwood Heath)",61011,184,87,8,10
+"CNGP11 (Washwood Heath)",61012,207,123,12,4
+"CNGP12 (Washwood Heath)",61013,232,130,24,6
+"CNGP13 (Washwood Heath)",61014,207,152,3,0
+"CNGP14 (Washwood Heath)",61015,177,128,3,2
+"CNGP15 (Washwood Heath)",61016,180,112,3,0
+"CNGP16 (Washwood Heath)",61017,116,72,3,1
+"CNGP17 (Washwood Heath)",61018,228,135,4,0
+"CNGP18 (Washwood Heath)",61019,193,111,6,5
+"CNGP19 (Washwood Heath)",61020,191,124,4,3
+"CNGP20 (Washwood Heath)",61021,175,88,22,6
+"CNGP21 (Washwood Heath)",61022,183,76,27,17
+"CNGP22 (Washwood Heath)",61023,172,94,5,2
+"CNGP23 (Washwood Heath)",61024,182,88,22,9
+"CNGP24 (Washwood Heath)",61025,177,94,10,2
+"CNGP25 (Washwood Heath)",61026,223,152,3,4
+"CNGP26 (Washwood Heath)",61027,220,139,8,2
+"CNGP27 (Washwood Heath)",61028,183,109,10,2
+"CNGP28 (Washwood Heath)",61029,187,125,11,3
+"CNGP29 (Washwood Heath)",61030,208,132,5,0
+"CNGP30 (Washwood Heath)",61031,136,66,18,3
+"CNGP31 (Washwood Heath)",61032,122,40,23,9
+"CNGP32 (Washwood Heath)",61033,161,72,18,3
+"CNGP33 (Washwood Heath)",61034,175,71,26,9
+"CNGP34 (Washwood Heath)",61035,196,80,32,11
+"CNGP35 (Washwood Heath)",61036,237,111,29,9
+"CNGP36 (Washwood Heath)",61037,195,107,15,1
+"CNGP37 (Washwood Heath)",61038,186,98,12,4
+"CNGP38 (Washwood Heath)",61039,200,111,22,4
+"CNGP39 (Washwood Heath)",61040,211,132,8,0
+"CNGP40 (Washwood Heath)",61041,215,134,5,2
+"CNGP41 (Washwood Heath)",61042,211,127,16,1
+"CNGP42 (Washwood Heath)",61043,222,160,6,1
+"CNGP43 (Washwood Heath)",61044,194,109,7,1
+"CNGP44 (Washwood Heath)",61045,222,119,11,0
+"CNGP45 (Washwood Heath)",61046,156,100,5,2
+"CNGP46 (Washwood Heath)",61047,201,152,5,2
+"CNGP47 (Washwood Heath)",61048,216,112,13,3
+"CNGP48 (Washwood Heath)",61049,165,89,10,0
+"CNGP49 (Washwood Heath)",61050,216,126,13,0
+"CNGP50 (Washwood Heath)",61051,211,102,18,10
+"CNGP51 (Washwood Heath)",61052,181,104,12,4
+"CNGP52 (Washwood Heath)",61053,195,98,11,1
+"CNGQ01 (Weoley)",61054,194,122,3,0
+"CNGQ02 (Weoley)",61055,179,97,6,0
+"CNGQ03 (Weoley)",61056,213,127,9,0
+"CNGQ04 (Weoley)",61057,169,97,7,1
+"CNGQ05 (Weoley)",61058,181,105,6,2
+"CNGQ06 (Weoley)",61059,218,136,7,1
+"CNGQ07 (Weoley)",61060,237,133,12,3
+"CNGQ08 (Weoley)",61061,147,76,6,1
+"CNGQ09 (Weoley)",61062,205,112,8,0
+"CNGQ10 (Weoley)",61063,178,99,6,2
+"CNGQ11 (Weoley)",61064,219,134,10,3
+"CNGQ12 (Weoley)",61065,197,110,12,0
+"CNGQ13 (Weoley)",61066,224,132,11,0
+"CNGQ14 (Weoley)",61067,215,125,4,1
+"CNGQ15 (Weoley)",61068,235,140,3,1
+"CNGQ16 (Weoley)",61069,218,147,4,1
+"CNGQ17 (Weoley)",61070,170,114,7,3
+"CNGQ18 (Weoley)",61071,203,124,0,0
+"CNGQ19 (Weoley)",61072,217,135,0,0
+"CNGQ20 (Weoley)",61073,217,146,1,0
+"CNGQ21 (Weoley)",61074,187,139,0,0
+"CNGQ22 (Weoley)",61075,221,156,2,0
+"CNGQ23 (Weoley)",61076,220,137,7,0
+"CNGQ24 (Weoley)",61077,200,149,0,0
+"CNGQ25 (Weoley)",61078,190,144,0,0
+"CNGQ26 (Weoley)",61079,198,132,2,0
+"CNGQ28 (Weoley)",61080,241,165,3,0
+"CNGQ29 (Weoley)",61081,208,141,1,0
+"CNGQ30 (Weoley)",61082,220,153,4,0
+"CNGQ31 (Weoley)",61083,191,105,1,0
+"CNGQ32 (Weoley)",61084,180,121,2,0
+"CNGQ33 (Weoley)",61085,213,158,1,0
+"CNGQ34 (Weoley)",61086,191,138,4,1
+"CNGQ35 (Weoley)",61087,131,91,3,0
+"CNGQ36 (Weoley)",61088,95,31,7,0
+"CNGQ37 (Weoley)",61089,218,105,6,3
+"CNGQ38 (Weoley)",61090,245,141,6,1
+"CNGQ39 (Weoley)",61091,240,143,13,1
+"CNGQ40 (Weoley)",61092,241,141,5,0
+"CNGQ41 (Weoley)",61093,231,113,14,1
+"CNGQ42 (Weoley)",61094,231,133,6,1
+"CNGQ43 (Weoley)",61095,217,112,9,0
+"CNGQ44 (Weoley)",61096,189,102,12,2
+"CNGR01 (Yardley)",61097,210,130,4,2
+"CNGR02 (Yardley)",61098,262,137,6,5
+"CNGR03 (Yardley)",61099,188,100,7,2
+"CNGR04 (Yardley)",61100,205,100,5,1
+"CNGR05 (Yardley)",61101,211,110,14,4
+"CNGR06 (Yardley)",61102,222,117,17,4
+"CNGR07 (Yardley)",61103,189,102,9,6
+"CNGR08 (Yardley)",61104,144,80,3,5
+"CNGR09 (Yardley)",61105,211,129,6,1
+"CNGR10 (Yardley)",61106,202,142,3,1
+"CNGR11 (Yardley)",61107,210,142,2,1
+"CNGR12 (Yardley)",61108,216,113,5,0
+"CNGR13 (Yardley)",61109,235,145,2,8
+"CNGR14 (Yardley)",61110,228,158,6,0
+"CNGR15 (Yardley)",61111,233,125,4,0
+"CNGR16 (Yardley)",61112,210,129,3,0
+"CNGR17 (Yardley)",61113,243,142,12,0
+"CNGR18 (Yardley)",61114,234,112,14,5
+"CNGR19 (Yardley)",61115,228,148,6,0
+"CNGR20 (Yardley)",61116,171,99,1,2
+"CNGR21 (Yardley)",61117,227,167,4,0
+"CNGR22 (Yardley)",61118,162,121,2,0
+"CNGR23 (Yardley)",61119,230,137,8,0
+"CNGR24 (Yardley)",61120,229,153,6,0
+"CNGR25 (Yardley)",61121,197,135,9,1
+"CNGR26 (Yardley)",61122,218,178,1,1
+"CNGR27 (Yardley)",61123,211,138,5,0
+"CNGR28 (Yardley)",61124,244,164,0,0
+"CNGR29 (Yardley)",61125,219,145,2,0
+"CNGR30 (Yardley)",61126,227,146,4,2
+"CNGR31 (Yardley)",61127,203,143,3,0
+"CNGR32 (Yardley)",61128,239,178,1,0
+"CNGR33 (Yardley)",61129,167,103,0,0
+"CNGR34 (Yardley)",61130,238,154,4,0
+"CNGR35 (Yardley)",61131,239,148,2,0
+"CNGR36 (Yardley)",61132,238,151,6,1
+"CNGR37 (Yardley)",61133,220,156,1,0
+"CNGR38 (Yardley)",61134,223,149,2,0
+"CNGR39 (Yardley)",61135,193,112,4,0
+"CNGR40 (Yardley)",61136,264,144,4,0
+"CNGR41 (Yardley)",61137,217,138,6,0
+"CNGR42 (Yardley)",61138,214,155,0,1
+"CNGR43 (Yardley)",61139,159,98,3,0
+"Column Total","Column Total",373917,234796,12041,3107
+
+
