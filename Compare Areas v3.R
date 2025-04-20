@@ -31,11 +31,11 @@ All_postcode_sf <- st_as_sf(All_postcodes, coords = c("x","y"))
 #st_crs(All_postcode_sf) <- st_crs(Area_014) 
 
 # Join to the reference geography polygon
-Postcodes_within_Birmingham014 <- st_join(All_postcode_sf, Area_014, join = st_within) %>% filter(!is.na(LSOA21CD)) 
+#Postcodes_within_Birmingham014 <- st_join(All_postcode_sf, Area_014, join = st_within) %>% filter(!is.na(LSOA21CD)) 
 
 #Plot onto 2021 LSOA map
-tm_shape(Area_014) + tm_borders(fill_alpha=.4) +
-  tm_shape(Postcodes_within_Birmingham014) + tm_dots(fill = "red", size = 0.7)  
+#tm_shape(Area_014) + tm_borders(fill_alpha=.4) +
+#  tm_shape(Postcodes_within_Birmingham014) + tm_dots(fill = "red", size = 0.7)  
 
 #Version for Birmingham in general 
 

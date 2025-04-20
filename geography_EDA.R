@@ -206,7 +206,7 @@ weights_df_1981 <- st_drop_geometry(Birmingham_postcodes) %>% mutate(ED81CD = as
   mutate(total_pc_in_ED81 = sum(active_1981)) %>% ungroup()
 
 weights_df_1981 <- weights_df_1981 %>% group_by(lsoa21, ED81CD) %>% 
-  mutate(prop_ED = sum(active_1981)/total_pc_in_ED81) %>% select(lsoa21, ED81CD, prop_ED)
+  mutate(prop_ED = sum(active_1981)/total_pc_in_ED81) %>% select(lsoa21, ED81CD, ED81CDO, prop_ED) #Added variable 20/04
 
 #At this stage these should add to one as they cover all of the 1981 EDs needed
 test <- weights_df_1981 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED81CD) %>% summarize(check = sum(prop_ED))
@@ -231,7 +231,7 @@ weights_df_1971 <- st_drop_geometry(Birmingham_postcodes) %>% mutate(ED71CD = as
   mutate(total_pc_in_ED71 = sum(active_1981)) %>% ungroup()
 
 weights_df_1971 <- weights_df_1971 %>% group_by(lsoa21, ED71CD) %>% 
-  mutate(prop_ED = sum(active_1981)/total_pc_in_ED71) %>% select(lsoa21, ED71CD, prop_ED)
+  mutate(prop_ED = sum(active_1981)/total_pc_in_ED71) %>% select(lsoa21, ED71CD:WD71CD, prop_ED)
 
 #At this stage these should add to one as they cover all of the 1971 EDs needed
 test <- weights_df_1971 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED71CD) %>% summarize(check = sum(prop_ED))
