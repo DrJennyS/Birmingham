@@ -18,6 +18,7 @@ Birmingham_postcodes <- read_sf("My_pc_lookup.shp")
 
 Birmingham_2021 <- read_sf("Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% filter(str_detect(LSOA21NM, "Birmingham"))
 
+List_2021_LSOA <- st_drop_geometry(Birmingham_2021) %>% select(LSOA21CD)
 ######################################################################################################################
 ################## EDA on postcodes ##################################################################################
 ######################################################################################################################
@@ -138,6 +139,9 @@ weights_df_2011 <- weights_df_2011 %>% group_by(lsoa21, oa11) %>%
 #Check all weights sum to 1
 test <- weights_df_2011 %>% filter(prop_oa11 != 1) %>% distinct() %>% group_by(oa11) %>% summarize(check = sum(prop_oa11))
 
+#Remove all of LSOAs not in 2021 geometry (added 13th May)
+weights_df_2011 <- weights_df_2011 %>% right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD")) 
+  
 #Remove all of the duplicated lines to make it easier to use these weights
 weights_df_2011 <- weights_df_2011 %>% distinct() %>% arrange(lsoa21)
 
@@ -162,6 +166,9 @@ weights_df_2001 <- weights_df_2001 %>% group_by(lsoa21, oa01) %>%
 #Check all weights sum to 1
 test <- weights_df_2001 %>% filter(prop_oa01 != 1) %>% distinct() %>% group_by(oa01) %>% summarize(check = sum(prop_oa01))
 
+#Remove all of LSOAs not in 2021 geometry (added 13th May)
+weights_df_2001 <- weights_df_2001 %>% right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD")) 
+
 #Remove all of the duplicated lines to make it easier to use these weights
 weights_df_2001 <- weights_df_2001 %>% distinct() %>% arrange(lsoa21)
 
@@ -180,18 +187,23 @@ weights_df_1991 <- st_drop_geometry(Birmingham_postcodes) %>% mutate(ED91CD = as
   filter(active_1991 == 1, req_91 == 1) %>% group_by(ED91CD) %>% 
   mutate(total_pc_in_ED91 = sum(active_1991)) %>% ungroup()
 
-weights_df_1991 <- weights_df_1991 %>% group_by(lsoa21, ED91CD) %>% 
-  mutate(prop_ED = sum(active_1991)/total_pc_in_ED91) %>% select(lsoa21, ED91CD, prop_ED)
+weights_df_1991 <- weights_df_1991 %>% 
+  group_by(lsoa21, ED91CD) %>% 
+  mutate(prop_ED = sum(active_1991)/total_pc_in_ED91) %>% select(lsoa21, ED91CD, prop_ED) %>%
+  mutate(ED91CD = str_remove(ED91CD, pattern = "^\\d{2}")) #Added 9th May to join to census data
 
 #At this stage these should add to one as they cover all of the 1991 EDs needed
 test <- weights_df_1991 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED91CD) %>% summarize(check = sum(prop_ED))
 sum(test$check) == nrow(test)
 
+#Remove all of LSOAs not in 2021 geometry (added 13th May)
+weights_df_1991 <- weights_df_1991 %>% right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD")) 
+
 #Remove all of the duplicated lines to make it easier to use these weights
 weights_df_1991 <- weights_df_1991 %>% distinct() %>% arrange(lsoa21)
 
 #List of ED's in more than one LSOA 21
-summary_split_ED91 <- weights_df_1991 %>% filter(prop_ED != 1) %>% select(-prop_ED) %>% 
+summary_split_ED91 <- weights_df_1991 %>% filter(prop_ED != 1) %>% select(-prop_ED) %>%
   distinct() %>% group_by(ED91CD) %>% summarise(count = n())
 
 #Proportion of EDs requiring to be split 
@@ -201,56 +213,75 @@ nrow(summary_split_ED91)/nrow(weights_df_1991 %>% select(ED91CD) %>% distinct())
 ### Repeat with 1981 - note that some EDs may be partially outside the 2021 city
 ######################################################################################################
 
-weights_df_1981 <- st_drop_geometry(Birmingham_postcodes) %>% mutate(ED81CD = as.factor(ED81CD), lsoa21 = as.factor(lsoa21)) %>%
-  filter(active_1981 == 1, req_81 == 1) %>% group_by(ED81CD) %>% 
+weights_df_1981 <- st_drop_geometry(Birmingham_postcodes) %>% 
+  mutate(ED81CDO = as.factor(ED81CDO), lsoa21 = as.factor(lsoa21)) %>%
+  filter(active_1981 == 1, req_81 == 1) %>% group_by(ED81CDO) %>% 
   mutate(total_pc_in_ED81 = sum(active_1981)) %>% ungroup()
 
-weights_df_1981 <- weights_df_1981 %>% group_by(lsoa21, ED81CD) %>% 
-  mutate(prop_ED = sum(active_1981)/total_pc_in_ED81) %>% select(lsoa21, ED81CD, ED81CDO, prop_ED) #Added variable 20/04
+weights_df_1981 <- weights_df_1981 %>% group_by(lsoa21, ED81CDO) %>% 
+  mutate(prop_ED = sum(active_1981)/total_pc_in_ED81) %>% 
+  select(lsoa21, ED81CDO, prop_ED) #Changed Variable 20/04
 
 #At this stage these should add to one as they cover all of the 1981 EDs needed
-test <- weights_df_1981 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED81CD) %>% summarize(check = sum(prop_ED))
+test <- weights_df_1981 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED81CDO) %>% summarize(check = sum(prop_ED))
 sum(test$check) == nrow(test)
+
+#Remove all of LSOAs not in 2021 geometry (added 13th May)
+weights_df_1981 <- weights_df_1981 %>% right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD")) 
 
 #Remove all of the duplicated lines to make it easier to use these weights
 weights_df_1981 <- weights_df_1981 %>% distinct() %>% arrange(lsoa21)
 
 #List of ED's in more than one LSOA 21
 summary_split_ED81 <- weights_df_1981 %>% filter(prop_ED != 1) %>% select(-prop_ED) %>% 
-  distinct() %>% group_by(ED81CD) %>% summarise(count = n())
+  distinct() %>% group_by(ED81CDO) %>% summarise(count = n())
 
 #Proportion of EDs requiring to be split 
-nrow(summary_split_ED81)/nrow(weights_df_1981 %>% select(ED81CD) %>% distinct())
+nrow(summary_split_ED81)/nrow(weights_df_1981 %>% select(ED81CDO) %>% distinct())
 
 ######################################################################################################
 ### Repeat with 1971 - note that some EDs may be partially outside the 2021 city
 ######################################################################################################
 
-weights_df_1971 <- st_drop_geometry(Birmingham_postcodes) %>% mutate(ED71CD = as.factor(ED71CD), lsoa21 = as.factor(lsoa21)) %>%
-  filter(active_1981 == 1, req_91 == 1) %>% group_by(ED71CD) %>% 
+weights_df_1971 <- st_drop_geometry(Birmingham_postcodes) %>% 
+  mutate(ED71ZCD = as.factor(ED71ZCD), lsoa21 = as.factor(lsoa21)) %>%
+  filter(active_1981 == 1, req_91 == 1) %>% group_by(ED71ZCD) %>% 
   mutate(total_pc_in_ED71 = sum(active_1981)) %>% ungroup()
 
-weights_df_1971 <- weights_df_1971 %>% group_by(lsoa21, ED71CD) %>% 
-  mutate(prop_ED = sum(active_1981)/total_pc_in_ED71) %>% select(lsoa21, ED71CD:WD71CD, prop_ED)
+weights_df_1971 <- weights_df_1971 %>% group_by(lsoa21, ED71ZCD) %>% 
+  mutate(prop_ED = sum(active_1981)/total_pc_in_ED71) %>% select(lsoa21, ED71ZCD, prop_ED) #Corrected 9th May
 
 #At this stage these should add to one as they cover all of the 1971 EDs needed
-test <- weights_df_1971 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED71CD) %>% summarize(check = sum(prop_ED))
+test <- weights_df_1971 %>% filter(prop_ED != 1) %>% distinct() %>% group_by(ED71ZCD) %>% summarize(check = sum(prop_ED))
 sum(test$check) == nrow(test)
+
+#Remove all of LSOAs not in 2021 geometry (added 13th May)
+weights_df_1971 <- weights_df_1971 %>% right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD"))
 
 #Remove all of the duplicated lines to make it easier to use these weights
 weights_df_1971 <- weights_df_1971 %>% distinct() %>% arrange(lsoa21)
 
 #List of ED's in more than one LSOA 21
 summary_split_ED71 <- weights_df_1971 %>% filter(prop_ED != 1) %>% select(-prop_ED) %>% 
-  distinct() %>% group_by(ED71CD) %>% summarise(count = n())
+  distinct() %>% group_by(ED71ZCD) %>% summarise(count = n())
 
 #Proportion of EDs requiring to be split 
-nrow(summary_split_ED71)/nrow(weights_df_1971 %>% select(ED71CD) %>% distinct())
+nrow(summary_split_ED71)/nrow(weights_df_1971 %>% select(ED71ZCD) %>% distinct())
+
+######################################
+
+# Finally (added 9th May) we need a look up to match the 2021 AOs to 2021 LSOA as the data was downloaded for the smaller OAs
+# Amended 13th May due to duplicates and to cover only the LSOAs inside the Birmingham 2021 boundaries. 
+
+weights_df_2021 <- st_drop_geometry(Birmingham_postcodes) %>% 
+  right_join(List_2021_LSOA, by = c("lsoa21" = "LSOA21CD")) %>% 
+  select(oa21, lsoa21) %>% mutate(prop = 1) %>% distinct()
 
 ######################################################################################################
 ### Create weight .csv files for easier use with aggregation 
 ######################################################################################################
 
+write_csv(weights_df_2021, "weights_2021.csv")
 write_csv(weights_df_2011, "weights_2011.csv")
 write_csv(weights_df_2001, "weights_2001.csv")
 write_csv(weights_df_1991, "weights_1991.csv")
