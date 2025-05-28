@@ -31,9 +31,20 @@ Geography_EDA.R - Uses the postcode lookup .shp file to determine "how much" of 
 Final_data.R - This file creates a nested data_frame from all of the prepared data. This data is then efficiently aggregated into a consistent geography and this data is outputted as .csv files. More use of dplyr and purrr. Some zeros are imputted using the most recently recorded data, others are ignored as Enumeration Districts were non-residential in 1991 or earlier as the boundaries were designed for ease of data collection rather than as statistical units.  
 
 Week4_EDA.R - This file is split into four parts: 
-(1) Examines missingness and unusual 2021 LSOAs: - This code was used to identify and correct a critical error about the postcodes in areas which only partially overlap with the current city boundaries. 
-(2) EDA on Townsend variables and creates a time consistent Townsend Index for Birmingham
-(3) EDA on the Manufacturing variables and creates a time consistent Manufacturing Index for Birmingham. 
-(4) Statistical test using the infer package
+(1) Examines missingness and unusual 2021 LSOAs: - This code was used to identify and correct a critical error about the postcodes in areas which only partially overlap with the current city boundaries. (lots of dplyr, ggplot and tmaps)
+(2) EDA on Townsend variables and creates a time consistent Townsend Index for Birmingham (lots of dplyr, ggplot and tmaps)
+(3) EDA on the Manufacturing variables and creates a time consistent Manufacturing Index for Birmingham.  (lots of dplyr, ggplot and tmaps)
 
-.... TBC. 
+Note that we can not use the overall Indices for any kind of regression model or in the Kmeans clustering algorithm due to data-leakage. 
+
+TBC...
+
+Week5_Kmeans (TidyModels)
+
+Week5_(GW)Regression (TidyModels)
+
+Week5_Infer
+
+Week6_pretty_graphs 
+
+Validate - compare with IMD
