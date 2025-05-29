@@ -467,11 +467,11 @@ ggplot(Summary,aes(x = year, y = mean_Manufacturing_index)) + geom_line()
 
 ### Create and label quintitles
 
-## for Manufacturing Index we want to identify the 20% lowest (LSOA 2021, year) pairs overall and label these Quintitle 1 etc. 
+## for Manufacturing Index we want to identify the 20% HIGHEST (LSOA 2021, year) pairs overall and label these Quintitle 1 etc. 
 
 return_quintile <- function(index) {
   # Category Labels
-  labels <- c(1,2,3,4,5)
+  labels <- c(5,4,3,2,1)
   # Calculate breaks based on quintiles
   breaks <- quantile(index, probs = seq(0, 1, 0.2), na.rm = TRUE)
   # Handle case where there are duplicate values at boundaries
