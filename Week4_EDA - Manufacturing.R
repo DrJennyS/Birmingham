@@ -301,6 +301,11 @@ Graph_variable(proportions_manual, 2011, "prop_manual")
 Graph_variable(proportions_manual, 2021, "prop_manual")
 
 Graph_variable(proportions_manual, 1971, "prop_manufacturing")
+
+##############################################################
+### Using this one for additional panel - terrible version ###
+##############################################################
+
 Graph_variable(proportions_manual, 1981, "prop_manufacturing")
 Graph_variable(proportions_manual, 1991, "prop_manufacturing")
 Graph_variable(proportions_manual, 2001, "prop_manufacturing")
