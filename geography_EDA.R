@@ -19,6 +19,7 @@ Birmingham_postcodes <- read_sf("My_pc_lookup.shp")
 Birmingham_2021 <- read_sf("Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% filter(str_detect(LSOA21NM, "Birmingham"))
 
 List_2021_LSOA <- st_drop_geometry(Birmingham_2021) %>% select(LSOA21CD)
+
 ######################################################################################################################
 ################## EDA on postcodes ##################################################################################
 ######################################################################################################################

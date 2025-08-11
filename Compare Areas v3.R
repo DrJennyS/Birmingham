@@ -168,10 +168,12 @@ tm_shape(Boundaries_1971_in_Birmingham) + tm_borders(fill_alpha=.4) +
 # Label the postcodes that will not contribute to the 2021 area but are needed as weights 
 Postcodes_within_Birmingham_71 <- st_join(Postcodes_within_Birmingham_71, Birmingham_2021, join = st_within) %>% mutate(in_city_21 = !is.na(LSOA21CD))  
 
+### This is a downloaded graph
 #Map these so the additional points needed for the weighting is clear
 tm_shape(Boundaries_1971_in_Birmingham) + tm_borders(fill_alpha=.4) +
   tm_shape(Postcodes_within_Birmingham_71) + tm_dots(fill = "in_city_21", size = 0.05) 
 
+### This is a downloaded graph
 tm_shape(Birmingham_2021) + tm_borders(fill_alpha=.4) +
   tm_shape(Postcodes_within_Birmingham_71) + tm_dots(fill = "in_city_21", size = 0.05) 
 
