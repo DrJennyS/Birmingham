@@ -2,18 +2,6 @@ library(tidyverse)
 library(readr)
 library(moments)
 
-#Set working directory
-setwd("~/R/Birmingham&Walsall/Week4") 
-dir()
-
-Manufacturing_aggregated <- read_csv("Manufacturing_aggregated.csv")
-
-#####################
-#### Missingness ####
-#####################
-
-#Note that the missingness in this file corresponds to the same zero_LSOAs in the Townsend data so does not require further comment.
-
 library(sf)
 library(corrplot)
 library(tmap)
@@ -21,9 +9,27 @@ library(spdep)
 library(spgwr)
 library(RColorBrewer)
 
+library(corrplot)
+
+#Set working directory
+setwd("~/R/Birmingham&Walsall/Week4") 
+dir()
+
+Manufacturing_aggregated <- read_csv("Manufacturing_aggregated.csv")
+
 # This file contains the boundary information
 Birmingham_2021 <- read_sf("~/R/Birmingham&Walsall/Week3/Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% 
   filter(str_detect(LSOA21NM, "Birmingham")) 
+
+#####################
+#### Missingness ####
+#####################
+
+#Note that the missingness in this file corresponds to the same zero_LSOAs in the Townsend data so does not require further comment.
+
+###############################################
+### Compare 10% sample and full sample size ###
+###############################################
 
 ## Distribution of 10% sample in relevant years population by year
 Manufacturing_aggregated %>% filter(year <= 1991) %>% ggplot(aes(residents_10)) + geom_histogram() + facet_wrap(~year)
@@ -56,7 +62,7 @@ Graph_variable_categorical <- function(data, y, var){
     tm_borders(alpha = 0.4)
   return(map) }
 
-Graph_variable_categorical(Manufacturing_aggregated, 1981, "low_outlier")
+#Graph_variable_categorical(Manufacturing_aggregated, 1981, "low_outlier")
 
 # Are these systematically large/small? 
 Manufacturing_aggregated %>% group_by(year) %>% summarize(count_low_outliers = sum(low_outlier, na.rm = TRUE), count_upper_outlier = sum(upper_outlier, na.rm = TRUE))
@@ -74,7 +80,7 @@ Trend_health <- Manufacturing_aggregated %>% select(year, InActive_sick, Disable
   summarize(across(everything(), \(x) sum(x))) %>% 
   mutate(InActive_sick = InActive_sick/total_residents, 
          Disabled = Disabled/total_residents, 
-         poor_health = ifelse(total_persons ==0, 0, poor_health/total_persons)) %>%
+         poor_health = ifelse(total_persons == 0, 0, poor_health/total_persons)) %>%
   select(-c(total_persons, total_residents))
 
 ggplot(Trend_health %>% pivot_longer(-year, names_to = "variable", values_to = "count"), aes(x = year, y = count, group = variable, color = variable)) + geom_line()
@@ -89,9 +95,8 @@ proportions_health <- Manufacturing_aggregated %>% select(year, lsoa21, InActive
   select(-c(total_persons, total_residents))
 
 ggplot(proportions_health, aes(x = InActive_sick)) + geom_histogram() + facet_wrap(~year, nrow = 3)
-ggplot(proportions_health, aes(x = InActive_sick, group = year, y = year)) + geom_boxplot()
+proportions_health %>% mutate(year = as.factor(year)) %>% ggplot(aes(x = InActive_sick, group = year, y = year)) + geom_boxplot()
 
-library(corrplot)
 plot_correlation <- function(data, y){
   Cor_Matrix <- data %>% filter(year == y) %>% filter(!if_any(where(is.numeric), ~is.na(.x))) %>% select(-c(year,lsoa21)) %>%  cor()
   plot <- corrplot(Cor_Matrix, addCoef.col = 'black', tl.pos = 'd')
@@ -105,7 +110,6 @@ plot_time_correlation <- function(data, var){
 }
 
 plot_time_correlation(proportions_health, "InActive_sick")
-
 
 ### Geographical plots 
 
@@ -124,7 +128,7 @@ Graph_variable <- function(data, y, var){
 Graph_variable(proportions_health, 1971, "InActive_sick")
 Graph_variable(proportions_health, 1991, "InActive_sick")
 
-## Geographical plot of outliers)
+## Geographical plot of outliers
 
 IQR_proportions_health <- Manufacturing_aggregated %>% select(year, lsoa21, InActive_sick,total_residents) %>%
   #ratio calculated - handles zero LSOAs as balanced
@@ -180,6 +184,9 @@ unemployed_proportions <- Townsend_aggregated %>% select(year, total_Active:unem
   summarize(across(total_Active:unemployed, \(x) sum(x, na.rm = TRUE))) %>% 
   mutate(unemployed = unemployed/total_Active) %>% select(year, unemployed)
 
+
+#### Graph types of sickness ####
+
 unemployed_proportions %>% left_join(Trend_health) %>% pivot_longer(-year, names_to = "variable", values_to = "proportion") %>%
   ggplot(aes(x = year, y = proportion, group = variable, colour = variable)) + geom_line()
 
@@ -219,6 +226,8 @@ graph_manual("prop_Semi_skilled")
 graph_manual("prop_Unskilled")
 
 # Boxplots 
+
+proportions_manual <- proportions_manual %>% mutate(year = as.factor(year))
 
 boxplot_manual <- function(prop){
   if(prop %in% c("prop_manual", "prop_manufacturing")){
@@ -340,7 +349,7 @@ proportions_Edu %>% filter(is.na(prop_Edu))
     proportions_Edu %>% ggplot(aes(x = prop_Edu)) + geom_histogram() + facet_wrap(~year, nrow = 3)
 
 # Boxplots 
-    proportions_Edu %>% ggplot(aes(x = prop_Edu, y = year, group = year)) + geom_boxplot() 
+    proportions_Edu %>% mutate(year = as.factor(year)) %>% ggplot(aes(x = prop_Edu, y = year, group = year)) + geom_boxplot() 
 
 #Average trend
 Manufacturing_aggregated %>% select(year, total_residents, residents_10, Well_Edu) %>% group_by(year) %>%
@@ -413,7 +422,7 @@ proportions_all_Birmingham <- Manufacturing_aggregated %>% group_by(year) %>%
          prop_Skilled = prop_Skilled + prop_Semi_skilled) %>%
   select(year, prop_sick:prop_low_Edu, -prop_Semi_skilled, -prop_Edu) 
 
-proportions_all_Birmingham %>% pivot_longer(-year, names_to = "variable", values_to = "proportion") %>%
+av_graph <- proportions_all_Birmingham %>% pivot_longer(-year, names_to = "variable", values_to = "proportion") %>%
   ggplot(aes(x = year, y = proportion, group = variable, color = variable)) + geom_line()
 
 #######################################
@@ -470,6 +479,8 @@ Summary <- Manufacturing_index %>% select(year, Manufacturing_index) %>%
 
 ggplot(Summary,aes(x = year, y = mean_Manufacturing_index)) + geom_line()
 
+# av_graph + geom_line(data = Summary, aes(x = year, y = mean_Manufacturing_index), inherit.aes = FALSE)
+
 ### Create and label quintitles
 
 ## for Manufacturing Index we want to identify the 20% HIGHEST (LSOA 2021, year) pairs overall and label these Quintitle 1 etc. 
@@ -499,7 +510,11 @@ return_quintile <- function(index) {
 
 Manufacturing_index_all <- Manufacturing_index %>% bind_cols(Quintile = return_quintile(Manufacturing_index$Manufacturing_index))
 
-table(Manufacturing_index_all$Quintile, Manufacturing_index_all$year)
+# Candidate table
+
+MyTable <- table(Manufacturing_index_all$Quintile, Manufacturing_index_all$year)
+
+
 
 ## We would like to look at trends in each input variable in relation to the quintile of the (LSOA 2021, year) pair
 
@@ -543,9 +558,10 @@ graph_trend <- function(var){
 #graph_trend("mean_index")
 graph_trend("prop_Skilled")
 graph_trend("prop_sick")
+graph_trend("prop_Manufacturing") # Using this one for poster?
 graph_trend("prop_Unskilled")
 graph_trend("prop_low_Edu")
-#As expected these changes are particularly interesting!!!
+#As expected these changes aren't particularly interesting!!!
 
 ##### Indices which are specific to each year ######
 
@@ -562,25 +578,57 @@ Manufacturing_index_year %>% mutate(Overall_diff = as.numeric(Quintile_2021) - a
 
 #### Final geographical plots! 
 
-## Relative Manufacturing Index (i.e. using all basis)
-geographical_Manufacturing <- Birmingham_2021 %>% right_join(Manufacturing_index_all %>% select(-Manufacturing_index) %>%
-                                                          pivot_wider(names_from = "year", values_from = "Quintile"), by = c("LSOA21CD" = "lsoa21"))
-Graph_index <- function(y){
-  map <- tm_shape(geographical_Manufacturing) + 
+## Relative Manufacturing Index (i.e. using all basis) - This is broken/not working as intended. I have created an yearly version first (Aug '25)
+#geographical_Manufacturing <- Birmingham_2021 %>% right_join(Manufacturing_index_all %>% select(-Manufacturing_index) %>%
+#                                                          pivot_wider(names_from = "year", values_from = "Quintile"), by = c("LSOA21CD" = "lsoa21"))
+
+#This generates figures with individual year indices
+geographical_Manufacturing <- Birmingham_2021 %>% 
+  right_join(Manufacturing_index_year, by = c("LSOA21CD" = "lsoa21")) 
+                                                                
+Graph_index <- function(df, y){
+  map <- tm_shape(df) + 
     tm_fill(col = y, 
             style = "cat", 
             palette = "brewer.prgn") + 
     tm_borders(alpha = 0.4)
   return(map) }
 
-Graph_index("2021")
-Graph_index("2011")
-Graph_index("2001")
-Graph_index("1991")
-Graph_index("1981")
-Graph_index("1971")
+Graph_index(geographical_Manufacturing, "Quintile_2021")
+Graph_index(geographical_Manufacturing, "Quintile_2011")
+Graph_index(geographical_Manufacturing, "Quintitle_2001")
+Graph_index(geographical_Manufacturing, "Quintile_1991")
+Graph_index(geographical_Manufacturing, "Quintile_1981")
+Graph_index(geographical_Manufacturing, "Quintile_1971")
 
-geographical_Manufacturing <- Birmingham_2021 %>% right_join(Manufacturing_index_year %>% mutate(Overall_diff = as.numeric(Quintile_2021) - as.numeric(Quintile_1971)), by = c("LSOA21CD" = "lsoa21"))
+test <- Manufacturing_index_all %>% select(lsoa21, year, Quintile) %>% pivot_wider(names_from = "year", values_from = "Quintile")
+
+geographical_Manufacturing2 <- Birmingham_2021 %>% right_join(test, by = c("LSOA21CD" = "lsoa21")) 
+
+map_2021 <- Graph_index(geographical_Manufacturing2, "2021")
+map_2011 <- Graph_index(geographical_Manufacturing2, "2011")
+map_2001 <- Graph_index(geographical_Manufacturing2, "2001")
+map_1991 <- Graph_index(geographical_Manufacturing2, "1991")
+map_1981 <- Graph_index(geographical_Manufacturing2, "1981")
+map_1971 <- Graph_index(geographical_Manufacturing2, "1971")
+
+# Graph manufacturing index for pass poster - change this to facetting to have only one set opf labels
+tmap_arrange(map_2021, map_2011, map_2001, map_1991, map_1981, map_1971, ncol = 3)
+
+#Fix this!!! 
+
+geographical_Manufacturing3 <- Birmingham_2021 %>% right_join(Manufacturing_index_all %>% select(lsoa21, year, Quintile), by = c("LSOA21CD" = "lsoa21")) 
+
+# This one for "PASS" poster
+Manufacturing_index_map <- tm_shape(geographical_Manufacturing3) + tm_fill(col = "Quintile", style = "cat", palette = "brewer.prgn") + tm_borders(alpha = 0.4) + 
+  tm_facets(by = "year", ncol = 3)
+
+tmap_save(Manufacturing_index_map, 
+          filename = "~/R/Birmingham&Walsall/Poster_materials/manufacturing_map.png",
+          width = 3000,
+          height = 3000,
+          dpi = 300)
+
 
 Graph_index("Overall_diff")
 

@@ -68,6 +68,8 @@ Townsend_aggregated %>% filter(year != "1971") %>%
    
 ggplot(Townsend_aggregated, aes(x =unemployed)) + geom_histogram() + facet_wrap(~year, nrow = 3)
 
+### This is a insanely large panel of histograms for the fail poster ###
+
 Townsend_aggregated %>% filter(year != "1971") %>%
   #ggplot(aes(x = Overcrowded)) +
   #ggplot(aes(x = Owned)) +
@@ -112,11 +114,11 @@ library(corrplot)
 
 plot_correlation <- function(data, y){
 Cor_Matrix <- data %>% filter(year == y) %>% select(-year) %>%  cor()
-plot <- corrplot(Cor_Matrix, addCoef.col = 'black', tl.pos = 'd')
+plot <- corrplot(Cor_Matrix, type = 'lower', tl.pos = 'l', tl.col = 'black', cl.ratio = 0.2, tl.srt = 45, col = COL2('RdBu', 10), addCoef.col = 'red')
 #return(plot)
 }
 
-plot_correlation(Townsend_aggregated %>% select(year, total_residents, unemployed, Overcrowded:no_car), "1971")
+plot_correlation(Townsend_aggregated %>% select(year, total_residents, unemployed, Overcrowded:no_car), "2021")
 
 plot_correlation(Manufacturing_aggregated %>% select(year, total_residents, InActive_sick, Skilled:Well_Edu) %>% na.omit(), "2001")
 
@@ -124,7 +126,7 @@ plot_correlation(Manufacturing_aggregated %>% select(year, total_residents, InAc
 
 plot_time_correlation <- function(data, var){
 var_data <- data %>% select(year, lsoa21, all_of(var)) %>% pivot_wider(names_from = year, values_from = var)
-corrplot(cor(var_data %>% select(-lsoa21)), type = 'lower', tl.pos = 'd', tl.col = 'black', cl.ratio = 0.2, tl.srt = 45, col = COL2('PuOr', 10), addCoef.col = 'white')
+corrplot(cor(var_data %>% select(-lsoa21)), type = 'lower', tl.pos = 'd', tl.col = 'black', cl.ratio = 0.2, tl.srt = 45, col = COL2('RdBu', 10), addCoef.col = 'red')
 }
 
 plot_time_correlation(Townsend_aggregated, "unemployed")
@@ -136,13 +138,15 @@ plot_time_correlation(Townsend_aggregated, "no_car")
 #### Proportions & Direction ##########
 #######################################
 
-Townsend_proportions <- Townsend_aggregated %>% mutate(prop_unemployed =  ifelse(total_Active == 0, NA, unemployed/total_Active), 
+Townsend_proportions_raw <- Townsend_aggregated %>% mutate(prop_unemployed =  ifelse(total_Active == 0, NA, unemployed/total_Active), 
                                                        prop_Overcrowded = ifelse(total_households == 0, NA, Overcrowded/total_households), 
                                                        prop_not_owned = ifelse(total_households == 0, NA, (total_households - Owned)/total_households), 
                                                        prop_no_car = ifelse(total_households == 0, NA, no_car/total_households)) %>%
   filter(total_households != 0 & total_Active != 0) %>%
   select(year, lsoa21, prop_unemployed:prop_no_car) %>% 
-  mutate(year = as.factor(year)) %>%
+  mutate(year = as.factor(year)) 
+
+Townsend_proportions <- Townsend_proportions_raw %>%
   mutate(across(where(is.numeric), ~ .x * 100)) %>% #Percentages
   mutate(prop_unemployed = log(prop_unemployed + 1), prop_Overcrowded = log(prop_Overcrowded + 1)) #Transformation of skewed variables
   
@@ -168,8 +172,20 @@ Baseline_proportions %>% pivot_longer(-year, names_to = "variable", values_to = 
 ### PCA - Townsend variables #####
 ##################################
 
-pc <- prcomp(Townsend_proportions %>% filter(year == "2021") %>% select(-year), center = TRUE, scale. = TRUE)
+pc <- prcomp(na.omit(Townsend_proportions %>% filter(year == "1971") %>% select(-c(year, lsoa21))), center = TRUE, scale. = TRUE)
 print(pc)
+
+library(ggbiplot)
+g <- ggbiplot(pc,
+              obs.scale = 1,
+              var.scale = 1,
+              ellipse = TRUE,
+              circle = TRUE,
+              ellipse.prob = 0.68)
+g <- g + scale_color_discrete(name = '')
+g <- g + theme(legend.direction = 'horizontal',
+               legend.position = 'top')
+print(g)
 
 ###############################
 #### Standardise variables ####
@@ -247,7 +263,7 @@ return_quintile <- function(index) {
 }
 
 # Overall Townsend index and quintiles
-Townsend_index_all <- Townsend_index %>% select(-Townsend_index_year) %>% bind_cols(Quintile = return_quintile(Townsend_index$Townsend_index))
+Townsend_index_all <- Townsend_index %>% bind_cols(Quintile = return_quintile(Townsend_index$Townsend_index))
 
 table(Townsend_index_all$Quintile, Townsend_index_all$year)
 
@@ -255,7 +271,7 @@ table(Townsend_index_all$Quintile, Townsend_index_all$year)
 
 ## Scattergraphs
 
-Joined <- Townsend_index_all %>% left_join(Townsend_proportions) 
+Joined <- Townsend_index_all %>% select(-Townsend_index_year) %>% left_join(Townsend_proportions) 
 
 ggplot(Joined, aes(x = Townsend_index, y = prop_no_car)) + geom_point() + facet_wrap(~year, ncol = 2)
 
@@ -313,6 +329,21 @@ Graph_index("1991")
 Graph_index("1981")
 Graph_index("1971")
 
+### Added faceted graph here (Aug '25) ###
+geographical_townsend2 <- Birmingham_2021 %>% right_join(Townsend_index_all %>% select(-Townsend_index), by = c("LSOA21CD" = "lsoa21"))
+
+Townsend_index_map <- tm_shape(geographical_townsend2) + tm_fill(col = "Quintile", style = "cat", palette = "brewer.prgn") + tm_borders(alpha = 0.4) + 
+  tm_facets(by = "year", ncol = 3)
+
+tmap_save(Townsend_index_map, 
+          filename = "~/R/Birmingham&Walsall/Poster_materials/Townsend_map.png",
+          width = 3000,
+          height = 3000,
+          dpi = 300)
+
+#########################
+
+
 geographical_townsend <- Birmingham_2021 %>% right_join(Townsend_index_year %>% mutate(Overall_diff = as.numeric(Quintile_2021) - as.numeric(Quintile_1971)), by = c("LSOA21CD" = "lsoa21"))
 
 Graph_index("Overall_diff")
@@ -326,4 +357,12 @@ Cor_Matrix <- Townsend_index_all %>% left_join(Townsend_proportions) %>%
 corrplot(Cor_Matrix, addCoef.col = 'black', tl.pos = 'd')
 
 ####
-write_csv()
+Townsend_prepared <- Townsend_proportions_raw %>% select(-prop_unemployed:prop_no_car) %>% mutate(year = as.numeric(as.character(year))) %>%
+  left_join(Townsend_index_all %>% mutate(year = as.numeric(as.character(year))) %>%
+              rename(Overall_Quintile = Quintile)) %>%
+  left_join(Townsend_index_year %>% select(lsoa21, Quintile_2021:Quintile_1971) %>% 
+              pivot_longer(-lsoa21, names_to = "description", values_to = "Census_Quintile") %>%
+              mutate(year = as.numeric(str_extract(description, pattern = "\\d{4}$"))) %>%
+              select(-description))
+
+write_csv(Townsend_prepared, "~/R/Birmingham&Walsall/Week5/Townsend_prepared.csv")
