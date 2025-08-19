@@ -68,8 +68,6 @@ Townsend_aggregated %>% filter(year != "1971") %>%
    
 ggplot(Townsend_aggregated, aes(x =unemployed)) + geom_histogram() + facet_wrap(~year, nrow = 3)
 
-### This is a insanely large panel of histograms for the fail poster ###
-
 Townsend_aggregated %>% filter(year != "1971") %>%
   #ggplot(aes(x = Overcrowded)) +
   #ggplot(aes(x = Owned)) +
@@ -220,6 +218,18 @@ Townsend_z_scores %>% select(year, lsoa21, z_no_car_year) %>% mutate(Outlier = a
 
 ## This analysis suggests that the LSOAs with zero households should be replaced with NA as they are creating additional outliers that could unduly influence the analysis. 
 ## Changed line 139 accordingly and repeated following analysis
+
+########################################################################
+### This is a insanely large panel of histograms for the fail poster ###
+########################################################################
+library(hrbrthemes)
+
+Townsend_proportions_raw %>% mutate(year = as.factor(year)) %>% pivot_longer(-(year:lsoa21), names_to = "Proportion") %>% 
+  ggplot(aes(x = value, fill = Proportion)) + geom_histogram() +
+  theme_ipsum() + theme(legend.position="none") + facet_grid(rows = vars(Proportion), cols = vars(year), scales = "free")
+
+
+########################################################################
 
 ####################################
 #### Create index for each year ####

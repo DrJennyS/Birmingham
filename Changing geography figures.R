@@ -99,8 +99,6 @@ tm_shape(geographical_Manufacturing084new) + tm_fill(col = "prop_manufacturing",
 setwd("~/R/Birmingham&Walsall/Week3") 
 Birmingham_084C <- "E01009376"
 
-
-
 Area084C_postcodes <- read_sf("Birmingham_084C_pcds.shp") 
 
 # One of the names gets mangled, lets turn it back into something sensible!
