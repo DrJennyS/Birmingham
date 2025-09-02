@@ -1,5 +1,6 @@
 library(tidyverse)
 library(readr)
+library(ggthemes)
 
 #Set working directory
 setwd("~/R/Birmingham&Walsall/Week4") 
@@ -163,8 +164,37 @@ Baseline_proportions <- Townsend_aggregated %>% select(year, total_Active:no_car
   select(year, base_unemployed: base_no_car)
 
 # Graph overall trends in variables
-Baseline_proportions %>% pivot_longer(-year, names_to = "variable", values_to = "proportion") %>% 
-  ggplot(aes(x = year, y = proportion, group = variable, color = variable)) + geom_line()
+Baseline_proportions %>%  rename(`No access to a car` = base_no_car, `Rented` = base_not_owned, Overcrowded = base_Overcrowded, Unemployed = base_unemployed) %>%
+  pivot_longer(-year, names_to = "variable", values_to = "Proportion") %>%
+  ggplot(aes(x = year, y = Proportion, group = variable, color = variable)) + geom_line(linewidth = 1.5, ) + theme_economist_white() +
+  scale_color_economist() + 
+  labs(title = "Trends in poverty variables", 
+       subtitle = "Proportion of population impacted by each variable", 
+       caption = "This figure reflects the national trends shown in Figure 2 in Norman et. al., 2024. \n The unemployment rate is calculated as the proportion of residents.\n All other variables are calculated as a proportion of households.", 
+       x = "", y = "") + 
+  theme(plot.title = element_text(color = "#174273", size = 21, hjust = 0.5), legend.position = "bottom", 
+        legend.title = element_blank(), legend.text = element_text(color = "#39464D", size = 12), 
+        legend.background = element_rect(fill = "#D1D9E3"),
+        plot.subtitle = element_text(color = "#39464D", margin = margin(t = 8, b = 12)), plot.background = element_rect(fill = "#D1D9E3"))
+
+## This imports the table from Manufacturing EDA for the figure in panel 1. 
+vars = c("Unskilled", "manufacturing", "manual")
+More_proportions <- read_csv("Manufacturing_proportions.csv") %>% filter(variable %in% vars) %>%
+  mutate(variable = ifelse(str_detect(variable, "manufacturing"), "Manufacturing", 
+                           ifelse(str_detect(variable, "manual"), "Manual", 
+                                  ifelse(str_detect(variable, "Unskilled"), "Unskilled manual", variable))), 
+         index = "Manufacturing")  
+
+More_proportions %>% ggplot(aes(x = year, y = Proportion, group = variable, color = variable)) + 
+  geom_line(linewidth = 1.5) + theme_economist_white() +
+  scale_color_economist() + 
+  labs(title = "Trends in employment variables", 
+       subtitle = "Proportion of employed residents by sector and type of work", x = "", y = "") + 
+  theme(plot.title = element_text(color = "#174273", size = 21, hjust = 0.5), legend.position = "bottom", 
+        legend.title = element_blank(), legend.text = element_text(color = "#39464D", size = 12), legend.background = element_rect(fill = "#D1D9E3"),
+        plot.subtitle = element_text(color = "#39464D", margin = margin(t = 8, b = 12)), plot.background = element_rect(fill = "#D1D9E3"))
+
+#Note that these simiar graph as less messy than using facets as the legend is more readable
 
 ##################################
 ### PCA - Townsend variables #####
@@ -222,11 +252,12 @@ Townsend_z_scores %>% select(year, lsoa21, z_no_car_year) %>% mutate(Outlier = a
 ########################################################################
 ### This is a insanely large panel of histograms for the fail poster ###
 ########################################################################
-library(hrbrthemes)
+#library(hrbrthemes)
 
-Townsend_proportions_raw %>% mutate(year = as.factor(year)) %>% pivot_longer(-(year:lsoa21), names_to = "Proportion") %>% 
+Townsend_proportions_raw %>% mutate(year = as.factor(year)) %>% pivot_longer(-(year:lsoa21), names_to = "Proportion") %>%
+  mutate(Proportion = str_remove(Proportion, "prop_")) %>%
   ggplot(aes(x = value, fill = Proportion)) + geom_histogram() +
-  theme_ipsum() + theme(legend.position="none") + facet_grid(rows = vars(Proportion), cols = vars(year), scales = "free")
+  theme_economist_white() + scale_fill_economist() + theme(legend.position="none") + labs(title = "Townsend Variables") + facet_grid(rows = vars(Proportion), cols = vars(year), scales = "free")
 
 
 ########################################################################
@@ -313,7 +344,17 @@ Townsend_index_year <- Townsend_index %>% select(-Townsend_index) %>% pivot_wide
   mutate(across(where(is.numeric), ~return_quintile(.x), .names = "Quintile_{.col}"))
 
 #Cross-tabulate - These are the relative movements so if an area was in the bottom 20% in 1971 compared with bottom 20% in 2021
-table(Townsend_index_year$Quintile_1971, Townsend_index_year$Quintile_2021)
+#Table_Townsend_movers <- table(Townsend_index_year$Quintile_1971, Townsend_index_year$Quintile_2021)
+
+Table_Townsend_movers <- Townsend_index_year %>% filter(complete.cases(.)) %>% 
+  group_by(Quintile_1971, Quintile_2021) %>% summarise(count = n()) %>% 
+  pivot_wider(names_from = Quintile_2021, values_from = count, names_prefix = "2021 Q", values_fill = 0) %>%
+  mutate(Quintile_1971 = str_c("1971 Q", Quintile_1971)) %>% rename(Transitions = Quintile_1971)
+
+library(kableExtra)
+kab <- kable(Table_Townsend_movers , caption = "Count of LSOAs in each Quintile", booktabs=T)
+kable_classic_2(kab, full_width=F, latex_options="hold_position") %>% save_kable("~/R/Birmingham&Walsall/Poster_materials/Townsend_table.png")
+
 
 # Biggest movers
 Townsend_index_year %>% mutate(Overall_diff = as.numeric(Quintile_2021) - as.numeric(Quintile_1971)) %>%
@@ -342,7 +383,7 @@ Graph_index("1971")
 ### Added faceted graph here (Aug '25) ###
 geographical_townsend2 <- Birmingham_2021 %>% right_join(Townsend_index_all %>% select(-Townsend_index), by = c("LSOA21CD" = "lsoa21"))
 
-Townsend_index_map <- tm_shape(geographical_townsend2) + tm_fill(col = "Quintile", style = "cat", palette = "brewer.prgn") + tm_borders(alpha = 0.4) + 
+Townsend_index_map <- tm_shape(geographical_townsend2) + tm_fill(col = "Quintile", style = "cat", palette = "brewer.blues") + tm_borders(alpha = 0.4) + 
   tm_facets(by = "year", ncol = 3)
 
 tmap_save(Townsend_index_map, 
@@ -376,3 +417,39 @@ Townsend_prepared <- Townsend_proportions_raw %>% select(-prop_unemployed:prop_n
               select(-description))
 
 write_csv(Townsend_prepared, "~/R/Birmingham&Walsall/Week5/Townsend_prepared.csv")
+
+######
+
+neighbours <- poly2nb(Birmingham_2021, queen = FALSE)
+neighbours
+
+#List of weights
+listw <- nb2listw(neighbours)
+
+geographical_data <- Birmingham_2021 %>% left_join(Townsend_prepared %>% filter(year == 2021), by = c("LSOA21CD" = "lsoa21"))
+
+# Are there spatial clusters in the proportion of people reporting ill-health
+moran.test(geographical_data$Townsend_index_year, listw)
+
+# Moran plot
+
+moran <- moran.plot(geographical_data$Townsend_index_year, listw = nb2listw(neighbours, style = "W"))
+
+# Local Moran output 
+
+local <- localmoran(x = geographical_data$Townsend_index_year, listw = nb2listw(neighbours, style = "W"))
+
+# Add the relevant column to the  Birmingham Data
+geographical_data <- cbind(geographical_data, Ii = local[,1])
+
+# map local moran statistic 
+tm_shape(geographical_data) + tm_fill("Ii", style = "quantile", title = "local moran statistic", palette = "brewer.blues") + tm_borders(alpha = 0.4)
+
+### Time correlation indicating that lagging the data does not add much
+
+plot_time_correlation <- function(data, var){
+  var_data <- data %>% select(year, lsoa21, all_of(var)) %>% pivot_wider(names_from = year, values_from = var) %>% filter(complete.cases(.)) 
+  corrplot(cor(var_data %>% select(-lsoa21)), type = 'lower', tl.pos = 'd', tl.col = 'black', cl.ratio = 0.2, tl.srt = 45, col = COL2('RdBu', 10), addCoef.col = 'red')
+}
+
+plot_time_correlation(Townsend_prepared, "Townsend_index_year")

@@ -14,6 +14,7 @@ library(tmap)
 library(spdep)
 library(spgwr)
 library(RColorBrewer)
+library("factoextra")
 
 setwd("~/R/Birmingham&Walsall/Week5") 
 dir()
@@ -68,10 +69,14 @@ clusterings <- kclusts %>% unnest(cols = c(glanced))
 ggplot(clusterings, aes(k, tot.withinss)) + geom_line() + geom_point()
 # This suggests that the idea number of clusters is likely to be k =  2
 
+fviz_nbclust(data, kmeans, method = "wss")
+fviz_nbclust(data, kmeans, method = "silhouette")
+fviz_nbclust(data, kmeans, nstart = 25,  method = "gap_stat", nboot = 50)
+
 # Lets join this back to the data-set containing LSOA21 labels with these clusters compare with Index
 
 # This is a test case with k = 2
-Manufacturing_1971_labelled <- Manufacturing_prepared %>% filter(year == 1971) %>% inner_join(assignments %>% filter(k == 2) %>% select(prop_manufacturing:.cluster))
+#Manufacturing_1971_labelled <- Manufacturing_prepared %>% filter(year == 1971) %>% inner_join(assignments %>% filter(k == 3) %>% select(prop_manufacturing:.cluster))
 
 Manufacturing_1971_labelled <- Manufacturing_prepared %>% filter(year == 1971) %>% 
   inner_join(assignments %>% select(n_cluster = k, prop_manufacturing:.cluster) %>% filter(n_cluster != 1) %>%
@@ -79,33 +84,60 @@ Manufacturing_1971_labelled <- Manufacturing_prepared %>% filter(year == 1971) %
                pivot_wider(names_from = "n_cluster", values_from = ".cluster") %>%
                mutate(across(where(is.factor), fct_drop)))
 
-### Tabulate
-table(Manufacturing_1971_labelled$k_5, Manufacturing_1971_labelled$Census_Quintile)
+Townsend_1971_labelled <- Manufacturing_1971_labelled %>% select(lsoa21, k_2:k_10) %>% inner_join(Townsend_prepared %>% filter(year == 1971) %>% select(lsoa21, Townsend_Q = Census_Quintile))
 
-## TO DO: Examine features of composite elements for k = 2, k =3 and k = 5
+Test <- Townsend_1971_labelled %>% inner_join(Manufacturing_1971_labelled)
+
+### Tabulate (make nice table!!) - IMPORTANT TO EDIT THESE
+
+table(Manufacturing_1971_labelled$k_3, Manufacturing_1971_labelled$Census_Quintile)
+
+# THIS ONE # 
+table(Townsend_1971_labelled$k_3, Townsend_1971_labelled$Townsend_Q)
+
+Table_Groups <- Townsend_1971_labelled %>% group_by(k_3, Townsend_Q) %>% summarize(count = n()) %>% 
+  rename(Group = k_3) %>% mutate(Townsend_Q = str_c("Quintile ", Townsend_Q)) %>%
+  pivot_wider(names_from = Townsend_Q, values_from = "count")
+
+library(kableExtra)
+kab <- kable(Table_Groups, caption = "Count of neighbourhoods in each 1971 Manufacturing Group by 1971 Townsend index quintile.", booktabs=T)
+kable_classic_2(kab, full_width=F, latex_options="hold_position") %>% save_kable("~/R/Birmingham&Walsall/Poster_materials/Groups_table.png")
+
+
+table(Test$Census_Quintile, Townsend_1971_labelled$Townsend_Q)
+
+summary(Manufacturing_1971_labelled$k_3)
+
+### First change here is to add on the 1971 Townsend Quintiles to tabulate
 
 ### Graph on map
 
 # Boundary information
+
 Birmingham_2021 <- read_sf("~/R/Birmingham&Walsall/Week3/Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% 
   filter(str_detect(LSOA21NM, "Birmingham")) 
 
-geographical_data <- Birmingham_2021 %>% right_join(Manufacturing_1971_labelled, by = c("LSOA21CD" = "lsoa21"))
+geographical_data <- Birmingham_2021 %>% right_join(Manufacturing_1971_labelled, by = c("LSOA21CD" = "lsoa21")) %>% mutate(across(starts_with("k_"), ~fct_drop(.x))) %>% filter(!is.na(k_3))
 
-Categories_map <- tm_shape(geographical_data) + tm_fill(col = "k_3", style = "cat", palette = "brewer.pu_or") + tm_borders(alpha = 0.4)
+tmap_options(outer.bg = TRUE, outer.bg.color = "#D1D9E3")
 
-tmap_save(Categories_map, 
-          filename = "~/R/Birmingham&Walsall/Poster_materials/Categories_map.png",
-          width = 3000,
-          height = 3000,
-          dpi = 300)
+Categories_map <- tm_shape(geographical_data) + tm_fill(col = "k_3", style = "cat", palette = "-brewer.blues", title = "Cluster") + tm_borders(alpha = 0.4) + 
+  tm_layout(legend.position = c("left", "top"), legend.text.size = 0.6, legend.title.size = 0.6, legend.text.color = "#39464D") 
+
+Categories_map
+#tmap_save(Categories_map, 
+#          filename = "~/R/Birmingham&Walsall/Poster_materials/Categories_map.png",
+#          width = 3000,
+#          height = 3000,
+#          dpi = 600)
 
 ## Add Label - uses k = 3, Cluster 1: High Manufacturing = TRUE, Cluster 2 or 3: High_Manufacturing = FALSE
 
 Manufacturing_1971_labelled <- Manufacturing_1971_labelled %>% mutate(Label = ifelse(k_3 == 1, TRUE, FALSE))
 
 # Handy sanity check
-# table(Manufacturing_1971_labelled$Label, Manufacturing_1971_labelled$k_2)
+
+table(Manufacturing_1971_labelled$Label, Manufacturing_1971_labelled$k_3)
 
 ## Add these labels back onto the Townsend data
 
@@ -113,7 +145,7 @@ Townsend_prepared <- Townsend_prepared %>% left_join(Manufacturing_1971_labelled
 
 ### Split by Manufacturing in 1971 so can cluster within these groups ###
 
-write_csv(Manufacturing_1971_labelled %>% select(lsoa21, k_2:k_5), "~/R/Birmingham&Walsall/Week5/labels.csv" , append = FALSE)
+write_csv(Manufacturing_1971_labelled %>% select(lsoa21, k_3), "~/R/Birmingham&Walsall/Week5/labels.csv" , append = FALSE)
 
 ############################################################
 ### Visual look at whether these groupings are different ###
@@ -125,19 +157,19 @@ write_csv(Manufacturing_1971_labelled %>% select(lsoa21, k_2:k_5), "~/R/Birmingh
 Townsend_prepared %>% mutate(year = as.factor(year)) %>% filter(!is.na(Label)) %>% group_by(year, Label, Overall_Quintile) %>% summarise(Count = n()) %>%
   ggplot(aes(x = Overall_Quintile, y = Count, fill = Label)) + geom_col() + facet_grid(rows = vars(year))
 
-library(hrbrthemes)
+
 # Densities 
 Townsend_prepared %>% mutate(year = as.factor(year)) %>% filter(!is.na(Label)) %>% 
-  ggplot(aes(x = prop_unemployed, fill = Label)) + geom_histogram(color="#e9ecef", alpha=0.6, position = 'identity') + facet_wrap(~year, nrow = 2) +
-  scale_fill_manual(values=c("#69b3a2", "#404080")) + theme_ipsum() + labs(fill="")
+  ggplot(aes(x = prop_not_owned, fill = Label)) + geom_histogram(color="#e9ecef", alpha=0.6, position = 'identity') + facet_wrap(~year, nrow = 2) +
+  scale_fill_manual(values=c("#69b3a2", "#404080")) + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
 
-##### TO DO - Recalculate Totals here ????
+##### TO DO - Recalculate Totals here ???? this is crude and not calculated on the same basis as the previous graphs :(
 
 ### Mean proportions is a big horrid but lets take a look
 Townsend_prepared %>% mutate(year = as.factor(year)) %>% filter(!is.na(Label)) %>% group_by(year, Label) %>% 
   summarise(across(starts_with("prop_"), ~mean(.x))) %>% pivot_longer(starts_with("prop_"), names_to = "Component", values_to = "mean_proportion") %>%
   mutate(Component = str_remove(Component, "prop_")) %>%
-  ggplot(aes(x = year, y = mean_proportion, group = Component, color = Component)) + geom_line() + facet_grid(cols = vars(Label)) + theme_ipsum() 
+  ggplot(aes(x = year, y = mean_proportion, group = Component, color = Component)) + geom_line() + facet_grid(cols = vars(Label))
 
 
 ### Mean Townsend Index is a big horrid but lets take a look
@@ -161,11 +193,11 @@ str(Wide_data)
 # Bar charts of distribution of change in quintiles
 Wide_data %>% filter(!is.na(Label)) %>% group_by(Label, Change) %>% summarise(Count = n()) %>%
   ggplot(aes(x = Change, y = Count, fill = Label)) + geom_col(position = "dodge") +
-  scale_fill_manual(values=c("#69b3a2", "#404080")) + theme_ipsum() + labs(fill="")
+  scale_fill_manual(values=c("#69b3a2", "#404080")) + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
 
 geographical_data <- Birmingham_2021 %>% right_join(Wide_data, by = c("LSOA21CD" = "lsoa21"))
 
-Changes_map <- tm_shape(geographical_data) + tm_fill(col = "Change", style = "cat", palette = "brewer.pu_or") + tm_borders(alpha = 0.4)
+Changes_map <- tm_shape(geographical_data) + tm_fill(col = "Change", style = "cat", palette = "brewer.RdBu") + tm_borders(alpha = 0.4)
 
 tmap_save(Changes_map, 
           filename = "~/R/Birmingham&Walsall/Poster_materials/Changes_map.png",
@@ -176,6 +208,6 @@ tmap_save(Changes_map,
 #########################################################################
 #########################################################################
 
-
+### Infer goes here
 
 

@@ -14,6 +14,7 @@ library(tmap)
 library(spdep)
 library(spgwr)
 library(RColorBrewer)
+library(ggthemes)
 
 library("factoextra")
 
@@ -63,7 +64,7 @@ assignments <- kclusts %>% unnest(cols = c(augmented))
 clusterings <- kclusts %>% unnest(cols = c(glanced)) 
 
 ### Elbow Plot 
-ggplot(clusterings, aes(k, tot.withinss)) + geom_line() + geom_point()
+ggplot(clusterings, aes(k, tot.withinss)) + geom_line(linewidth = 1, color = "blue") + geom_point(size = 2, color = "blue") + theme_economist_white()
 # This suggests that the idea number of clusters is likely to be k =  3
 
 #install.packages("factoextra") 
@@ -128,7 +129,9 @@ ggplot(index_data, aes(x = Manufacturing_index, y = Townsend_index, color = .clu
 
 # Filter for useful statistics
 
+# Representative points
 Table1 <- clusters %>% filter(k ==4)
+
 
 Table2 <- clusterings %>% filter(k ==4)
 
@@ -140,7 +143,7 @@ assignments_4 <- assignments %>% filter(k == 4) %>% select(prop_manufacturing:.c
   mutate(M_component = str_remove(M_component, pattern = "prop_"), T_component = str_remove(T_component, pattern = "prop_"))
 
 ggplot(assignments_4, aes(x = T_proportion, y = M_proportion)) + geom_point(aes(color = .cluster), alpha = 0.8) + 
-  facet_grid(rows = vars(M_component), cols = vars(T_component), scales = "free")
+  facet_grid(rows = vars(M_component), cols = vars(T_component), scales = "free") + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
 
 # (2) PCA on the joint data and represent in this space
 
@@ -157,7 +160,7 @@ biplot <- ggbiplot(pc, obs.scale = 1, var.scale = 1,
                    ellipse.prob = 0.68)
 biplot <- biplot + scale_color_discrete(name = '')
 biplot <- biplot + theme(legend.direction = 'horizontal',
-                         legend.position = 'top')
+                         legend.position = 'top') + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
 
 biplot
 
@@ -168,10 +171,11 @@ index_data <- assignments %>% filter(k == 4) %>% select(prop_manufacturing:.clus
   inner_join(Manufacturing_prepared %>% select(year:Manufacturing_index_year)) 
 
 # Total plot with relative index 
-ggplot(index_data, aes(x = Manufacturing_index, y = Townsend_index, color = .cluster)) + geom_point()
+ggplot(index_data, aes(x = Manufacturing_index, y = Townsend_index, color = .cluster)) + geom_point() + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
 
 # Relative index facets
-ggplot(index_data, aes(x = Manufacturing_index, y = Townsend_index, color = .cluster)) + geom_point() + facet_wrap(~year, ncol = 3)
+ggplot(index_data, aes(x = Manufacturing_index, y = Townsend_index, color = .cluster)) + geom_point() + facet_wrap(~year, ncol = 3) + theme_economist_white() + scale_fill_economist() + scale_colour_economist()
+
 
 # Geographical clusters facets
 Birmingham_2021 <- read_sf("~/R/Birmingham&Walsall/Week3/Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% 
@@ -179,13 +183,13 @@ Birmingham_2021 <- read_sf("~/R/Birmingham&Walsall/Week3/Lower_layer_Super_Outpu
 
 geographical_data <- Birmingham_2021 %>% right_join(index_data, by = c("LSOA21CD" = "lsoa21")) %>% mutate(.cluster = fct_drop(.cluster))
 
-Clusters_map <- tm_shape(geographical_data) + tm_fill(col = ".cluster", style = "cat", palette = "brewer.pu_or", col.legend = tm_legend(show = FALSE)) + tm_borders(alpha = 0.4) + tm_facets_wrap("year", nrow =2)
+Clusters_map <- tm_shape(geographical_data) + tm_fill(col = ".cluster", style = "cat", palette = "brewer.blues", col.legend = tm_legend(show = FALSE)) + tm_borders(alpha = 0.4) + tm_facets_wrap("year", nrow =2)
 
 tmap_save(Clusters_map, 
-          filename = "~/R/Birmingham&Walsall/Poster_materials/Clusters_map.png",
+          filename = "~/R/Birmingham&Walsall/Poster_materials/Clusters_map_pass.png",
           width = 3000,
           height = 3000,
-          dpi = 300)
+          dpi = 600)
 
 ######################################
 ### Clustering for each time point ###
@@ -258,8 +262,8 @@ Add_year2 <- function(df, y){
   df %>% left_join(data_year)
 }
 
-df <- df %>% Add_year(2021) %>% Add_year(2011) %>% Add_year(2001) %>% Add_year(1991) %>% Add_year(1981) #%>% Add_year(1971)
-df <- df %>% Add_year2(2021) %>% Add_year2(2011) %>% Add_year2(2001) %>% Add_year2(1991) %>% Add_year2(1981) %>% Add_year2(1971)
+df <- df %>% Add_year(2021) %>% Add_year(2011) %>% Add_year(2001) #%>% Add_year(1991) %>% Add_year(1981) #%>% Add_year(1971)
+df <- df %>% Add_year2(2021) %>% Add_year2(2011) %>% Add_year2(2001) #%>% Add_year2(1991) %>% Add_year2(1981) %>% Add_year2(1971)
 
 str(df)
 
@@ -302,11 +306,11 @@ geographical_data <- Birmingham_2021 %>% right_join(df_k3, by = c("LSOA21CD" = "
 
 lagged_map <- tm_shape(geographical_data) + tm_fill(col = ".cluster", style = "cat", palette = "brewer.pu_or", col.legend = tm_legend(show = FALSE)) + tm_borders(alpha = 0.4) 
 
-tmap_save(lagged_map, 
-          filename = "~/R/Birmingham&Walsall/Poster_materials/lagged_map.png",
-          width = 3000,
-          height = 3000,
-          dpi = 300)
+#tmap_save(lagged_map, 
+ #         filename = "~/R/Birmingham&Walsall/Poster_materials/lagged_map.png",
+#          width = 3000,
+#          height = 3000,
+#          dpi = 300)
 
 ### Faceted graph of components
 
@@ -334,10 +338,14 @@ df_long %>% mutate(year = as.factor(year)) %>% group_by(year, .cluster) %>%
 
 test <- read_csv("~/R/Birmingham&Walsall/Week5/labels.csv")
 
-df_labels <- df %>% inner_join(test %>% select(lsoa21, k_2)) %>% filter(!if_any(everything(), ~is.na(.x))) %>% select(-lsoa21) %>% group_by(k_2) %>% nest() 
+# Found below 
+
+df_labels <- df %>% inner_join(test %>% select(lsoa21, k_3)) %>% filter(!if_any(everything(), ~is.na(.x))) %>% select(-lsoa21) %>% filter(k_3 == 3) %>% select(-k_3)
+
+#%>% group_by(k_3) %>% nest() 
 str(df_labels)
 
-kclusts <- df_labels %>% mutate(kclust = map(data, ~kmeans(.x, 2)), tidied = map(kclust, tidy), glanced = map(kclust, glance), augmented = map2(kclust, data, augment))
+kclusts <- df_labels %>% mutate(kclust = map(data, ~kmeans(.x, 3)), tidied = map(kclust, tidy), glanced = map(kclust, glance), augmented = map2(kclust, data, augment))
 
 # Note this is a 3 x 6 object with lists/tibbles in columns 2-5
 kclusts 
@@ -352,20 +360,35 @@ assignments <- kclusts %>% unnest(cols = c(augmented))
 clusterings <- kclusts %>% unnest(cols = c(glanced)) 
 
 ### Elbow Plot for each subgroup
-for(i in 1:2){
-  data <- df_labels %>% unnest(cols = c(data)) %>% filter(k_2 == i) 
-  plot <- fviz_nbclust(data, kmeans, method = "wss")
+for(i in 1:3){
+  data <- df_labels %>% unnest(cols = c(data)) %>% filter(k_3 == i) 
+  #plot <- fviz_nbclust(data, kmeans, method = "wss") 
+  plot <- fviz_nbclust(data, kmeans, nstart = 25,  method = "gap_stat", nboot = 500)
   print(plot)
 }
 
 # Silhouette analysis
-for(i in 1:2){
-  data <- df_labels %>% unnest(cols = c(data)) %>% filter(k_2 == i) 
+for(i in 1:3){
+  data <- df_labels %>% unnest(cols = c(data)) %>% filter(k_3 == i) 
   plot <- fviz_nbclust(data, kmeans, method = "silhouette")
   print(plot)
 }
 
-df_partition <- assignments %>% mutate(.cluster = as.factor(str_c(k_2, ".", .cluster))) %>% ungroup() %>% select(-(k_2:glanced)) %>% inner_join(df)
+# 3 and 4 clusters over k_3 = 2,3 respectively
+
+  temp <- df_labels %>% unnest(cols = c(data)) %>% filter(k_3 != 1) 
+  fviz_nbclust(temp, kmeans, method = "wss") 
+  fviz_nbclust(temp, kmeans, nstart = 25,  method = "gap_stat", nboot = 50)
+# This does not converge!
+  fviz_nbclust(temp, kmeans, method = "silhouette", nboot = 50)
+
+
+#  install.packages("NbClust")
+#  library(NbClust)
+  NbClust(data = df_labels, diss = NULL, distance = "euclidean",
+          min.nc = 2, max.nc = 15, method = "kmeans")
+
+df_partition <- assignments %>% mutate(.cluster = as.factor(str_c(k_3, ".", .cluster))) %>% ungroup() %>% select(-(k_3:glanced)) %>% inner_join(df)
 summary(df_partition$.cluster)
 geographical_data <- Birmingham_2021 %>% right_join(df_partition, by = c("LSOA21CD" = "lsoa21")) 
 
@@ -402,9 +425,9 @@ df_longer %>% filter(year == 2001) %>% ggplot(aes(x = T_proportion, y = M_propor
 
 # (2) PCA on the joint data and represent in this space
 
-pca_data <- df_partition %>% select(-lsoa21) %>% select(`2021_prop_manufacturing`:`2001_prop_sick`, `2021_prop_unemployed`:`2001_prop_no_car` , .cluster)
+pca_data <- df_partition %>% select(-lsoa21) %>% select(`2021_prop_manufacturing`:`2021_prop_sick`, `2021_prop_unemployed`:`2021_prop_no_car` , .cluster)
 str(pca_data)
-pc <- prcomp(pca_data[,-28], center = TRUE, scale. = TRUE)
+pc <- prcomp(pca_data[,-10], center = TRUE, scale. = TRUE)
 print(pc)
 summary(pc)
 
@@ -440,9 +463,9 @@ data_inc_coords <- Birmingham_2021 %>% right_join(df_partition, by = c("LSOA21CD
 
 db_data <- as.matrix(data_inc_coords %>% select(matches("^2021"), LONG, LAT)) 
 
-kNNdistplot(db_data, k = 11, minPts = 12) # Used to inspect for knee/ eps value
+kNNdistplot(db_data, k = 11, minPts = 12) # Used to inspect for knee/ eps value minPts = 12 originally
 
-db <- dbscan(db_data, eps = 0.10, minPts = 12)    # Area 1 - eps = 0.08 # Both - eps = 0.8 # Area 2 - eps = 0.15 #Adjust min to cols + 1
+db <- dbscan(db_data, eps = 0.8, minPts = 12)    # Area 1 - eps = 0.08 # Both - eps = 0.8 # Area 2 - eps = 0.15 #Adjust min to cols + 1
 db
 
 pairs(db_data, col = db$cluster + 1L)

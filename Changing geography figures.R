@@ -109,10 +109,10 @@ List_ED_1971C <- st_drop_geometry(Area084C_postcodes) %>% filter(req_71 == 1) %>
 
 Birmingham_084c <-"E01009376"
 
-# 2021 LSOA boundaries for the Birmingham 084 area
+# 2021 LSOA boundaries for the Birmingham 084C area
 Area084C_LSOA_Boundaries_2021 <- read_sf("Lower_layer_Super_Output_Areas_(December_2021)_Boundaries_EW_BFC_(V10).shp") %>% filter(str_detect(LSOA21NM, "Birmingham 084C"))
 
-# 2021 OA boundaries for the Birmingham 084 area
+# 2021 OA boundaries for the Birmingham 084C area
 Area084C_OA_Boundaries_2021 <- read_sf("OA_2021_EW_BFE_V9.shp") %>% filter(str_detect(LSOA21NM, "Birmingham 084C"))
 
 # Other OA and ED Level geometries
@@ -120,4 +120,4 @@ Boundaries_1971C <- read_sf("ED_1971_EW.shp") %>% filter(ED71ZCD %in% List_ED_19
 
 # Graphs on restricted region 
 
-Graph_variable(proportions_manual, 1971, "prop_manufacturing")
+#Graph_variable(proportions_manual, 1971, "prop_manufacturing")
