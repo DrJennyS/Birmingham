@@ -50,7 +50,7 @@ Week5_Kmeans (Tidymodels, dbscan and factoextra) - I have experimented with a fe
 (3) clustering lsoa21 points using data from multiple dates
 (4) clustering the lsoa21 points using the 1971 manufacturing data to identify areas which were most dependent on manufacturing. Then finding clusters within these groups within the remaining data. 
 
-** This is MUCH more work than I would anticipate you being able to do in 10 hours!!! Any one of these three approaches, and either the dbscan algorithm or k-means would be sufficient. The only important thing to note is that non of them are really that useful and (1) is no better than the others due to the breakdown of the clusters over time. The only approach that does not work is clustering the (lsoa21, year) pairs over (Townsend_index, Manufacturing_index) because the transformation of the variables going into Townsend_index generate a normal-random variable. We get "stripes" in the resulting clusters (eek!)
+** This is MUCH more work than I would anticipate you being able to do in 10 hours!!! Any one of these three approaches, and either the dbscan algorithm or k-means would be sufficient. The only important thing to note is that none of them are really that useful and (1) is no better than the others due to the breakdown of the clusters over time. The only approach that does not work is clustering the (lsoa21, year) pairs over (Townsend_index, Manufacturing_index) because the transformation of the variables going into Townsend_index generate a normal-random variable. We get "stripes" in the resulting clusters (eek!)
 
 We see that the overall clusters are "high manufacturing", "low manufacturing" combined with "high deprivation" and "low deprivation". Deprevation levels being stable over the 60 year period, but manfacturing decreasing over time. This makes the clusters in (1) not particularly useful. 
 
@@ -60,12 +60,17 @@ Clustering with lagged variables does not significantly improve the analysis due
 
 Approach (4) did give some more interesting clusters of Manfacturing/Non-manfacturing focused areas which have been more/less stable over-time. The data split for (4) is in the additional file: Revised_Modelling.R
 
-I used wss/elbow plot to decide on optimal numbers of clusters, alongside silhouette score. The dominance of two groups could be due to the groups being non-elliptic or spatially dependent. 
+I used wss/elbow plot to decide on optimal numbers of clusters, alongside silhouette score and bootstrapping (gap statistic). I have used two approaches to the gap statistic (i) Uniform distribution for the null hypothesis and inf{k>=1 |gap(k) >= gap(k+1) - gap_se(k+1)} to decide on the optimal k as well as (ii) scaled PCA for the null hypothesis and the local max SE criteria inf{ 1<=k <L_max | gap(k) >= gap(k+1) - gap_se(k+1)} where L_max is the smallest local maximum in the gap statistic, i.e. L_max = arg_min{ k | gap(k) > max(gap(k-1), gap(k+1) } with the convention that gap(0) = 0. These two approaches give different suggestions for the optimal number of clusters within each group.
 
-I used DBSCAN as a non-parametric model to test my assumption about elliptic-clusters being a poor assumption. DBSCAN identified a large number of "outlier" variables and 1 or 2 other clusters. A graphical representation of these areas indicates that the outliers are geographically clustered in the areas with higher manufacturing levels. 
+Silhouette scores imply that there should be only two clusters within each group but this could be unreliable. In particular, this could be caused by the groups being non-elliptic or spatially dependent. 
 
-I have crudely added a coordinate for each area to try to introduce some idea of geographical closeness but this also did not improve the clustering. 
+I used DBSCAN as a non-parametric model to test my assumption about elliptic-clusters being a poor assumption. DBSCAN identified a large number of "outlier" variables and 1 (or 2 depending on the choice of hyperparameters) other clusters. A graphical representation of these areas indicates that the outliers are geographically clustered in the areas with higher manufacturing levels. 
 
 Finally, I have looked at the Moran I score and local-Moran score and note that spatial clustering is identified with a high level of significance. If I had more time this could be represented in a single table neatly. 
 
-Revised_Modelling.R - Here I have written a bootstrap approach to testing whether changes in the Townsend Index rating are different between the high/low manufacturing areas. The initial EDA suggests that higher manufacturing areas have lower variability - implying that poverty is more entrenched. I mentioned on the sample assessment 1 that the infer package is not covered on this programme. While this is true, the ideas are related to those on Statistical Computing.  
+Additional lines of enquiry that could be interesting: 
+
+- Is PCA or uniform a satisfactory null hypothesis for spatially variables? Could this be improved upon?
+- Are there better ways of evaluating the modelling, such as excluding geographically dispersed sections of each group to ensure that their marginal impact is low?
+- Variability in relative performance appears different between groups and clusters within groups. Can we be sure of the statistical significance of these differences?
+- Are there better choices of variables to go into the analysis? 
